@@ -29,15 +29,17 @@ export default function TaskCard({
         <input
           type="checkbox"
           checked={completed}
-          onChange={() =>{ if (taskId !== undefined){ onToggle(taskId)}}}
+          onChange={() => {
+  onToggle?.(taskId!)
+}}
         />
       )}
 {onDelete && ( 
   <button 
   type="button" 
 onClick={() => { 
-  if ( taskId !== undefined && window.confirm("Are you sure?") )
- { onDelete(taskId)
+  if (window.confirm("Are you sure?") )
+ { onDelete(taskId!)
   } 
   }} 
   style={{ marginLeft: "10px", padding: "4px 10px", cursor: "pointer", }} > Delete </button> )}

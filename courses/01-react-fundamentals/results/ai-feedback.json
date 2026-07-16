@@ -69,29 +69,6 @@
     }
   },
   {
-    "challengeId": "04-task-completion-toggle",
-    "challengeName": "Task Completion Toggle",
-    "aiReview": {
-      "challengeId": "04-task-completion-toggle",
-      "timestamp": "2026-07-16T07:29:27.973Z",
-      "score": 83,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is relatively easy to understand and follow."
-      ],
-      "improvements": [
-        "In the `TaskCard` component, the `onToggle` function is not checked for null or undefined before calling it. This can lead to a runtime error if `onToggle` is not provided. Consider adding a null check before calling `onToggle`.",
-        "In the `TaskList` component, the `tasks` prop is not checked for null or undefined before mapping over it. This can lead to a runtime error if `tasks` is not provided. Consider adding a null check before mapping over `tasks`.",
-        "The `TaskCard` component uses the `data-completed` attribute to indicate whether a task is completed. However, this attribute is not used anywhere in the code. Consider removing it to avoid confusion."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are some areas that need improvement to make it more robust and maintainable."
-    }
-  },
-  {
     "challengeId": "02-dynamic-task-rendering",
     "challengeName": "Dynamic Task Rendering",
     "aiReview": {
@@ -135,6 +112,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good balance of readability and performance. However, there are some areas for improvement, such as validation and separation of concerns. With some minor adjustments, this code could be even more efficient and scalable."
+    }
+  },
+  {
+    "challengeId": "04-task-completion-toggle",
+    "challengeName": "Task Completion Toggle",
+    "aiReview": {
+      "challengeId": "04-task-completion-toggle",
+      "timestamp": "2026-07-16T09:20:39.455Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between components.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is well-organized, with clear and concise variable names and function signatures."
+      ],
+      "improvements": [
+        "Some of the code could be simplified by using more concise syntax, such as using the optional chaining operator (`?.`) instead of `onToggle?.(taskId!)`.",
+        "The `TaskCard` component could be improved by adding more props validation, such as checking if `taskId` is a valid string or number.",
+        "The `TaskList` component could be improved by adding more error handling, such as checking if `tasks` is an array before trying to filter it."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-written and follows good practices, but could benefit from some minor improvements to make it more concise and robust."
     }
   }
 ]

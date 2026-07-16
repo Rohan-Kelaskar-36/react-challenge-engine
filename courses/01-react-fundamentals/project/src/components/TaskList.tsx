@@ -45,15 +45,16 @@ export default function TaskList({
   onToggle,
   onDelete,
 }: TaskListProps) {
-  const tasksList  = tasks ?? HARDCODED_TASKS
+  const tasksList = tasks ?? HARDCODED_TASKS
+
+const completedCount =  tasksList.filter(task => task.completed).length
 
   return (
     <section id="task-list">
-       {countText && (
-    <p id="task-count">
-      {countText}
-    </p>
-  )}
+       <p id="task-count">
+        {countText ??
+          `${completedCount} of ${tasksList.length} completed`}
+      </p>
       {tasksList.map((task) => (
         <TaskCard
           key={task.id}

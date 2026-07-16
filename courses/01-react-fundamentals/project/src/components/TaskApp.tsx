@@ -72,7 +72,7 @@ const filteredTasks =
     No tasks match this filter
   </p>
 )}
-     <TaskList tasks={tasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${tasks.length} Tasks`} />
+     <TaskList tasks={filteredTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`} />
     </>
   )
 }
