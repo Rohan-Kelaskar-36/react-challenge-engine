@@ -1,51 +1,5 @@
 [
   {
-    "challengeId": "06-task-filtering",
-    "challengeName": "Task Filtering",
-    "aiReview": {
-      "challengeId": "06-task-filtering",
-      "timestamp": "2026-07-16T06:55:02.427Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The filtering logic is implemented correctly and efficiently."
-      ],
-      "improvements": [
-        "The `FilterBar` component can be improved by adding a prop type for the `onFilterChange` function to ensure it's a function.",
-        "In the `TaskApp` component, the `filteredTasks` variable can be replaced with a more descriptive name, such as `filteredTaskList`.",
-        "The `handleToggle` function can be simplified by using the `map` method with a callback function to update the `completed` property of each task."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-organized and follows good practices, but there are some minor improvements that can be made to enhance its readability and maintainability."
-    }
-  },
-  {
-    "challengeId": "05-task-deletion",
-    "challengeName": "Task Deletion",
-    "aiReview": {
-      "challengeId": "05-task-deletion",
-      "timestamp": "2026-07-16T06:59:23.377Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components.",
-        "The use of TypeScript and functional components promotes maintainability and scalability.",
-        "The code adheres to the challenge requirements and meets the specified functionality."
-      ],
-      "improvements": [
-        "Some of the component props could be more descriptive, especially in the TaskCard component. For example, instead of `onDelete`, consider using `onDeleteTask` to clearly indicate its purpose.",
-        "In the TaskApp component, the `filteredTasks` variable could be extracted into a separate function to improve readability and maintainability.",
-        "Consider adding more comments or documentation to explain the reasoning behind certain decisions, such as the use of `window.confirm` for deletion confirmation."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-organized and meets the challenge requirements. However, some minor improvements could be made to enhance readability and maintainability. Overall, the code is a good example of a functional and scalable React application."
-    }
-  },
-  {
     "challengeId": "01-static-task-display",
     "challengeName": "Static Task Display",
     "aiReview": {
@@ -135,6 +89,52 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-written and follows good practices, but could benefit from some minor improvements to make it more concise and robust."
+    }
+  },
+  {
+    "challengeId": "05-task-deletion",
+    "challengeName": "Task Deletion",
+    "aiReview": {
+      "challengeId": "05-task-deletion",
+      "timestamp": "2026-07-16T09:24:14.829Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and organized into separate components, making it easy to follow and understand.",
+        "The use of TypeScript and functional components is a good practice, ensuring type safety and maintainability.",
+        "The code is well-commented, making it easier for others to understand the purpose and functionality of each component."
+      ],
+      "improvements": [
+        "Some of the component props could be more descriptive, making it easier for others to understand their purpose and usage.",
+        "There are some repeated code patterns, such as the `onDelete` handler, which could be extracted into a separate utility function to reduce code duplication.",
+        "The `TaskApp` component is quite large and complex, making it harder to maintain and understand. Consider breaking it down into smaller, more manageable components."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and follows good practices. However, there are some areas for improvement, such as code duplication and component complexity. With some refactoring and optimization, the code can be even more efficient and easier to maintain."
+    }
+  },
+  {
+    "challengeId": "06-task-filtering",
+    "challengeName": "Task Filtering",
+    "aiReview": {
+      "challengeId": "06-task-filtering",
+      "timestamp": "2026-07-16T09:26:49.585Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is relatively easy to follow and understand."
+      ],
+      "improvements": [
+        "In the `FilterBar` component, the `data-active` attribute can be replaced with a class for better accessibility and styling control.",
+        "In the `TaskApp` component, the `filteredTasks` variable can be extracted into a separate function for better readability and reusability.",
+        "In the `TaskApp` component, the `handleToggle` function can be simplified using the `map` method and a conditional expression."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some minor improvements that can be made to enhance readability and reusability. Overall, the code is a good example of a well-designed React application."
     }
   }
 ]

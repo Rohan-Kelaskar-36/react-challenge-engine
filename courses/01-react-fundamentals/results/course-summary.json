@@ -1,10 +1,10 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-07-16T09:20:41.014Z",
+  "lastUpdated": "2026-07-16T09:26:51.057Z",
   "totalChallenges": 23,
   "completedChallenges": 6,
-  "averageScore": 82.5,
+  "averageScore": 83.8,
   "completionPercentage": 26.1,
   "badgeLevel": "none",
   "challengeResults": [
@@ -35,13 +35,13 @@
     {
       "challengeId": "05-task-deletion",
       "challengeName": "Task Deletion",
-      "score": 80.97,
+      "score": 84.855,
       "passed": true
     },
     {
       "challengeId": "06-task-filtering",
       "challengeName": "Task Filtering",
-      "score": 80.97,
+      "score": 84.855,
       "passed": true
     }
   ],

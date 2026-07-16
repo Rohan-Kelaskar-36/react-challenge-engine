@@ -12,7 +12,7 @@ export default function FilterBar({
       id="filter-bar"
       style={{
         display: "flex",
-        gap: "10px",
+        gap: "9px",
         marginBottom: "20px",
       }}
     >

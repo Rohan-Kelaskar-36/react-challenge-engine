@@ -68,12 +68,12 @@ npm run review -- --challenge=01-static-task-display
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 16/7/2026, 2:50:41 pm*
+*Auto-updated when you run review. Last run: 16/7/2026, 2:56:51 pm*
 
 | Metric | Value |
 |--------|-------|
 | Challenges completed | 6 / 23 (26.1%) |
-| Average score | 82.5% |
+| Average score | 83.8% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
