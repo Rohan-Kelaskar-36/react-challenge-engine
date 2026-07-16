@@ -38,7 +38,7 @@ export default function TaskApp({
   }
 
 
-    const completedCount = tasks.filter((task) => task.completed).length
+    // const completedCount = tasks.filter((task) => task.completed).length
 
     const [filter, setFilter] = useState<
   "all" | "active" | "completed"
@@ -50,6 +50,8 @@ const [sortOrder, setSortOrder] = useState<
 const [editingId, setEditingId] = useState<
   string | number | null
 >(null)
+
+const [searchText, setSearchText] = useState("")
 
 const filteredTasks =
   filter === "active"
@@ -65,7 +67,17 @@ const filteredTasks =
   Low: 1,
 }
 
-const sortedTasks = [...filteredTasks].sort((a, b) => {
+const searchedTasks = filteredTasks.filter((task) =>
+  task.title
+    .toLowerCase()
+    .includes(searchText.toLowerCase()) ||
+
+  task.description
+    .toLowerCase()
+    .includes(searchText.toLowerCase())
+)
+
+const sortedTasks = [...searchedTasks].sort((a, b) => {
   switch (sortOrder) {
     case "high":
       return (
@@ -124,14 +136,19 @@ const handleUpdateTask = (
     onFilterChange={setFilter}
     sortOrder={sortOrder}
     onSortChange={setSortOrder}
+    searchText={searchText}
+    onSearchChange={setSearchText}
+    onClearSearch={() => setSearchText("")}
   />
 )}
-{filteredTasks.length === 0 && (
+{sortedTasks.length === 0 && (
   <p id="filter-empty-message">
-    No tasks match this filter
+    {searchText
+  ? `No tasks found for "${searchText}"`
+  : "No tasks match this filter"}
   </p>
 )}
-     <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`}  
+     <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`Showing ${sortedTasks.length} of ${tasks.length} tasks`}  
      editingId={editingId}
   setEditingId={setEditingId}
   onUpdateTask={handleUpdateTask} />

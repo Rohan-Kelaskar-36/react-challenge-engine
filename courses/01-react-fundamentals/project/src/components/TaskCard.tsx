@@ -1,12 +1,13 @@
 import {useState} from "react"
 
 interface TaskCardProps {
+  id?: string | number
+taskId?: string | number
   title: string
   description: string
   priority: string
   completed?: boolean
   onToggle?: (id: string | number) => void
-  taskId?: string | number
   onDelete?: (id: string | number) => void
   isEditing?: boolean
   setEditingId?: (id: string | number | null) => void
@@ -14,6 +15,7 @@ interface TaskCardProps {
 }
 
 export default function TaskCard({
+  id,
   title,
   description,
   priority,
@@ -31,14 +33,14 @@ const [editDescription, setEditDescription] = useState(description)
 const [editPriority, setEditPriority] = useState(priority)
 const [error, setError] = useState("");
 
-
+const currentId = taskId ?? id;
 const handleSave = () => {
   if (!editTitle.trim()) {
     setError("Title is required")
     return
   }
 
-  onUpdateTask?.(taskId!, {
+  onUpdateTask?.(currentId!, {
     title: editTitle,
     description: editDescription,
     priority: editPriority,
@@ -66,7 +68,7 @@ const handleCancel = () => {
           type="checkbox"
           checked={completed}
           onChange={() => {
-  onToggle?.(taskId!)
+  onToggle?.(currentId!)
 }}
         />
       )}
@@ -75,7 +77,7 @@ const handleCancel = () => {
   type="button" 
 onClick={() => { 
   if (window.confirm("Are you sure?") )
- { onDelete(taskId!)
+ { onDelete(currentId!)
   } 
   }} 
   style={{ marginLeft: "10px", padding: "4px 10px", cursor: "pointer", }} > Delete </button> )}
@@ -164,7 +166,7 @@ onClick={() => {
 
     {onUpdateTask && (
       <button
-        onClick={() => setEditingId?.(taskId!)}
+        onClick={() => setEditingId?.(currentId!)}
       >
         Edit
       </button>
