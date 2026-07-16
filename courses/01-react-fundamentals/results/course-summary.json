@@ -1,13 +1,58 @@
 {
   "courseId": "01-react-fundamentals",
   "courseName": "React Fundamentals",
-  "lastUpdated": "2026-02-06T11:31:54.754Z",
+  "lastUpdated": "2026-07-16T08:50:26.759Z",
   "totalChallenges": 23,
-  "completedChallenges": 0,
-  "averageScore": 0,
-  "completionPercentage": 0,
+  "completedChallenges": 5,
+  "averageScore": 79.9,
+  "completionPercentage": 21.7,
   "badgeLevel": "none",
-  "challengeResults": [],
-  "skillStrengths": [],
-  "improvementAreas": []
+  "challengeResults": [
+    {
+      "challengeId": "01-static-task-display",
+      "challengeName": "Static Task Display",
+      "score": 80.97,
+      "passed": true
+    },
+    {
+      "challengeId": "02-dynamic-task-rendering",
+      "challengeName": "Dynamic Task Rendering",
+      "score": 83.42,
+      "passed": true
+    },
+    {
+      "challengeId": "03-adding-new-tasks",
+      "challengeName": "Adding New Tasks",
+      "score": 83.91,
+      "passed": true
+    },
+    {
+      "challengeId": "04-task-completion-toggle",
+      "challengeName": "Task Completion Toggle",
+      "score": 68.97,
+      "passed": false
+    },
+    {
+      "challengeId": "05-task-deletion",
+      "challengeName": "Task Deletion",
+      "score": 80.97,
+      "passed": true
+    },
+    {
+      "challengeId": "06-task-filtering",
+      "challengeName": "Task Filtering",
+      "score": 80.97,
+      "passed": true
+    }
+  ],
+  "skillStrengths": [
+    "Static Task Display",
+    "Dynamic Task Rendering",
+    "Adding New Tasks",
+    "Task Deletion",
+    "Task Filtering"
+  ],
+  "improvementAreas": [
+    "Task Completion Toggle"
+  ]
 }

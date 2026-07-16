@@ -1,24 +1,115 @@
 {
-  "lastUpdated": "2026-02-06T11:31:55.811Z",
+  "lastUpdated": "2026-07-16T08:50:30.270Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 17,
-    "completionPercentage": 0,
+    "overallScore": 26.4,
+    "completionPercentage": 9.4,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 0
+    "completedChallenges": 5
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 0,
-      "completionPercentage": 0,
+      "averageScore": 79.9,
+      "completionPercentage": 21.7,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 0,
-      "challenges": {}
+      "completedChallenges": 5,
+      "challenges": {
+        "01-static-task-display": {
+          "challengeId": "01-static-task-display",
+          "challengeName": "Static Task Display",
+          "passed": true,
+          "score": 80.97,
+          "lastRun": "2026-07-16T07:24:41.886Z",
+          "scores": {
+            "functionalTests": 72.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "02-dynamic-task-rendering": {
+          "challengeId": "02-dynamic-task-rendering",
+          "challengeName": "Dynamic Task Rendering",
+          "passed": true,
+          "score": 83.42,
+          "lastRun": "2026-07-16T08:42:59.210Z",
+          "scores": {
+            "functionalTests": 79.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "03-adding-new-tasks": {
+          "challengeId": "03-adding-new-tasks",
+          "challengeName": "Adding New Tasks",
+          "passed": true,
+          "score": 83.91,
+          "lastRun": "2026-07-16T08:49:41.779Z",
+          "scores": {
+            "functionalTests": 80.6,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "04-task-completion-toggle": {
+          "challengeId": "04-task-completion-toggle",
+          "challengeName": "Task Completion Toggle",
+          "passed": false,
+          "score": 68.97,
+          "lastRun": "2026-07-16T07:27:30.364Z",
+          "scores": {
+            "functionalTests": 72.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 25,
+            "aiReview": 83
+          }
+        },
+        "05-task-deletion": {
+          "challengeId": "05-task-deletion",
+          "challengeName": "Task Deletion",
+          "passed": true,
+          "score": 80.97,
+          "lastRun": "2026-07-16T06:58:43.965Z",
+          "scores": {
+            "functionalTests": 72.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "06-task-filtering": {
+          "challengeId": "06-task-filtering",
+          "challengeName": "Task Filtering",
+          "passed": true,
+          "score": 80.97,
+          "lastRun": "2026-07-16T06:54:17.174Z",
+          "scores": {
+            "functionalTests": 72.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        }
+      }
     },
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
