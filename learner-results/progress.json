@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-07-16T09:26:53.645Z",
+  "lastUpdated": "2026-07-16T09:58:41.507Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
     "overallScore": 27.7,
-    "completionPercentage": 11.3,
+    "completionPercentage": 13.2,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 6
+    "completedChallenges": 7
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 83.8,
-      "completionPercentage": 26.1,
+      "averageScore": 84,
+      "completionPercentage": 30.4,
       "badgeLevel": "none",
       "totalChallenges": 23,
-      "completedChallenges": 6,
+      "completedChallenges": 7,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -100,6 +100,21 @@
           "passed": true,
           "score": 84.855,
           "lastRun": "2026-07-16T09:26:08.098Z",
+          "scores": {
+            "functionalTests": 83.3,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "07-priority-based-sorting": {
+          "challengeId": "07-priority-based-sorting",
+          "challengeName": "Priority-Based Sorting",
+          "passed": true,
+          "score": 84.855,
+          "lastRun": "2026-07-16T09:57:50.354Z",
           "scores": {
             "functionalTests": 83.3,
             "codeQuality": 50,

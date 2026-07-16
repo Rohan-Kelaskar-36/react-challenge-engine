@@ -43,6 +43,9 @@ export default function TaskApp({
     const [filter, setFilter] = useState<
   "all" | "active" | "completed"
 >("all")
+const [sortOrder, setSortOrder] = useState<
+  "recent" | "high" | "low" | "alphabetical"
+>("recent")
 
 const filteredTasks =
   filter === "active"
@@ -50,6 +53,39 @@ const filteredTasks =
     : filter === "completed"
     ? tasks.filter((task) => task.completed)
     : tasks
+
+
+    const priorityValue = {
+  High: 3,
+  Medium: 2,
+  Low: 1,
+}
+
+const sortedTasks = [...filteredTasks].sort((a, b) => {
+  switch (sortOrder) {
+    case "high":
+      return (
+        priorityValue[b.priority as keyof typeof priorityValue] -
+        priorityValue[a.priority as keyof typeof priorityValue]
+      )
+
+    case "low":
+      return (
+        priorityValue[a.priority as keyof typeof priorityValue] -
+        priorityValue[b.priority as keyof typeof priorityValue]
+      )
+
+    case "alphabetical":
+      return a.title.localeCompare(
+        b.title,
+        undefined,
+        { sensitivity: "base" }
+      )
+
+    default:
+      return Number(a.id) - Number(b.id)
+  }
+})
 
    return (
     <>
@@ -65,6 +101,8 @@ const filteredTasks =
   <FilterBar
     filter={filter}
     onFilterChange={setFilter}
+    sortOrder={sortOrder}
+    onSortChange={setSortOrder}
   />
 )}
 {filteredTasks.length === 0 && (
@@ -72,7 +110,7 @@ const filteredTasks =
     No tasks match this filter
   </p>
 )}
-     <TaskList tasks={filteredTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`} />
+     <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`} />
     </>
   )
 }
