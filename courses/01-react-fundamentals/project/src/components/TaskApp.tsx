@@ -47,6 +47,10 @@ const [sortOrder, setSortOrder] = useState<
   "recent" | "high" | "low" | "alphabetical"
 >("recent")
 
+const [editingId, setEditingId] = useState<
+  string | number | null
+>(null)
+
 const filteredTasks =
   filter === "active"
     ? tasks.filter((task) => !task.completed)
@@ -87,6 +91,23 @@ const sortedTasks = [...filteredTasks].sort((a, b) => {
   }
 })
 
+const handleUpdateTask = (
+  id: string | number,
+  updates: Pick<Task, "title" | "description" | "priority">
+) => {
+  if (!updates.title.trim()) return
+
+  setTasks?.((prev) =>
+    prev.map((task) =>
+      task.id === id
+        ? { ...task, ...updates }
+        : task
+    )
+  )
+
+  setEditingId(null)
+}
+
    return (
     <>
   
@@ -110,7 +131,10 @@ const sortedTasks = [...filteredTasks].sort((a, b) => {
     No tasks match this filter
   </p>
 )}
-     <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`} />
+     <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`${completedCount} of ${tasks.length} completed`}  
+     editingId={editingId}
+  setEditingId={setEditingId}
+  onUpdateTask={handleUpdateTask} />
     </>
   )
 }
