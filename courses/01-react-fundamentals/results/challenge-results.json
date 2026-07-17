@@ -12131,5 +12131,1268 @@
       "maintainability": 80,
       "overall": "The code is well-structured and follows good practices, but there are some areas that need improvement to make it more maintainable and efficient."
     }
+  },
+  {
+    "challengeId": "10-useeffect-local-storage",
+    "challengeName": "useEffect - Local Storage Persistence",
+    "timestamp": "2026-07-17T07:34:16.489Z",
+    "scores": {
+      "functionalTests": 84.7,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 85.345,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 84.7,
+      "passed": false,
+      "totalTests": 72,
+      "passedTests": 61,
+      "failedTests": 11,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should render title, description, and priority",
+              "status": "passed",
+              "title": "should render title, description, and priority",
+              "duration": 80,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use article with id task-card",
+              "status": "passed",
+              "title": "should use article with id task-card",
+              "duration": 7,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskCard"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskCard should use semantic HTML (h2 for title)",
+              "status": "passed",
+              "title": "should use semantic HTML (h2 for title)",
+              "duration": 9,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should render 3 TaskCards when no tasks prop",
+              "status": "passed",
+              "title": "should render 3 TaskCards when no tasks prop",
+              "duration": 18,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should have section with id task-list",
+              "status": "passed",
+              "title": "should have section with id task-list",
+              "duration": 22,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 01: Static Task Display",
+                "TaskList"
+              ],
+              "fullName": " Challenge 01: Static Task Display TaskList should display three different tasks",
+              "status": "passed",
+              "title": "should display three different tasks",
+              "duration": 65,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273669993,
+          "endTime": 1784273670196,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-01.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should render tasks from tasks prop",
+              "status": "passed",
+              "title": "should render tasks from tasks prop",
+              "duration": 163,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should display task count with id task-count",
+              "status": "passed",
+              "title": "should display task count with id task-count",
+              "duration": 52,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use unique keys when mapping (no duplicate keys)",
+              "status": "passed",
+              "title": "should use unique keys when mapping (no duplicate keys)",
+              "duration": 34,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 02: Dynamic Task Rendering"
+              ],
+              "fullName": " Challenge 02: Dynamic Task Rendering should use map in TaskList",
+              "status": "passed",
+              "title": "should use map in TaskList",
+              "duration": 2,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273669996,
+          "endTime": 1784273670247,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-02.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have controlled title input",
+              "status": "passed",
+              "title": "should have controlled title input",
+              "duration": 646,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should have Add Task submit button",
+              "status": "passed",
+              "title": "should have Add Task submit button",
+              "duration": 140,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should call onAddTask with new task when title filled and submitted",
+              "status": "passed",
+              "title": "should call onAddTask with new task when title filled and submitted",
+              "duration": 545,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should show error when title is empty on submit",
+              "status": "passed",
+              "title": "should show error when title is empty on submit",
+              "duration": 203,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should clear form after successful add",
+              "status": "passed",
+              "title": "should clear form after successful add",
+              "duration": 362,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 03: Adding New Tasks"
+              ],
+              "fullName": " Challenge 03: Adding New Tasks should use controlled inputs (value + onChange)",
+              "status": "passed",
+              "title": "should use controlled inputs (value + onChange)",
+              "duration": 4,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273670760,
+          "endTime": 1784273672660,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-03.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should render checkbox when onToggle provided",
+              "status": "passed",
+              "title": "TaskCard should render checkbox when onToggle provided",
+              "duration": 340,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should call onToggle when checkbox clicked",
+              "status": "passed",
+              "title": "TaskCard should call onToggle when checkbox clicked",
+              "duration": 197,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should show strike-through when completed",
+              "status": "passed",
+              "title": "TaskCard should show strike-through when completed",
+              "duration": 87,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskCard should have data-completed or different style when completed",
+              "status": "passed",
+              "title": "TaskCard should have data-completed or different style when completed",
+              "duration": 12,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle TaskList should pass onToggle to TaskCard when tasks provided",
+              "status": "passed",
+              "title": "TaskList should pass onToggle to TaskCard when tasks provided",
+              "duration": 189,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 04: Task Completion Toggle"
+              ],
+              "fullName": " Challenge 04: Task Completion Toggle count text should show X of Y completed format",
+              "status": "passed",
+              "title": "count text should show X of Y completed format",
+              "duration": 16,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273670720,
+          "endTime": 1784273671561,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-04.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should render Delete button when onDelete and id provided",
+              "status": "passed",
+              "title": "TaskCard should render Delete button when onDelete and id provided",
+              "duration": 348,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not render Delete button when onDelete not provided",
+              "status": "passed",
+              "title": "TaskCard should not render Delete button when onDelete not provided",
+              "duration": 27,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should call onDelete when Delete clicked and user confirms",
+              "status": "passed",
+              "title": "TaskCard should call onDelete when Delete clicked and user confirms",
+              "duration": 189,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskCard should not call onDelete when user cancels confirmation",
+              "status": "passed",
+              "title": "TaskCard should not call onDelete when user cancels confirmation",
+              "duration": 138,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should pass onDelete to TaskCard when provided",
+              "status": "passed",
+              "title": "TaskList should pass onDelete to TaskCard when provided",
+              "duration": 167,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 05: Task Deletion"
+              ],
+              "fullName": " Challenge 05: Task Deletion TaskList should show countText in #task-count",
+              "status": "passed",
+              "title": "TaskList should show countText in #task-count",
+              "duration": 15,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273670713,
+          "endTime": 1784273671597,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-05.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should render All, Active, Completed buttons",
+              "status": "passed",
+              "title": "FilterBar should render All, Active, Completed buttons",
+              "duration": 504,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should have id=\"filter-bar\"",
+              "status": "passed",
+              "title": "FilterBar should have id=\"filter-bar\"",
+              "duration": 19,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should highlight active filter",
+              "status": "passed",
+              "title": "FilterBar should highlight active filter",
+              "duration": 148,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering FilterBar should call onFilterChange when button clicked",
+              "status": "passed",
+              "title": "FilterBar should call onFilterChange when button clicked",
+              "duration": 232,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 06: Task Filtering"
+              ],
+              "fullName": " Challenge 06: Task Filtering TaskList with filtered tasks should show only matching tasks",
+              "status": "passed",
+              "title": "TaskList with filtered tasks should show only matching tasks",
+              "duration": 69,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273670723,
+          "endTime": 1784273671696,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting FilterBar or sort control should exist",
+              "status": "passed",
+              "title": "FilterBar or sort control should exist",
+              "duration": 42,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting TaskList should render tasks in order provided",
+              "status": "passed",
+              "title": "TaskList should render tasks in order provided",
+              "duration": 345,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 07: Priority-Based Sorting"
+              ],
+              "fullName": " Challenge 07: Priority-Based Sorting When tasks sorted High to Low, High appears first",
+              "status": "passed",
+              "title": "When tasks sorted High to Low, High appears first",
+              "duration": 201,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273669992,
+          "endTime": 1784273670580,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskCard should render title and description",
+              "status": "passed",
+              "title": "TaskCard should render title and description",
+              "duration": 176,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should pass tasks to TaskCard",
+              "status": "passed",
+              "title": "TaskList should pass tasks to TaskCard",
+              "duration": 45,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 08: Task Editing"
+              ],
+              "fullName": " Challenge 08: Task Editing TaskList should have id=\"task-list\"",
+              "status": "passed",
+              "title": "TaskList should have id=\"task-list\"",
+              "duration": 19,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273677083,
+          "endTime": 1784273677324,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-08.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality FilterBar should exist for search integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search integration",
+              "duration": 110,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 09: Search Functionality"
+              ],
+              "fullName": " Challenge 09: Search Functionality TaskList should filter by provided tasks (search applied upstream)",
+              "status": "passed",
+              "title": "TaskList should filter by provided tasks (search applied upstream)",
+              "duration": 107,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273676842,
+          "endTime": 1784273677060,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 393,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 10: useEffect - Local Storage Persistence"
+              ],
+              "fullName": " Challenge 10: useEffect - Local Storage Persistence App should have routes for challenge 10",
+              "status": "passed",
+              "title": "App should have routes for challenge 10",
+              "duration": 68,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273677459,
+          "endTime": 1784273677920,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-10.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
+              "status": "passed",
+              "title": "FilterBar should exist for search/debounce integration",
+              "duration": 69,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 11: useEffect - Debounced Search"
+              ],
+              "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 63,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273678547,
+          "endTime": 1784273678679,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskCard should render title and priority",
+              "status": "passed",
+              "title": "TaskCard should render title and priority",
+              "duration": 169,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 12: Categories and Tags"
+              ],
+              "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
+              "status": "passed",
+              "title": "TaskList should render tasks with extended shape",
+              "duration": 24,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273677488,
+          "endTime": 1784273677681,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskCard should render title",
+              "status": "passed",
+              "title": "TaskCard should render title",
+              "duration": 149,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 13: Due Dates and Sorting"
+              ],
+              "fullName": " Challenge 13: Due Dates and Sorting TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 31,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273677480,
+          "endTime": 1784273677660,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-13.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should have id=\"stats-panel\"",
+              "status": "failed",
+              "title": "StatsPanel should have id=\"stats-panel\"",
+              "duration": 31,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 14,
+                "column": 53
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should display total and completed",
+              "status": "failed",
+              "title": "StatsPanel should display total and completed",
+              "duration": 19,
+              "failureMessages": [
+                "Unable to find an element with the text: /total:\\s*2/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div />\u001b[39m\n\u001b[36m</body>\u001b[39m"
+              ],
+              "location": {
+                "line": 37,
+                "column": 19
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 14: Task Statistics Dashboard"
+              ],
+              "fullName": " Challenge 14: Task Statistics Dashboard TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 74,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273669992,
+          "endTime": 1784273670116,
+          "status": "failed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-14.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskCard should accept and render props",
+              "status": "passed",
+              "title": "TaskCard should accept and render props",
+              "duration": 124,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 15: Component Organization with Props"
+              ],
+              "fullName": " Challenge 15: Component Organization with Props TaskList should render TaskCards with props",
+              "status": "passed",
+              "title": "TaskList should render TaskCards with props",
+              "duration": 19,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273678270,
+          "endTime": 1784273678413,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-15.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 153,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 16: Context API - Theme Management"
+              ],
+              "fullName": " Challenge 16: Context API - Theme Management App should have main content",
+              "status": "passed",
+              "title": "App should have main content",
+              "duration": 24,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273679142,
+          "endTime": 1784273679319,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-16.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 17: Custom Hook - useLocalStorage"
+              ],
+              "fullName": " Challenge 17: Custom Hook - useLocalStorage App should render without crashing",
+              "status": "passed",
+              "title": "App should render without crashing",
+              "duration": 111,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273681118,
+          "endTime": 1784273681229,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-17.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management App should render",
+              "status": "passed",
+              "title": "App should render",
+              "duration": 177,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 18: useReducer - Complex State Management"
+              ],
+              "fullName": " Challenge 18: useReducer - Complex State Management TaskList should render tasks",
+              "status": "passed",
+              "title": "TaskList should render tasks",
+              "duration": 31,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273678875,
+          "endTime": 1784273679083,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-18.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskCard should render",
+              "status": "passed",
+              "title": "TaskCard should render",
+              "duration": 112,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 19: Performance Optimization"
+              ],
+              "fullName": " Challenge 19: Performance Optimization TaskList should render TaskCards",
+              "status": "passed",
+              "title": "TaskList should render TaskCards",
+              "duration": 19,
+              "failureMessages": []
+            }
+          ],
+          "startTime": 1784273678408,
+          "endTime": 1784273678539,
+          "status": "passed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-19.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should render children when no error",
+              "status": "passed",
+              "title": "ErrorBoundary should render children when no error",
+              "duration": 68,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "status": "failed",
+              "title": "ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
+              "duration": 55,
+              "failureMessages": [
+                "test"
+              ],
+              "location": {
+                "line": 18,
+                "column": 13
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "status": "failed",
+              "title": "ErrorBoundary should have Retry button with id=\"error-retry\"",
+              "duration": 18,
+              "failureMessages": [
+                "test"
+              ],
+              "location": {
+                "line": 32,
+                "column": 13
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 20: Error Boundaries and Error Handling"
+              ],
+              "fullName": " Challenge 20: Error Boundaries and Error Handling Retry button should be clickable",
+              "status": "failed",
+              "title": "Retry button should be clickable",
+              "duration": 16,
+              "failureMessages": [
+                "test"
+              ],
+              "location": {
+                "line": 46,
+                "column": 13
+              }
+            }
+          ],
+          "startTime": 1784273670742,
+          "endTime": 1784273670899,
+          "status": "failed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should use useParams and render task detail or not found",
+              "status": "passed",
+              "title": "TaskDetailPage should use useParams and render task detail or not found",
+              "duration": 29,
+              "failureMessages": []
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 21: React Router - Routing and Navigation"
+              ],
+              "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should have back button with id task-detail-back",
+              "status": "failed",
+              "title": "TaskDetailPage should have back button with id task-detail-back",
+              "duration": 17,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 28,
+                "column": 18
+              }
+            }
+          ],
+          "startTime": 1784273670026,
+          "endTime": 1784273670072,
+          "status": "failed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-21.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show loading state initially or fetch from API",
+              "status": "failed",
+              "title": "FetchDemoView should show loading state initially or fetch from API",
+              "duration": 1065,
+              "failureMessages": [
+                "Unable to find an element with the text: Test todo. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div />\u001b[39m\n\u001b[36m</body>\u001b[39m\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
+              ],
+              "location": {
+                "line": 163,
+                "column": 27
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should have fetch-list when data is loaded",
+              "status": "failed",
+              "title": "FetchDemoView should have fetch-list when data is loaded",
+              "duration": 1025,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
+              ],
+              "location": {
+                "line": 35,
+                "column": 20
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 22: Data Fetching - Loading and Error State"
+              ],
+              "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show fetch-error when fetch fails",
+              "status": "failed",
+              "title": "FetchDemoView should show fetch-error when fetch fails",
+              "duration": 1014,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
+              ],
+              "location": {
+                "line": 44,
+                "column": 19
+              }
+            }
+          ],
+          "startTime": 1784273669973,
+          "endTime": 1784273673077,
+          "status": "failed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-22.test.tsx"
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should render search input with id search-input",
+              "status": "failed",
+              "title": "FilterBar should render search input with id search-input",
+              "duration": 97,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 14,
+                "column": 25
+              }
+            },
+            {
+              "ancestorTitles": [
+                "",
+                "Challenge 23: useRef - Focus Management"
+              ],
+              "fullName": " Challenge 23: useRef - Focus Management FilterBar should be focusable for search input",
+              "status": "failed",
+              "title": "FilterBar should be focusable for search input",
+              "duration": 21,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 26,
+                "column": 25
+              }
+            }
+          ],
+          "startTime": 1784273676928,
+          "endTime": 1784273677046,
+          "status": "failed",
+          "message": "",
+          "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
+        }
+      ],
+      "error": "Command failed: npm test -- C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\challenge-10.test.tsx --run --reporter=json\nnpm notice run react-fundamentals-project@1.0.0 test\nnpm notice run vitest C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\challenge-10.test.tsx --run --reporter=json\n"
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/App.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-10.spec.ts",
+          "file": "challenge-10.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 10: useEffect Local Storage - E2E",
+              "file": "challenge-10.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display task list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 726,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-07-17T07:35:04.314Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-ba3b23b66771ff6c010c",
+                  "file": "challenge-10.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should display task count",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 352,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-07-17T07:35:09.184Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-51aa29bd7f0387a1168b",
+                  "file": "challenge-10.spec.ts",
+                  "line": 12,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "10-useeffect-local-storage",
+      "timestamp": "2026-07-17T07:35:10.109Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of a separate constant for the initial tasks makes the code more readable and maintainable.",
+        "The code is well-structured and easy to follow, with clear separation of concerns between the AppContent component and the task management logic.",
+        "The use of TypeScript and functional components makes the code more robust and easier to reason about."
+      ],
+      "improvements": [
+        "The useEffect hook for saving tasks to local storage could be improved by adding a check to ensure that the tasks array is not empty before trying to save it.",
+        "The code could benefit from more comments to explain the purpose of each section and the logic behind the task management functionality.",
+        "The use of a try-catch block to handle potential errors when parsing the stored tasks could be improved by logging the error message to help with debugging."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good separation of concerns between the AppContent component and the task management logic. However, there are a few areas for improvement, such as adding more comments and handling potential errors when saving tasks to local storage."
+    },
+    "aiResults": {
+      "challengeId": "10-useeffect-local-storage",
+      "timestamp": "2026-07-17T07:35:10.109Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of a separate constant for the initial tasks makes the code more readable and maintainable.",
+        "The code is well-structured and easy to follow, with clear separation of concerns between the AppContent component and the task management logic.",
+        "The use of TypeScript and functional components makes the code more robust and easier to reason about."
+      ],
+      "improvements": [
+        "The useEffect hook for saving tasks to local storage could be improved by adding a check to ensure that the tasks array is not empty before trying to save it.",
+        "The code could benefit from more comments to explain the purpose of each section and the logic behind the task management functionality.",
+        "The use of a try-catch block to handle potential errors when parsing the stored tasks could be improved by logging the error message to help with debugging."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good separation of concerns between the AppContent component and the task management logic. However, there are a few areas for improvement, such as adding more comments and handling potential errors when saving tasks to local storage."
+    }
   }
 ]
