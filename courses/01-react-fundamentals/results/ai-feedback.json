@@ -228,5 +228,28 @@
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good separation of concerns between the AppContent component and the task management logic. However, there are a few areas for improvement, such as adding more comments and handling potential errors when saving tasks to local storage."
     }
+  },
+  {
+    "challengeId": "11-useeffect-debounced-search",
+    "challengeName": "useEffect - Debounced Search",
+    "aiReview": {
+      "challengeId": "11-useeffect-debounced-search",
+      "timestamp": "2026-07-18T05:38:00.414Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and functional components is a good practice.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "Some of the functions are quite long and complex. Consider breaking them down into smaller, more manageable functions.",
+        "The `useEffect` hook is used extensively throughout the code. Consider creating a separate utility function to handle the cleanup logic.",
+        "The code could benefit from more type annotations. Consider adding type annotations for function parameters and return types."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but could benefit from some refactoring to improve maintainability and readability."
+    }
   }
 ]

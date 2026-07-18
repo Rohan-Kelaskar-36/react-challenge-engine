@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 import TaskList, { Task } from "./TaskList"
 import TaskForm from "./TaskForm"
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import FilterBar from "./FilterBar"
 
 interface TaskAppProps {
@@ -52,6 +52,8 @@ const [editingId, setEditingId] = useState<
 >(null)
 
 const [searchText, setSearchText] = useState("")
+const [debouncedSearchText, setDebouncedSearchText] = useState("")
+const [isSearching, setIsSearching] = useState(false)
 
 const filteredTasks =
   filter === "active"
@@ -67,14 +69,31 @@ const filteredTasks =
   Low: 1,
 }
 
+
+useEffect(() => {
+  if (searchText === debouncedSearchText) {
+    setIsSearching(false)
+    return
+  }
+
+  setIsSearching(true)
+
+  const timeout = setTimeout(() => {
+    setDebouncedSearchText(searchText)
+    setIsSearching(false)
+  }, 300)
+
+  return () => clearTimeout(timeout)
+}, [searchText, debouncedSearchText])
+
 const searchedTasks = filteredTasks.filter((task) =>
   task.title
     .toLowerCase()
-    .includes(searchText.toLowerCase()) ||
+    .includes(debouncedSearchText.toLowerCase()) ||
 
   task.description
     .toLowerCase()
-    .includes(searchText.toLowerCase())
+    .includes(debouncedSearchText.toLowerCase())
 )
 
 const sortedTasks = [...searchedTasks].sort((a, b) => {
@@ -120,6 +139,9 @@ const handleUpdateTask = (
   setEditingId(null)
 }
 
+
+
+
    return (
     <>
   
@@ -140,6 +162,12 @@ const handleUpdateTask = (
     onSearchChange={setSearchText}
     onClearSearch={() => setSearchText("")}
   />
+)}
+
+{isSearching && (
+  <p id="searching-indicator">
+    Searching...
+  </p>
 )}
 {sortedTasks.length === 0 && (
   <p id="filter-empty-message">
