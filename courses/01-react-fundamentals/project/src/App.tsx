@@ -16,6 +16,8 @@ const INITIAL_TASKS: Task[] = [
     description: "Description one",
     priority: "High",
     completed: false,
+    category: "General",
+    tags: [],
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const INITIAL_TASKS: Task[] = [
     description: "Description two",
     priority: "Medium",
     completed: false,
+    category: "General",
+    tags: [],
   },
   {
     id: 3,
@@ -30,6 +34,8 @@ const INITIAL_TASKS: Task[] = [
     description: "Description three",
     priority: "Low",
     completed: false,
+    category: "General",
+    tags: [],
   },
   {
     id: 4,
@@ -37,6 +43,8 @@ const INITIAL_TASKS: Task[] = [
     description: "Description four",
     priority: "Medium",
     completed: false,
+    category: "Work",
+    tags: [],
   },
   {
     id: 5,
@@ -44,6 +52,8 @@ const INITIAL_TASKS: Task[] = [
     description: "Description five",
     priority: "High",
     completed: false,
+    category: "Personal",
+    tags: [],
   },
 ];
 
@@ -60,9 +70,15 @@ function AppContent() {
 
     const parsedTasks = JSON.parse(storedTasks)
 
-    return Array.isArray(parsedTasks)
-      ? parsedTasks
-      : INITIAL_TASKS
+    if (!Array.isArray(parsedTasks)) {
+  return INITIAL_TASKS;
+}
+
+return parsedTasks.map((task) => ({
+  ...task,
+  category: task.category ?? "General",
+  tags: Array.isArray(task.tags) ? task.tags : [],
+}));
   } catch {
     return INITIAL_TASKS
   }

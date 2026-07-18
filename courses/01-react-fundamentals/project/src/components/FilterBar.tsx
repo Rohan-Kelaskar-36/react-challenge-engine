@@ -9,6 +9,9 @@ interface FilterBarProps {
   searchText: string
   onSearchChange: (text: string) => void
   onClearSearch: () => void
+  categories: string[]
+  selectedCategory: string
+  onCategoryChange: (category: string) => void
 }
 
 export default function FilterBar({
@@ -18,7 +21,10 @@ export default function FilterBar({
   onSortChange,
   searchText,
   onSearchChange,
-  onClearSearch
+  onClearSearch,
+  categories,
+  selectedCategory,
+  onCategoryChange
 }: FilterBarProps) {
   
   return (
@@ -79,6 +85,8 @@ export default function FilterBar({
           Alphabetical
         </option>
       </select>
+
+      
       <input
   // id="search-input"
   type="text"
@@ -96,6 +104,26 @@ export default function FilterBar({
     Clear search
   </button>
 )}
+  <select
+  id="category-filter"
+  value={selectedCategory}
+  onChange={(e) =>
+    onCategoryChange(e.target.value)
+  }
+>
+  <option value="All">
+    All Categories
+  </option>
+
+  {categories.map(category => (
+    <option
+      key={category}
+      value={category}
+    >
+      {category}
+    </option>
+  ))}
+</select>
     </div>
   )
 }

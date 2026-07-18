@@ -6,6 +6,8 @@ export interface NewTask {
   description: string
   priority: string
   completed: boolean
+  category: string
+tags: string[]
 }
 
 interface TaskFormProps {
@@ -17,6 +19,9 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
   const [description, setDescription] = useState("")
   const [priority, setPriority] = useState("Low")
   const [error, setError] = useState("")
+const [category, setCategory] = useState("General")
+const [tags, setTags] = useState("")
+
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -34,11 +39,15 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
       description,
       priority,
       completed: false,
+      category,
+      tags: tags.split(",").map(tag => tag.trim()).filter(tag => tag.length > 0),
     })
 
     setTitle("")
     setDescription("")
     setPriority("Low")
+    setCategory("General")
+setTags("")
   }
 
   return (
@@ -103,6 +112,32 @@ id="task-priority"
     <option value="Medium">Medium</option>
     <option value="High">High</option>
   </select>
+
+  <label>Category</label>
+
+<select
+style={{
+      padding: "10px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      fontSize: "16px",
+    }}
+  value={category}
+  onChange={(e) => setCategory(e.target.value)}
+>
+  <option>General</option>
+  <option>Work</option>
+  <option>Personal</option>
+</select>
+
+<label>Tags</label>
+
+<input
+  type="text"
+  placeholder="tag1, tag2, tag3"
+  value={tags}
+  onChange={(e) => setTags(e.target.value)}
+/>
 
   <button
     type="submit"

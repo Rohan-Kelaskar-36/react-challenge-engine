@@ -6,6 +6,8 @@ export interface Task {
   description: string
   priority: string
   completed: boolean
+  category: string
+  tags: string[]
 }
 
 interface TaskListProps {
@@ -27,6 +29,8 @@ const HARDCODED_TASKS: Task[] = [
     description: "First hardcoded task",
     priority: "High",
     completed: false,
+    category: "General",
+    tags: [],
   },
   {
     id: 2,
@@ -34,6 +38,8 @@ const HARDCODED_TASKS: Task[] = [
     description: "Second hardcoded task",
     priority: "Medium",
     completed: false,
+    category: "General",
+    tags: [],
   },
   {
     id: 3,
@@ -41,6 +47,8 @@ const HARDCODED_TASKS: Task[] = [
     description: "Third hardcoded task",
     priority: "Low",
     completed: false,
+    category: "General",
+    tags: [],
   },
 ]
 
@@ -76,6 +84,8 @@ const completedCount =  tasksList.filter(task => task.completed).length
           isEditing={editingId === task.id}
           setEditingId={setEditingId}
           onUpdateTask={onUpdateTask}
+          category={task.category}
+          tags={task.tags}
         />
       ))}
     </section>

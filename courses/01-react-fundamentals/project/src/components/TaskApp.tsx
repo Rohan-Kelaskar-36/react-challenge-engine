@@ -55,6 +55,16 @@ const [searchText, setSearchText] = useState("")
 const [debouncedSearchText, setDebouncedSearchText] = useState("")
 const [isSearching, setIsSearching] = useState(false)
 
+const [selectedCategory, setSelectedCategory] =
+useState("All")
+
+const categories = [
+  ...new Set(
+    tasks
+      .map(task => task.category)
+      .filter(Boolean)
+  ),
+]
 const filteredTasks =
   filter === "active"
     ? tasks.filter((task) => !task.completed)
@@ -86,7 +96,14 @@ useEffect(() => {
   return () => clearTimeout(timeout)
 }, [searchText, debouncedSearchText])
 
-const searchedTasks = filteredTasks.filter((task) =>
+const categoryFilteredTasks =
+  selectedCategory === "All"
+    ? filteredTasks
+    : filteredTasks.filter(
+        task =>
+          task.category === selectedCategory
+      )
+const searchedTasks = categoryFilteredTasks.filter((task) =>
   task.title
     .toLowerCase()
     .includes(debouncedSearchText.toLowerCase()) ||
@@ -161,6 +178,9 @@ const handleUpdateTask = (
     searchText={searchText}
     onSearchChange={setSearchText}
     onClearSearch={() => setSearchText("")}
+    categories={categories}
+    selectedCategory={selectedCategory}
+    onCategoryChange={setSelectedCategory}
   />
 )}
 
