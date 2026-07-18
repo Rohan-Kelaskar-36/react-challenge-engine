@@ -7,7 +7,8 @@ export interface NewTask {
   priority: string
   completed: boolean
   category: string
-tags: string[]
+tags: string[],
+dueDate?: string
 }
 
 interface TaskFormProps {
@@ -21,6 +22,7 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
   const [error, setError] = useState("")
 const [category, setCategory] = useState("General")
 const [tags, setTags] = useState("")
+const [dueDate, setDueDate] = useState("")
 
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -41,6 +43,7 @@ const [tags, setTags] = useState("")
       completed: false,
       category,
       tags: tags.split(",").map(tag => tag.trim()).filter(tag => tag.length > 0),
+      dueDate: dueDate || undefined
     })
 
     setTitle("")
@@ -48,6 +51,7 @@ const [tags, setTags] = useState("")
     setPriority("Low")
     setCategory("General")
 setTags("")
+setDueDate("")
   }
 
   return (
@@ -137,6 +141,14 @@ style={{
   placeholder="tag1, tag2, tag3"
   value={tags}
   onChange={(e) => setTags(e.target.value)}
+/>
+<label>Due Date</label>
+
+<input
+  id="task-due-date-input"
+  type="date"
+  value={dueDate}
+  onChange={(e) => setDueDate(e.target.value)}
 />
 
   <button

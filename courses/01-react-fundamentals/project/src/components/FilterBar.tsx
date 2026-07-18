@@ -1,9 +1,9 @@
 interface FilterBarProps {
   filter: "all" | "active" | "completed"
   onFilterChange: (filter: "all" | "active" | "completed") => void
-  sortOrder: "recent" | "high" | "low" | "alphabetical"
+  sortOrder: "recent" | "high" | "low" | "alphabetical" | "dueDate"
   onSortChange: (
-    sort: "recent" | "high" | "low" | "alphabetical"
+    sort: "recent" | "high" | "low" | "alphabetical" | "dueDate"
   ) => void
 
   searchText: string
@@ -84,6 +84,10 @@ export default function FilterBar({
         <option value="alphabetical">
           Alphabetical
         </option>
+
+        <option value="dueDate">
+  Due Date (Soonest First)
+</option>
       </select>
 
       

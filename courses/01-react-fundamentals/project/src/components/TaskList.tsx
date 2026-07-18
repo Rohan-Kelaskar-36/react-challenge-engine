@@ -8,6 +8,7 @@ export interface Task {
   completed: boolean
   category: string
   tags: string[]
+  dueDate?: string
 }
 
 interface TaskListProps {
@@ -19,7 +20,8 @@ interface TaskListProps {
   setEditingId?: (id: string | number | null) => void
   onUpdateTask?: (id: string | number, updates: {title: string
     description: string
-    priority: string}) => void
+    priority: string}) => void,
+    
 }
 
 const HARDCODED_TASKS: Task[] = [
@@ -86,6 +88,7 @@ const completedCount =  tasksList.filter(task => task.completed).length
           onUpdateTask={onUpdateTask}
           category={task.category}
           tags={task.tags}
+          dueDate={task.dueDate}
         />
       ))}
     </section>

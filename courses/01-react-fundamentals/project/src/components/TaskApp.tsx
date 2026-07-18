@@ -44,7 +44,7 @@ export default function TaskApp({
   "all" | "active" | "completed"
 >("all")
 const [sortOrder, setSortOrder] = useState<
-  "recent" | "high" | "low" | "alphabetical"
+  "recent" | "high" | "low" | "alphabetical" | "dueDate"
 >("recent")
 
 const [editingId, setEditingId] = useState<
@@ -133,6 +133,17 @@ const sortedTasks = [...searchedTasks].sort((a, b) => {
         undefined,
         { sensitivity: "base" }
       )
+      case "dueDate": {
+  const aTime = a.dueDate
+    ? new Date(a.dueDate).getTime()
+    : Number.MAX_SAFE_INTEGER
+
+  const bTime = b.dueDate
+    ? new Date(b.dueDate).getTime()
+    : Number.MAX_SAFE_INTEGER
+
+  return aTime - bTime
+}
 
     default:
       return Number(a.id) - Number(b.id)
