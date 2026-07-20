@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2026-07-20T11:53:38.960Z",
+  "lastUpdated": "2026-07-20T12:26:05.135Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
     "overallScore": 27.6,
-    "completionPercentage": 30.2,
+    "completionPercentage": 32.1,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 16
+    "completedChallenges": 17
   },
   "courses": {
     "01-react-fundamentals": {
       "courseId": "01-react-fundamentals",
       "courseName": "React Fundamentals",
-      "averageScore": 83.6,
-      "completionPercentage": 69.6,
+      "averageScore": 83.5,
+      "completionPercentage": 73.9,
       "badgeLevel": "bronze",
       "totalChallenges": 23,
-      "completedChallenges": 16,
+      "completedChallenges": 17,
       "challenges": {
         "01-static-task-display": {
           "challengeId": "01-static-task-display",
@@ -250,6 +250,21 @@
           "passed": true,
           "score": 81.95,
           "lastRun": "2026-07-20T11:52:57.832Z",
+          "scores": {
+            "functionalTests": 75,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "17-custom-hook-uselocalstorage": {
+          "challengeId": "17-custom-hook-uselocalstorage",
+          "challengeName": "Custom Hook - useLocalStorage",
+          "passed": true,
+          "score": 81.95,
+          "lastRun": "2026-07-20T12:25:23.080Z",
           "scores": {
             "functionalTests": 75,
             "codeQuality": 50,

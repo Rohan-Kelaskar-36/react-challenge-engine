@@ -1,4 +1,5 @@
-import { createContext, useState,useEffect,useContext, type ReactNode } from 'react'
+import { createContext,useContext, type ReactNode } from 'react'
+import useLocalStorage from "../hooks/useLocalStorage";
 
 export type Theme = 'light' | 'dark'
 
@@ -18,13 +19,10 @@ export const ThemeContext =
   const STORAGE_KEY = "task-app-theme";
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>(()=>{
-     const saved =localStorage.getItem(STORAGE_KEY);
-     return saved === 'dark' ? 'dark' : 'light';
-  });
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, theme);
-  }, [theme]);
+  const [theme, setTheme] = useLocalStorage<Theme>(
+      "task-app-theme",
+      "light"
+    );
 
 
 const toggleTheme = () => {
