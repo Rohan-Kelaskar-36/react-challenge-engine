@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Button from "./Button"
 import FormInput from "./FormInput"
+import { useTheme } from "../contexts/ThemeContext";
+
 
 export interface NewTask {
   id: string | number
@@ -26,6 +28,9 @@ const [category, setCategory] = useState("General")
 const [tags, setTags] = useState("")
 const [dueDate, setDueDate] = useState("")
 
+
+
+const { theme } = useTheme();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -69,7 +74,15 @@ setDueDate("")
     display: "flex",
     flexDirection: "column",
     gap: "15px",
-    backgroundColor: "#fff",
+    backgroundColor:
+theme==="dark"
+? "#333"
+: "#fff",
+
+color:
+theme==="dark"
+? "#fff"
+: "#111",
   }}
 >
   <label htmlFor="task-title">Title</label>

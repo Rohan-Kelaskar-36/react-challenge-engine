@@ -35,3 +35,13 @@
 #task-card p {
   margin: 4px 0;
 }
+
+[data-theme="light"] {
+  background: white;
+  color: #111;
+}
+
+[data-theme="dark"] {
+  background: #1e1e1e;
+  color: white;
+}

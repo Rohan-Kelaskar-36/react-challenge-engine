@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react'
+import { useTheme } from "../contexts/ThemeContext";
 
 interface ButtonProps {
   children?: React.ReactNode
@@ -13,11 +14,15 @@ export default function Button({
 children, onClick, type = 'button', variant = 'primary', disabled = false, id
 }: ButtonProps) {
 
+  const { theme } = useTheme();
+
 const background = {
-    primary: "#2563eb",
+    primary: "#3f444d",
     secondary: "#6b7280",
     danger: "#dc2626",
   };
+
+
 
   return (
  <button
@@ -28,7 +33,10 @@ const background = {
       style={{
         padding: "8px 14px",
         color: "#fff",
-        border: "none",
+        border:
+theme==="dark"
+? "1px solid white"
+: "none",
         borderRadius: "6px",
         cursor: "pointer",
         backgroundColor: background[variant],

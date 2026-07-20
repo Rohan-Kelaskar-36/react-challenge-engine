@@ -1,5 +1,6 @@
 import Button from "./Button"
 import FormInput from "./FormInput"
+import { useTheme } from "../contexts/ThemeContext";
 
 interface FilterBarProps {
   filter: "all" | "active" | "completed"
@@ -29,6 +30,8 @@ export default function FilterBar({
   selectedCategory,
   onCategoryChange
 }: FilterBarProps) {
+
+  const { theme } = useTheme();
   
   return (
     <div
@@ -38,6 +41,10 @@ export default function FilterBar({
         gap: "10px",
         marginBottom: "20px",
         alignItems: "center",
+        background:
+theme==="dark"
+? "#222"
+: "#f5f5f5",
       }}
     >
       <Button

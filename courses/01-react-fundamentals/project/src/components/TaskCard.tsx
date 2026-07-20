@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "./Button";
 import Badge from "./Badge";
 import StatusIndicator from "./StatusIndicator";
+import { useTheme } from "../contexts/ThemeContext";
 
 interface TaskCardProps {
   id?: string | number;
@@ -43,6 +44,8 @@ export default function TaskCard({
   const [editDescription, setEditDescription] = useState(description);
   const [editPriority, setEditPriority] = useState(priority);
   const [error, setError] = useState("");
+
+  const { theme } = useTheme();
 
   const currentId = taskId ?? id;
   const handleSave = () => {
@@ -107,8 +110,17 @@ const isDueSoon =
     borderRadius: "8px",
     padding: "16px",
     marginBottom: "12px",
-    backgroundColor: completed ? "#e8f5e9" : "#ffffff",
-      }}
+backgroundColor:
+completed
+? "#e8f5e9"
+: theme === "dark"
+? "#333"
+: "#fff",
+
+color:
+theme === "dark"
+? "#fff"
+: "#111",      }}
     >
       {onToggle && (
         <input

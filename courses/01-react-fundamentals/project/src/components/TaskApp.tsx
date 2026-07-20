@@ -4,6 +4,8 @@ import TaskForm from "./TaskForm"
 import { useMemo,useState,useEffect } from "react"
 import FilterBar from "./FilterBar"
 import StatsPanel from "./StatsPanel"
+import { useTheme } from "../contexts/ThemeContext";
+import Button from './Button'
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -38,6 +40,7 @@ export default function TaskApp({
       )
     )
   }
+  const { theme, toggleTheme } = useTheme();
 
 
     // const completedCount = tasks.filter((task) => task.completed).length
@@ -230,8 +233,30 @@ const stats = useMemo(() => {
 
 
    return (
-    <>
-  
+    <div
+  data-theme={theme}
+  style={{
+    background:
+      theme === "dark"
+        ? "#222"
+        : "#fff",
+    color:
+      theme === "dark"
+        ? "#fff"
+        : "#111",
+    minHeight: "100vh",
+    padding: "20px",
+  }}
+>
+  <Button
+      id="theme-toggle"
+      variant="secondary"
+      onClick={toggleTheme}
+    >
+      {theme === "dark"
+        ? "Light Mode"
+        : "Dark Mode"}
+    </Button>
       
 
      {showForm && (
@@ -273,7 +298,7 @@ const stats = useMemo(() => {
      editingId={editingId}
   setEditingId={setEditingId}
   onUpdateTask={handleUpdateTask} />
-    </>
+    </div>
   )
 }
 
