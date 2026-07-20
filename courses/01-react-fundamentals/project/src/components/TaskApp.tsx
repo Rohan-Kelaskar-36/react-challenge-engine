@@ -1,8 +1,9 @@
 import type { Dispatch, SetStateAction } from 'react'
 import TaskList, { Task } from "./TaskList"
 import TaskForm from "./TaskForm"
-import { useState,useEffect } from "react"
+import { useMemo,useState,useEffect } from "react"
 import FilterBar from "./FilterBar"
+import StatsPanel from "./StatsPanel"
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -11,7 +12,7 @@ interface TaskAppProps {
   showForm?: boolean
   countFormat?: string
       showFilterBar?: boolean
-  // showStatsPanel?: boolean
+      showStatsPanel?: boolean
   onDelete?: (id: string | number) => void
   // linkToTaskDetail?: boolean
 }
@@ -21,6 +22,7 @@ export default function TaskApp({
  setTasks,
  showForm,
  showFilterBar,
+ showStatsPanel,
  onDelete,
 }: TaskAppProps) {
   const handleAddTask = (task: Task) => {
@@ -169,13 +171,68 @@ const handleUpdateTask = (
 
 
 
+const stats = useMemo(() => {
+  const total = tasks.length;
+
+  const completed = tasks.filter(
+    (task) => task.completed
+  ).length;
+
+  const active = total - completed;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const overdue = tasks.filter((task) => {
+    if (!task.dueDate || task.completed) {
+      return false;
+    }
+
+    const due = new Date(task.dueDate);
+    due.setHours(0, 0, 0, 0);
+
+    return due < today;
+  }).length;
+
+  const completionPercentage =
+    total === 0
+      ? 0
+      : Math.round((completed / total) * 100);
+
+  const categoryBreakdown = tasks.reduce(
+    (acc, task) => {
+      acc[task.category] =
+        (acc[task.category] || 0) + 1;
+      return acc;
+    },
+    {} as Record<string, number>
+  );
+
+  const priorityBreakdown = tasks.reduce(
+    (acc, task) => {
+      acc[task.priority] =
+        (acc[task.priority] || 0) + 1;
+      return acc;
+    },
+    {} as Record<string, number>
+  );
+
+  return {
+    total,
+    completed,
+    active,
+    overdue,
+    completionPercentage,
+    categoryBreakdown,
+    priorityBreakdown,
+  };
+}, [tasks]);
+
 
    return (
     <>
   
-      {/* <p id="task-count">
-  Showing {filteredTasks.length} of {tasks.length} tasks
-</p> */}
+      
 
      {showForm && (
       <TaskForm onAddTask={handleAddTask} />
@@ -206,6 +263,11 @@ const handleUpdateTask = (
   ? `No tasks found for "${searchText}"`
   : "No tasks match this filter"}
   </p>
+)}
+{showStatsPanel && (
+  <StatsPanel
+    {...stats}
+  />
 )}
      <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`Showing ${sortedTasks.length} of ${tasks.length} tasks`}  
      editingId={editingId}
