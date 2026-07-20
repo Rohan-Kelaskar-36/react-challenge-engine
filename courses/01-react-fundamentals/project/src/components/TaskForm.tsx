@@ -1,4 +1,6 @@
 import { useState } from "react"
+import Button from "./Button"
+import FormInput from "./FormInput"
 
 export interface NewTask {
   id: string | number
@@ -71,19 +73,14 @@ setDueDate("")
   }}
 >
   <label htmlFor="task-title">Title</label>
-  <input
-    id="task-title"
-    type="text"
-    placeholder="Task title"
-    value={title}
-    onChange={(e) => setTitle(e.target.value)}
-    style={{
-      padding: "10px",
-      border: "1px solid #ccc",
-      borderRadius: "5px",
-      fontSize: "16px",
-    }}
-  />
+  <FormInput
+  label="Title"
+  id="task-title"
+  value={title}
+  onChange={(e) =>
+    setTitle(e.target.value)
+  }
+/>
 
 <label htmlFor="task-description">Description</label>
   <textarea id="task-description"
@@ -151,21 +148,22 @@ style={{
   onChange={(e) => setDueDate(e.target.value)}
 />
 
-  <button
+  <Button
     type="submit"
-    style={{
-      padding: "10px",
-      backgroundColor: "#2563eb",
-      color: "#fff",
-      border: "none",
-      borderRadius: "5px",
-      cursor: "pointer",
-      fontSize: "16px",
-      fontWeight: "bold",
-    }}
+    variant="primary"
+    // style={{
+    //   padding: "10px",
+    //   backgroundColor: "#2563eb",
+    //   color: "#fff",
+    //   border: "none",
+    //   borderRadius: "5px",
+    //   cursor: "pointer",
+    //   fontSize: "16px",
+    //   fontWeight: "bold",
+    // }}
   >
     Add Task
-  </button>
+  </Button>
 
   {error && (
     <p

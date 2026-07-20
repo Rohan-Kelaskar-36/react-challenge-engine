@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Button from "./Button";
+import Badge from "./Badge";
+import StatusIndicator from "./StatusIndicator";
 
 interface TaskCardProps {
   id?: string | number;
@@ -117,19 +120,18 @@ const isDueSoon =
         />
       )}
       {onDelete && (
-        <button
-          type="button"
-          onClick={() => {
-            if (window.confirm("Are you sure?")) {
-              onDelete(currentId!);
-            }
-          }}
-          style={{ marginLeft: "10px", padding: "4px 10px", cursor: "pointer" }}
-        >
-          {" "}
-          Delete{" "}
-        </button>
-      )}
+  <Button
+    type="button"
+    variant="danger"
+    onClick={() => {
+      if (window.confirm("Are you sure?")) {
+        onDelete(currentId!);
+      }
+    }}
+  >
+    Delete
+  </Button>
+)}
       {isEditing ? (
         <div
           style={{
@@ -175,13 +177,13 @@ const isDueSoon =
           {error && <p style={{ color: "red", margin: 0 }}>{error}</p>}
 
           <div style={{ display: "flex", gap: "10px" }}>
-            <button type="button" onClick={handleSave}>
+            <Button variant="primary" type="button" onClick={handleSave}>
               Save
-            </button>
+            </Button>
 
-            <button type="button" onClick={handleCancel}>
+            <Button variant="secondary" type="button" onClick={handleCancel}>
               Cancel
-            </button>
+            </Button>
           </div>
         </div>
       ) : (
@@ -202,25 +204,28 @@ const isDueSoon =
             {description}
           </p>
 
-          <p>Priority: {priority}</p>
+          <Badge variant="priority"> Priority: {priority}</Badge>
 
-          <p id="task-category">Category: {category}</p>
+          <Badge variant="category">
+            Category: {category}
+          </Badge>
 
           <div id="task-tags">
             {tags.map((tag) => (
-              <span
+              <Badge
+              variant="tag"
                 key={tag}
-                style={{
-                  display: "inline-block",
-                  padding: "3px 8px",
-                  marginRight: "6px",
-                  borderRadius: "12px",
-                  background: "#e5e7eb",
-                  fontSize: "12px",
-                }}
+                // style={{
+                //   display: "inline-block",
+                //   padding: "3px 8px",
+                //   marginRight: "6px",
+                //   borderRadius: "12px",
+                //   background: "#e5e7eb",
+                //   fontSize: "12px",
+                // }}
               >
                 {tag}
-              </span>
+              </Badge>
             ))}
             {dueDate && (
   <p id="task-due-date">
@@ -228,26 +233,22 @@ const isDueSoon =
   </p>
 )}
 {isOverdue && (
-  <span style={{ color: "red" }}>
-    Overdue
-  </span>
+  <StatusIndicator status="overdue" />  
 )}
 
 {isDueToday && (
-  <span>
-    Due Today
-  </span>
+  <StatusIndicator status="due-today" />
 )}
 
 {isDueSoon && (
-  <span>
-    Due Soon
-  </span>
+  <StatusIndicator status="due-soon" />
 )}
           </div>
 
           {onUpdateTask && (
-            <button onClick={() => setEditingId?.(currentId!)}>Edit</button>
+            <Button onClick={() => setEditingId?.(currentId!)} variant="secondary">
+              Edit
+            </Button>
           )}
         </>
       )}
