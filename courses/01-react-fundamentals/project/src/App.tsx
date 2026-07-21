@@ -8,7 +8,7 @@ import TaskDetailPage from "./components/TaskDetailPage";
 import FetchDemoView from "./components/FetchDemoView";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import type { Task } from "./components/TaskList";
-import { useReducer } from "react";
+import { useReducer,useCallback } from "react";
 import { taskReducer,DELETE_TASK } from "./reducers/taskReducer";
 
 const INITIAL_TASKS: Task[] = [
@@ -70,12 +70,15 @@ const [storedTasks] =
 const [tasks, dispatch] =
   useReducer(taskReducer, storedTasks); 
 
-  const handleDelete = (id: string | number) => {
+  const handleDelete = useCallback(
+  (id: string | number) => {
     dispatch({
       type: DELETE_TASK,
-      payload: id ,
-    })
-  };
+      payload: id,
+    });
+  },
+  [dispatch]
+);
 
   return (
     <BrowserRouter>

@@ -1,7 +1,7 @@
 // import type { Dispatch, SetStateAction } from 'react'
 import TaskList, { Task } from "./TaskList"
 import TaskForm from "./TaskForm"
-import { useMemo,useState,useEffect } from "react"
+import { useMemo,useState,useEffect,useCallback} from "react"
 import FilterBar from "./FilterBar"
 import StatsPanel from "./StatsPanel"
 import { useTheme } from "../contexts/ThemeContext";
@@ -30,12 +30,25 @@ export default function TaskApp({
  onDelete,
 }: TaskAppProps) {
 
-  const handleAddTask = (task: Task) => {
-    dispatch?.({ type: ADD_TASK, payload: task })}
+  const handleAddTask = useCallback(
+  (task: Task) => {
+    dispatch?.({
+      type: ADD_TASK,
+      payload: task,
+    });
+  },
+  [dispatch]
+);
 
-  const handleToggle = (id: string | number) => {
-    dispatch?.({ type: TOGGLE_TASK, payload: id })
-  }
+{const handleToggle = useCallback(
+  (id: string | number) => {
+    dispatch?.({
+      type: TOGGLE_TASK,
+      payload: id,
+    });
+  },
+  [dispatch]
+);
   const { theme, toggleTheme } = useTheme();
 
 
@@ -151,17 +164,29 @@ const sortedTasks = [...searchedTasks].sort((a, b) => {
   }
 })
 
-const handleUpdateTask = (
-  id: string | number,
-  updates: Pick<Task, "title" | "description" | "priority">
-) => {
-  if (!updates.title.trim()) return
+const handleUpdateTask = useCallback(
+  (
+    id: string | number,
+    updates: Pick<Task,
+      "title" |
+      "description" |
+      "priority">
+  ) => {
 
-  dispatch?.({ type: UPDATE_TASK, payload: { id, ...updates } })
+    if (!updates.title.trim()) return;
 
+    dispatch?.({
+      type: UPDATE_TASK,
+      payload: {
+        id,
+        ...updates,
+      },
+    });
 
-  setEditingId(null)
-}
+    setEditingId(null);
+  },
+  [dispatch]
+);
 
 
 
@@ -293,4 +318,4 @@ const stats = useMemo(() => {
   )
 }
 
-
+}

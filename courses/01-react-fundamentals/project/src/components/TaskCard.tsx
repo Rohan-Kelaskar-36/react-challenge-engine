@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import Button from "./Button";
 import Badge from "./Badge";
 import StatusIndicator from "./StatusIndicator";
@@ -24,7 +24,7 @@ interface TaskCardProps {
   dueDate?: string;
 }
 
-export default function TaskCard({
+ function TaskCard({
   id,
   title,
   description,
@@ -267,3 +267,4 @@ theme === "dark"
     </article>
   );
 }
+export default React.memo(TaskCard);
