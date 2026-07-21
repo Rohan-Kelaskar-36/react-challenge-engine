@@ -9,6 +9,7 @@ import Button from './Button'
 import  {   ADD_TASK,UPDATE_TASK,
   TOGGLE_TASK } from "../reducers/taskReducer";
   import type { TaskAction } from "../reducers/taskReducer";
+  import ErrorBoundary from "./ErrorBoundary";
 
 interface TaskAppProps {
   tasks?: Task[]
@@ -18,7 +19,7 @@ dispatch?: React.Dispatch<TaskAction>  // dispatch?: (action: { type: string; pa
       showFilterBar?: boolean
       showStatsPanel?: boolean
   onDelete?: (id: string | number) => void
-  // linkToTaskDetail?: boolean
+  linkToTaskDetail?: boolean
 }
 
 export default function TaskApp({
@@ -28,6 +29,7 @@ export default function TaskApp({
  showFilterBar,
  showStatsPanel,
  onDelete,
+  linkToTaskDetail,
 }: TaskAppProps) {
 
   const handleAddTask = useCallback(
@@ -40,7 +42,7 @@ export default function TaskApp({
   [dispatch]
 );
 
-{const handleToggle = useCallback(
+const handleToggle = useCallback(
   (id: string | number) => {
     dispatch?.({
       type: TOGGLE_TASK,
@@ -310,12 +312,17 @@ const stats = useMemo(() => {
     {...stats}
   />
 )}
+<ErrorBoundary>
      <TaskList tasks={sortedTasks}  onToggle={handleToggle} onDelete={onDelete} countText={`Showing ${sortedTasks.length} of ${tasks.length} tasks`}  
      editingId={editingId}
   setEditingId={setEditingId}
-  onUpdateTask={handleUpdateTask} />
+  onUpdateTask={handleUpdateTask} 
+  linkToTaskDetail={linkToTaskDetail}
+  />
+  </ErrorBoundary>
+ 
     </div>
   )
 }
 
-}
+

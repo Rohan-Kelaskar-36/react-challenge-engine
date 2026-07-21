@@ -21,6 +21,7 @@ interface TaskListProps {
   onUpdateTask?: (id: string | number, updates: {title: string
     description: string
     priority: string}) => void,
+    linkToTaskDetail?: boolean;
     
 }
 
@@ -62,6 +63,7 @@ export default function TaskList({
   editingId,
   setEditingId,
   onUpdateTask,
+  linkToTaskDetail,
 }: TaskListProps) {
   const tasksList = tasks ?? HARDCODED_TASKS
 
@@ -89,6 +91,7 @@ const completedCount =  tasksList.filter(task => task.completed).length
           category={task.category}
           tags={task.tags}
           dueDate={task.dueDate}
+          linkToTaskDetail={linkToTaskDetail}
         />
       ))}
     </section>

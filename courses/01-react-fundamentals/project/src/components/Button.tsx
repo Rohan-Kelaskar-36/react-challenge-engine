@@ -1,7 +1,8 @@
-import type {ReactNode} from 'react'
+// import type {ReactNode} from 'react'
 import { useTheme } from "../contexts/ThemeContext";
 
-interface ButtonProps {
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode
   onClick?: () => void
   type?: 'button' | 'submit'
@@ -11,7 +12,7 @@ interface ButtonProps {
 }
 
 export default function Button({ 
-children, onClick, type = 'button', variant = 'primary', disabled = false, id
+children, onClick, type = 'button', variant = 'primary', disabled = false, id,...rest
 }: ButtonProps) {
 
   const { theme } = useTheme();
@@ -30,6 +31,7 @@ const background = {
       type={type}
       disabled={disabled}
       onClick={onClick}
+      {...rest}
       style={{
         padding: "8px 14px",
         color: "#fff",

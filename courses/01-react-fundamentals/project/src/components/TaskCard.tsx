@@ -3,6 +3,7 @@ import Button from "./Button";
 import Badge from "./Badge";
 import StatusIndicator from "./StatusIndicator";
 import { useTheme } from "../contexts/ThemeContext";
+import { Link } from "react-router-dom";
 
 interface TaskCardProps {
   id?: string | number;
@@ -22,7 +23,9 @@ interface TaskCardProps {
   category?: string;
   tags?: string[];
   dueDate?: string;
+  linkToTaskDetail?: boolean;
 }
+
 
  function TaskCard({
   id,
@@ -39,7 +42,11 @@ interface TaskCardProps {
   category,
   tags = [],
   dueDate,
+  linkToTaskDetail,
 }: TaskCardProps) {
+
+
+  
   const [editTitle, setEditTitle] = useState(title);
   const [editDescription, setEditDescription] = useState(description);
   const [editPriority, setEditPriority] = useState(priority);
@@ -200,13 +207,17 @@ theme === "dark"
         </div>
       ) : (
         <>
-          <h2
-            style={{
+          <h2 style={{
               textDecoration: completed ? "line-through" : "none",
-            }}
-          >
+            }}>
+  {linkToTaskDetail ? (
+    <Link to={`/challenge/21-react-router/task/${taskId}`}> 
             {title}
-          </h2>
+           </Link>
+  ) : (
+    title
+  )}
+</h2>
 
           <p
             style={{

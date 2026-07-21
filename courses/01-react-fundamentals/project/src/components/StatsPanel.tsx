@@ -6,19 +6,19 @@ interface StatsPanelProps {
   completed?: number
   active?: number
   overdue?: number
-  completedPercentage?: number
+  completionPercentage?: number
     categoryBreakdown: Record<string, number>;
   priorityBreakdown: Record<string, number>;
 }
 
 export default function StatsPanel({
-  total,
-  completed,
-  active,
-  overdue,
-completedPercentage,
-  categoryBreakdown,
-  priorityBreakdown,  
+  total=0,
+  completed=0,
+  active=0,
+  overdue=0,
+  completionPercentage=0,
+  categoryBreakdown={},
+  priorityBreakdown={},  
 }: StatsPanelProps) {
   return (
    <section
@@ -32,16 +32,17 @@ completedPercentage,
     >
       <h2>Task Statistics</h2>
 
-      <p>Total Tasks: {total}</p>
+      <p>Total: {total}</p>
       <p>
-        Completed: {completed} ({completedPercentage}%)
+        Completed: {completed}
       </p>
+      <p>Completion: {completionPercentage}%</p>
       <p>Active: {active}</p>
       <p>Overdue: {overdue}</p>
 
       <div
         role="progressbar"
-        aria-valuenow={completedPercentage}
+        aria-valuenow={completionPercentage}
         aria-valuemin={0}
         aria-valuemax={100}
         style={{
@@ -55,7 +56,7 @@ completedPercentage,
       >
         <div
           style={{
-            width: `${completedPercentage}%`,
+            width: `${completionPercentage}%`,
             height: "100%",
             background: "#4caf50",
           }}

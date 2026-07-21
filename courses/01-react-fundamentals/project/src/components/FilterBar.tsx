@@ -13,8 +13,8 @@ interface FilterBarProps {
   searchText: string
   onSearchChange: (text: string) => void
   onClearSearch: () => void
-  categories: string[]
-  selectedCategory: string
+  categories?: string[]
+  selectedCategory?: string
   onCategoryChange: (category: string) => void
 }
 
@@ -26,8 +26,8 @@ export default function FilterBar({
   searchText,
   onSearchChange,
   onClearSearch,
-  categories,
-  selectedCategory,
+  categories=[],
+  selectedCategory="All",
   onCategoryChange
 }: FilterBarProps) {
 

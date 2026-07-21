@@ -83,7 +83,7 @@ const [tasks, dispatch] =
   return (
     <BrowserRouter>
       <div className="App">
-        <main>
+        {/* <main> */}
           <Routes>
             <Route path="/" element={<ChallengeList />} />
             <Route
@@ -340,7 +340,7 @@ const [tasks, dispatch] =
               }
             />
           </Routes>
-        </main>
+        {/* </main> */}
       </div>
     </BrowserRouter>
   );
