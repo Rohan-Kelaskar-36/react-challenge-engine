@@ -27,7 +27,7 @@ export default function StatsPanel({
         border: "1px solid #ddd",
         borderRadius: "8px",
         padding: "16px",
-        marginBottom: "20px",
+        marginBottom: "10px",
       }}
     >
       <h2>Task Statistics</h2>

@@ -27532,25 +27532,25 @@
   {
     "challengeId": "22-data-fetching",
     "challengeName": "Data Fetching - Loading and Error State",
-    "timestamp": "2026-07-21T06:05:12.598Z",
+    "timestamp": "2026-07-21T06:28:08.904Z",
     "scores": {
-      "functionalTests": 91.7,
+      "functionalTests": 98.6,
       "codeQuality": 50,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 65
+      "e2eTests": 100,
+      "aiReview": 88
     },
-    "totalScore": 69.345,
-    "passed": false,
+    "totalScore": 90.21,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 91.7,
+      "score": 98.6,
       "passed": false,
       "totalTests": 72,
-      "passedTests": 66,
-      "failedTests": 6,
+      "passedTests": 71,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -27563,7 +27563,7 @@
               "fullName": " Challenge 01: Static Task Display TaskCard should render title, description, and priority",
               "status": "passed",
               "title": "should render title, description, and priority",
-              "duration": 189,
+              "duration": 173,
               "failureMessages": []
             },
             {
@@ -27575,7 +27575,7 @@
               "fullName": " Challenge 01: Static Task Display TaskCard should use article with id task-card",
               "status": "passed",
               "title": "should use article with id task-card",
-              "duration": 26,
+              "duration": 21,
               "failureMessages": []
             },
             {
@@ -27587,7 +27587,7 @@
               "fullName": " Challenge 01: Static Task Display TaskCard should use semantic HTML (h2 for title)",
               "status": "passed",
               "title": "should use semantic HTML (h2 for title)",
-              "duration": 20,
+              "duration": 16,
               "failureMessages": []
             },
             {
@@ -27599,7 +27599,7 @@
               "fullName": " Challenge 01: Static Task Display TaskList should render 3 TaskCards when no tasks prop",
               "status": "passed",
               "title": "should render 3 TaskCards when no tasks prop",
-              "duration": 32,
+              "duration": 39,
               "failureMessages": []
             },
             {
@@ -27611,7 +27611,7 @@
               "fullName": " Challenge 01: Static Task Display TaskList should have section with id task-list",
               "status": "passed",
               "title": "should have section with id task-list",
-              "duration": 37,
+              "duration": 44,
               "failureMessages": []
             },
             {
@@ -27623,12 +27623,12 @@
               "fullName": " Challenge 01: Static Task Display TaskList should display three different tasks",
               "status": "passed",
               "title": "should display three different tasks",
-              "duration": 79,
+              "duration": 78,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613923798,
-          "endTime": 1784613924183,
+          "startTime": 1784615298516,
+          "endTime": 1784615298889,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-01.test.tsx"
@@ -27643,7 +27643,7 @@
               "fullName": " Challenge 02: Dynamic Task Rendering should render tasks from tasks prop",
               "status": "passed",
               "title": "should render tasks from tasks prop",
-              "duration": 348,
+              "duration": 323,
               "failureMessages": []
             },
             {
@@ -27654,7 +27654,7 @@
               "fullName": " Challenge 02: Dynamic Task Rendering should display task count with id task-count",
               "status": "passed",
               "title": "should display task count with id task-count",
-              "duration": 68,
+              "duration": 64,
               "failureMessages": []
             },
             {
@@ -27665,7 +27665,7 @@
               "fullName": " Challenge 02: Dynamic Task Rendering should use unique keys when mapping (no duplicate keys)",
               "status": "passed",
               "title": "should use unique keys when mapping (no duplicate keys)",
-              "duration": 38,
+              "duration": 58,
               "failureMessages": []
             },
             {
@@ -27676,12 +27676,12 @@
               "fullName": " Challenge 02: Dynamic Task Rendering should use map in TaskList",
               "status": "passed",
               "title": "should use map in TaskList",
-              "duration": 3,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613923801,
-          "endTime": 1784613924259,
+          "startTime": 1784615298515,
+          "endTime": 1784615298962,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-02.test.tsx"
@@ -27696,7 +27696,7 @@
               "fullName": " Challenge 03: Adding New Tasks should have controlled title input",
               "status": "passed",
               "title": "should have controlled title input",
-              "duration": 688,
+              "duration": 785,
               "failureMessages": []
             },
             {
@@ -27707,7 +27707,7 @@
               "fullName": " Challenge 03: Adding New Tasks should have Add Task submit button",
               "status": "passed",
               "title": "should have Add Task submit button",
-              "duration": 172,
+              "duration": 294,
               "failureMessages": []
             },
             {
@@ -27718,7 +27718,7 @@
               "fullName": " Challenge 03: Adding New Tasks should call onAddTask with new task when title filled and submitted",
               "status": "passed",
               "title": "should call onAddTask with new task when title filled and submitted",
-              "duration": 477,
+              "duration": 700,
               "failureMessages": []
             },
             {
@@ -27729,7 +27729,7 @@
               "fullName": " Challenge 03: Adding New Tasks should show error when title is empty on submit",
               "status": "passed",
               "title": "should show error when title is empty on submit",
-              "duration": 178,
+              "duration": 291,
               "failureMessages": []
             },
             {
@@ -27740,7 +27740,7 @@
               "fullName": " Challenge 03: Adding New Tasks should clear form after successful add",
               "status": "passed",
               "title": "should clear form after successful add",
-              "duration": 344,
+              "duration": 454,
               "failureMessages": []
             },
             {
@@ -27755,8 +27755,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784613924280,
-          "endTime": 1784613926145,
+          "startTime": 1784615298980,
+          "endTime": 1784615301510,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-03.test.tsx"
@@ -27771,7 +27771,7 @@
               "fullName": " Challenge 04: Task Completion Toggle TaskCard should render checkbox when onToggle provided",
               "status": "passed",
               "title": "TaskCard should render checkbox when onToggle provided",
-              "duration": 463,
+              "duration": 447,
               "failureMessages": []
             },
             {
@@ -27782,7 +27782,7 @@
               "fullName": " Challenge 04: Task Completion Toggle TaskCard should call onToggle when checkbox clicked",
               "status": "passed",
               "title": "TaskCard should call onToggle when checkbox clicked",
-              "duration": 252,
+              "duration": 258,
               "failureMessages": []
             },
             {
@@ -27793,7 +27793,7 @@
               "fullName": " Challenge 04: Task Completion Toggle TaskCard should show strike-through when completed",
               "status": "passed",
               "title": "TaskCard should show strike-through when completed",
-              "duration": 125,
+              "duration": 140,
               "failureMessages": []
             },
             {
@@ -27804,7 +27804,7 @@
               "fullName": " Challenge 04: Task Completion Toggle TaskCard should have data-completed or different style when completed",
               "status": "passed",
               "title": "TaskCard should have data-completed or different style when completed",
-              "duration": 19,
+              "duration": 22,
               "failureMessages": []
             },
             {
@@ -27815,7 +27815,7 @@
               "fullName": " Challenge 04: Task Completion Toggle TaskList should pass onToggle to TaskCard when tasks provided",
               "status": "passed",
               "title": "TaskList should pass onToggle to TaskCard when tasks provided",
-              "duration": 297,
+              "duration": 270,
               "failureMessages": []
             },
             {
@@ -27826,12 +27826,12 @@
               "fullName": " Challenge 04: Task Completion Toggle count text should show X of Y completed format",
               "status": "passed",
               "title": "count text should show X of Y completed format",
-              "duration": 39,
+              "duration": 28,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613925192,
-          "endTime": 1784613926387,
+          "startTime": 1784615298991,
+          "endTime": 1784615300156,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-04.test.tsx"
@@ -27846,7 +27846,7 @@
               "fullName": " Challenge 05: Task Deletion TaskCard should render Delete button when onDelete and id provided",
               "status": "passed",
               "title": "TaskCard should render Delete button when onDelete and id provided",
-              "duration": 423,
+              "duration": 445,
               "failureMessages": []
             },
             {
@@ -27857,7 +27857,7 @@
               "fullName": " Challenge 05: Task Deletion TaskCard should not render Delete button when onDelete not provided",
               "status": "passed",
               "title": "TaskCard should not render Delete button when onDelete not provided",
-              "duration": 20,
+              "duration": 27,
               "failureMessages": []
             },
             {
@@ -27868,7 +27868,7 @@
               "fullName": " Challenge 05: Task Deletion TaskCard should call onDelete when Delete clicked and user confirms",
               "status": "passed",
               "title": "TaskCard should call onDelete when Delete clicked and user confirms",
-              "duration": 220,
+              "duration": 271,
               "failureMessages": []
             },
             {
@@ -27879,7 +27879,7 @@
               "fullName": " Challenge 05: Task Deletion TaskCard should not call onDelete when user cancels confirmation",
               "status": "passed",
               "title": "TaskCard should not call onDelete when user cancels confirmation",
-              "duration": 148,
+              "duration": 198,
               "failureMessages": []
             },
             {
@@ -27890,7 +27890,7 @@
               "fullName": " Challenge 05: Task Deletion TaskList should pass onDelete to TaskCard when provided",
               "status": "passed",
               "title": "TaskList should pass onDelete to TaskCard when provided",
-              "duration": 167,
+              "duration": 264,
               "failureMessages": []
             },
             {
@@ -27901,12 +27901,12 @@
               "fullName": " Challenge 05: Task Deletion TaskList should show countText in #task-count",
               "status": "passed",
               "title": "TaskList should show countText in #task-count",
-              "duration": 27,
+              "duration": 31,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613924273,
-          "endTime": 1784613925279,
+          "startTime": 1784615299004,
+          "endTime": 1784615300240,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-05.test.tsx"
@@ -27921,7 +27921,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should render All, Active, Completed buttons",
               "status": "passed",
               "title": "FilterBar should render All, Active, Completed buttons",
-              "duration": 634,
+              "duration": 618,
               "failureMessages": []
             },
             {
@@ -27932,7 +27932,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should have id=\"filter-bar\"",
               "status": "passed",
               "title": "FilterBar should have id=\"filter-bar\"",
-              "duration": 30,
+              "duration": 40,
               "failureMessages": []
             },
             {
@@ -27941,16 +27941,10 @@
                 "Challenge 06: Task Filtering"
               ],
               "fullName": " Challenge 06: Task Filtering FilterBar should highlight active filter",
-              "status": "failed",
+              "status": "passed",
               "title": "FilterBar should highlight active filter",
-              "duration": 239,
-              "failureMessages": [
-                "\u001b[2mexpect(\u001b[22m\u001b[31melement\u001b[39m\u001b[2m).toHaveAttribute(\u001b[22m\u001b[32m\u001b[32m\"data-active\"\u001b[32m\u001b[39m\u001b[2m, \u001b[22m\u001b[32m\u001b[32m\"true\"\u001b[32m\u001b[39m\u001b[2m) // element.getAttribute(\"data-active\") === \"true\"\u001b[22m\n\nExpected the element to have attribute:\n\u001b[32m  data-active=\"true\"\u001b[39m\nReceived:\n\u001b[31m  null\u001b[39m"
-              ],
-              "location": {
-                "line": 29,
-                "column": 23
-              }
+              "duration": 282,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -27960,7 +27954,7 @@
               "fullName": " Challenge 06: Task Filtering FilterBar should call onFilterChange when button clicked",
               "status": "passed",
               "title": "FilterBar should call onFilterChange when button clicked",
-              "duration": 317,
+              "duration": 331,
               "failureMessages": []
             },
             {
@@ -27971,13 +27965,13 @@
               "fullName": " Challenge 06: Task Filtering TaskList with filtered tasks should show only matching tasks",
               "status": "passed",
               "title": "TaskList with filtered tasks should show only matching tasks",
-              "duration": 66,
+              "duration": 90,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613925226,
-          "endTime": 1784613926512,
-          "status": "failed",
+          "startTime": 1784615299005,
+          "endTime": 1784615300367,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-06.test.tsx"
         },
@@ -27991,7 +27985,7 @@
               "fullName": " Challenge 07: Priority-Based Sorting FilterBar or sort control should exist",
               "status": "passed",
               "title": "FilterBar or sort control should exist",
-              "duration": 179,
+              "duration": 151,
               "failureMessages": []
             },
             {
@@ -28002,7 +27996,7 @@
               "fullName": " Challenge 07: Priority-Based Sorting TaskList should render tasks in order provided",
               "status": "passed",
               "title": "TaskList should render tasks in order provided",
-              "duration": 470,
+              "duration": 404,
               "failureMessages": []
             },
             {
@@ -28013,12 +28007,12 @@
               "fullName": " Challenge 07: Priority-Based Sorting When tasks sorted High to Low, High appears first",
               "status": "passed",
               "title": "When tasks sorted High to Low, High appears first",
-              "duration": 228,
+              "duration": 222,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613924387,
-          "endTime": 1784613925264,
+          "startTime": 1784615298514,
+          "endTime": 1784615299291,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-07.test.tsx"
@@ -28033,7 +28027,7 @@
               "fullName": " Challenge 08: Task Editing TaskCard should render title and description",
               "status": "passed",
               "title": "TaskCard should render title and description",
-              "duration": 187,
+              "duration": 193,
               "failureMessages": []
             },
             {
@@ -28044,7 +28038,7 @@
               "fullName": " Challenge 08: Task Editing TaskList should pass tasks to TaskCard",
               "status": "passed",
               "title": "TaskList should pass tasks to TaskCard",
-              "duration": 38,
+              "duration": 70,
               "failureMessages": []
             },
             {
@@ -28059,8 +28053,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784613931705,
-          "endTime": 1784613931952,
+          "startTime": 1784615307540,
+          "endTime": 1784615307826,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-08.test.tsx"
@@ -28075,7 +28069,7 @@
               "fullName": " Challenge 09: Search Functionality FilterBar should exist for search integration",
               "status": "passed",
               "title": "FilterBar should exist for search integration",
-              "duration": 159,
+              "duration": 172,
               "failureMessages": []
             },
             {
@@ -28086,12 +28080,12 @@
               "fullName": " Challenge 09: Search Functionality TaskList should filter by provided tasks (search applied upstream)",
               "status": "passed",
               "title": "TaskList should filter by provided tasks (search applied upstream)",
-              "duration": 85,
+              "duration": 92,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613931857,
-          "endTime": 1784613932102,
+          "startTime": 1784615307440,
+          "endTime": 1784615307704,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-09.test.tsx"
@@ -28106,7 +28100,7 @@
               "fullName": " Challenge 10: useEffect - Local Storage Persistence App should render without crashing",
               "status": "passed",
               "title": "App should render without crashing",
-              "duration": 400,
+              "duration": 425,
               "failureMessages": []
             },
             {
@@ -28117,12 +28111,12 @@
               "fullName": " Challenge 10: useEffect - Local Storage Persistence App should have routes for challenge 10",
               "status": "passed",
               "title": "App should have routes for challenge 10",
-              "duration": 72,
+              "duration": 67,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613931859,
-          "endTime": 1784613932332,
+          "startTime": 1784615307736,
+          "endTime": 1784615308228,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-10.test.tsx"
@@ -28137,7 +28131,7 @@
               "fullName": " Challenge 11: useEffect - Debounced Search FilterBar should exist for search/debounce integration",
               "status": "passed",
               "title": "FilterBar should exist for search/debounce integration",
-              "duration": 131,
+              "duration": 126,
               "failureMessages": []
             },
             {
@@ -28148,12 +28142,12 @@
               "fullName": " Challenge 11: useEffect - Debounced Search TaskList should render tasks",
               "status": "passed",
               "title": "TaskList should render tasks",
-              "duration": 37,
+              "duration": 54,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613933465,
-          "endTime": 1784613933633,
+          "startTime": 1784615308395,
+          "endTime": 1784615308575,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-11.test.tsx"
@@ -28168,7 +28162,7 @@
               "fullName": " Challenge 12: Categories and Tags TaskCard should render title and priority",
               "status": "passed",
               "title": "TaskCard should render title and priority",
-              "duration": 155,
+              "duration": 226,
               "failureMessages": []
             },
             {
@@ -28179,12 +28173,12 @@
               "fullName": " Challenge 12: Categories and Tags TaskList should render tasks with extended shape",
               "status": "passed",
               "title": "TaskList should render tasks with extended shape",
-              "duration": 40,
+              "duration": 37,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613932859,
-          "endTime": 1784613933054,
+          "startTime": 1784615307045,
+          "endTime": 1784615307308,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-12.test.tsx"
@@ -28199,7 +28193,7 @@
               "fullName": " Challenge 13: Due Dates and Sorting TaskCard should render title",
               "status": "passed",
               "title": "TaskCard should render title",
-              "duration": 166,
+              "duration": 185,
               "failureMessages": []
             },
             {
@@ -28214,8 +28208,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784613932802,
-          "endTime": 1784613932998,
+          "startTime": 1784615307363,
+          "endTime": 1784615307578,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-13.test.tsx"
@@ -28228,16 +28222,10 @@
                 "Challenge 14: Task Statistics Dashboard"
               ],
               "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should have id=\"stats-panel\"",
-              "status": "failed",
+              "status": "passed",
               "title": "StatsPanel should have id=\"stats-panel\"",
-              "duration": 107,
-              "failureMessages": [
-                "Cannot convert undefined or null to object"
-              ],
-              "location": {
-                "line": 67,
-                "column": 15
-              }
+              "duration": 132,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -28245,16 +28233,10 @@
                 "Challenge 14: Task Statistics Dashboard"
               ],
               "fullName": " Challenge 14: Task Statistics Dashboard StatsPanel should display total and completed",
-              "status": "failed",
+              "status": "passed",
               "title": "StatsPanel should display total and completed",
-              "duration": 16,
-              "failureMessages": [
-                "Cannot convert undefined or null to object"
-              ],
-              "location": {
-                "line": 67,
-                "column": 15
-              }
+              "duration": 68,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -28264,13 +28246,13 @@
               "fullName": " Challenge 14: Task Statistics Dashboard TaskList should render tasks",
               "status": "passed",
               "title": "TaskList should render tasks",
-              "duration": 207,
+              "duration": 81,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613924583,
-          "endTime": 1784613924914,
-          "status": "failed",
+          "startTime": 1784615298510,
+          "endTime": 1784615298792,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-14.test.tsx"
         },
@@ -28284,7 +28266,7 @@
               "fullName": " Challenge 15: Component Organization with Props TaskCard should accept and render props",
               "status": "passed",
               "title": "TaskCard should accept and render props",
-              "duration": 179,
+              "duration": 136,
               "failureMessages": []
             },
             {
@@ -28295,12 +28277,12 @@
               "fullName": " Challenge 15: Component Organization with Props TaskList should render TaskCards with props",
               "status": "passed",
               "title": "TaskList should render TaskCards with props",
-              "duration": 28,
+              "duration": 26,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613932928,
-          "endTime": 1784613933135,
+          "startTime": 1784615308434,
+          "endTime": 1784615308596,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-15.test.tsx"
@@ -28315,7 +28297,7 @@
               "fullName": " Challenge 16: Context API - Theme Management App should render without crashing",
               "status": "passed",
               "title": "App should render without crashing",
-              "duration": 194,
+              "duration": 296,
               "failureMessages": []
             },
             {
@@ -28324,15 +28306,21 @@
                 "Challenge 16: Context API - Theme Management"
               ],
               "fullName": " Challenge 16: Context API - Theme Management App should have main content",
-              "status": "passed",
+              "status": "failed",
               "title": "App should have main content",
-              "duration": 24,
-              "failureMessages": []
+              "duration": 32,
+              "failureMessages": [
+                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n"
+              ],
+              "location": {
+                "line": 13,
+                "column": 45
+              }
             }
           ],
-          "startTime": 1784613934102,
-          "endTime": 1784613934321,
-          "status": "passed",
+          "startTime": 1784615309077,
+          "endTime": 1784615309405,
+          "status": "failed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-16.test.tsx"
         },
@@ -28346,12 +28334,12 @@
               "fullName": " Challenge 17: Custom Hook - useLocalStorage App should render without crashing",
               "status": "passed",
               "title": "App should render without crashing",
-              "duration": 130,
+              "duration": 104,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613936680,
-          "endTime": 1784613936810,
+          "startTime": 1784615312486,
+          "endTime": 1784615312590,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-17.test.tsx"
@@ -28366,7 +28354,7 @@
               "fullName": " Challenge 18: useReducer - Complex State Management App should render",
               "status": "passed",
               "title": "App should render",
-              "duration": 202,
+              "duration": 266,
               "failureMessages": []
             },
             {
@@ -28377,12 +28365,12 @@
               "fullName": " Challenge 18: useReducer - Complex State Management TaskList should render tasks",
               "status": "passed",
               "title": "TaskList should render tasks",
-              "duration": 39,
+              "duration": 59,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613933965,
-          "endTime": 1784613934206,
+          "startTime": 1784615308578,
+          "endTime": 1784615308904,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-18.test.tsx"
@@ -28397,7 +28385,7 @@
               "fullName": " Challenge 19: Performance Optimization TaskCard should render",
               "status": "passed",
               "title": "TaskCard should render",
-              "duration": 109,
+              "duration": 120,
               "failureMessages": []
             },
             {
@@ -28408,12 +28396,12 @@
               "fullName": " Challenge 19: Performance Optimization TaskList should render TaskCards",
               "status": "passed",
               "title": "TaskList should render TaskCards",
-              "duration": 17,
+              "duration": 25,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613933589,
-          "endTime": 1784613933716,
+          "startTime": 1784615308754,
+          "endTime": 1784615308899,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-19.test.tsx"
@@ -28428,7 +28416,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should render children when no error",
               "status": "passed",
               "title": "ErrorBoundary should render children when no error",
-              "duration": 83,
+              "duration": 85,
               "failureMessages": []
             },
             {
@@ -28439,7 +28427,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
               "status": "passed",
               "title": "ErrorBoundary should have fallback with id=\"error-boundary-fallback\" when error caught",
-              "duration": 98,
+              "duration": 95,
               "failureMessages": []
             },
             {
@@ -28450,7 +28438,7 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling ErrorBoundary should have Retry button with id=\"error-retry\"",
               "status": "passed",
               "title": "ErrorBoundary should have Retry button with id=\"error-retry\"",
-              "duration": 25,
+              "duration": 23,
               "failureMessages": []
             },
             {
@@ -28461,12 +28449,12 @@
               "fullName": " Challenge 20: Error Boundaries and Error Handling Retry button should be clickable",
               "status": "passed",
               "title": "Retry button should be clickable",
-              "duration": 441,
+              "duration": 440,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613924219,
-          "endTime": 1784613924866,
+          "startTime": 1784615298900,
+          "endTime": 1784615299543,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-20.test.tsx"
@@ -28481,7 +28469,7 @@
               "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should use useParams and render task detail or not found",
               "status": "passed",
               "title": "TaskDetailPage should use useParams and render task detail or not found",
-              "duration": 73,
+              "duration": 69,
               "failureMessages": []
             },
             {
@@ -28492,12 +28480,12 @@
               "fullName": " Challenge 21: React Router - Routing and Navigation TaskDetailPage should have back button with id task-detail-back",
               "status": "passed",
               "title": "TaskDetailPage should have back button with id task-detail-back",
-              "duration": 15,
+              "duration": 13,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613923703,
-          "endTime": 1784613923792,
+          "startTime": 1784615298428,
+          "endTime": 1784615298511,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-21.test.tsx"
@@ -28510,16 +28498,10 @@
                 "Challenge 22: Data Fetching - Loading and Error State"
               ],
               "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show loading state initially or fetch from API",
-              "status": "failed",
+              "status": "passed",
               "title": "FetchDemoView should show loading state initially or fetch from API",
-              "duration": 1072,
-              "failureMessages": [
-                "Unable to find an element with the text: Test todo. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div />\u001b[39m\n\u001b[36m</body>\u001b[39m\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
-              ],
-              "location": {
-                "line": 163,
-                "column": 27
-              }
+              "duration": 114,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -28527,16 +28509,10 @@
                 "Challenge 22: Data Fetching - Loading and Error State"
               ],
               "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should have fetch-list when data is loaded",
-              "status": "failed",
+              "status": "passed",
               "title": "FetchDemoView should have fetch-list when data is loaded",
-              "duration": 1028,
-              "failureMessages": [
-                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
-              ],
-              "location": {
-                "line": 35,
-                "column": 20
-              }
+              "duration": 14,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -28544,21 +28520,15 @@
                 "Challenge 22: Data Fetching - Loading and Error State"
               ],
               "fullName": " Challenge 22: Data Fetching - Loading and Error State FetchDemoView should show fetch-error when fetch fails",
-              "status": "failed",
+              "status": "passed",
               "title": "FetchDemoView should show fetch-error when fetch fails",
-              "duration": 1017,
-              "failureMessages": [
-                "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).toBeInTheDocument()\u001b[22m\n\n\u001b[31mreceived\u001b[39m value must be an HTMLElement or an SVGElement.\n\n\nIgnored nodes: comments, script, style\n\u001b[36m<html>\u001b[39m\n  \u001b[36m<head />\u001b[39m\n  \u001b[36m<body>\u001b[39m\n    \u001b[36m<div />\u001b[39m\n  \u001b[36m</body>\u001b[39m\n\u001b[36m</html>\u001b[39m"
-              ],
-              "location": {
-                "line": 44,
-                "column": 19
-              }
+              "duration": 16,
+              "failureMessages": []
             }
           ],
-          "startTime": 1784613923643,
-          "endTime": 1784613926761,
-          "status": "failed",
+          "startTime": 1784615298384,
+          "endTime": 1784615298529,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-22.test.tsx"
         },
@@ -28572,7 +28542,7 @@
               "fullName": " Challenge 23: useRef - Focus Management FilterBar should render search input with id search-input",
               "status": "passed",
               "title": "FilterBar should render search input with id search-input",
-              "duration": 149,
+              "duration": 167,
               "failureMessages": []
             },
             {
@@ -28583,12 +28553,12 @@
               "fullName": " Challenge 23: useRef - Focus Management FilterBar should be focusable for search input",
               "status": "passed",
               "title": "FilterBar should be focusable for search input",
-              "duration": 25,
+              "duration": 36,
               "failureMessages": []
             }
           ],
-          "startTime": 1784613932809,
-          "endTime": 1784613932983,
+          "startTime": 1784615307244,
+          "endTime": 1784615307448,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/01-react-fundamentals/project/tests/challenge-23.test.tsx"
@@ -28614,11 +28584,10 @@
         {
           "file": "src/components/FetchDemoView.tsx",
           "patternsFound": [
-            "functionalComponent"
-          ],
-          "patternsMissing": [
+            "functionalComponent",
             "useState"
-          ]
+          ],
+          "patternsMissing": []
         },
         {
           "file": "src/App.tsx",
@@ -28638,10 +28607,11 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
+      "score": 100,
+      "passed": true,
       "totalTests": 2,
-      "passedTests": 0,
-      "failedTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
       "details": [
         {
           "title": "challenge-22.spec.ts",
@@ -28658,7 +28628,7 @@
               "specs": [
                 {
                   "title": "should show loading or list",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -28671,154 +28641,18 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 2299,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 47,
-                              "line": 16
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m hasList \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m list\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mconst\u001b[39m hasError \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m err\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     expect(hasLoading \u001b[33m||\u001b[39m hasList \u001b[33m||\u001b[39m hasError)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m   test(\u001b[32m'should eventually show fetch-list when API succeeds'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 47,
-                                "line": 16
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  14 |     const hasList = await list.isVisible();\n  15 |     const hasError = await err.isVisible();\n> 16 |     expect(hasLoading || hasList || hasError).toBeTruthy();\n     |                                               ^\n  17 |   });\n  18 |\n  19 |   test('should eventually show fetch-list when API succeeds', async ({ page }) => {\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 2149,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-21T06:05:53.699Z",
+                          "startTime": "2026-07-21T06:28:45.403Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium\\error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 47,
-                            "line": 16
-                          }
-                        },
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 2510,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 47,
-                              "line": 16
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m hasList \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m list\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mconst\u001b[39m hasError \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m err\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     expect(hasLoading \u001b[33m||\u001b[39m hasList \u001b[33m||\u001b[39m hasError)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m   test(\u001b[32m'should eventually show fetch-list when API succeeds'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 47,
-                                "line": 16
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  14 |     const hasList = await list.isVisible();\n  15 |     const hasError = await err.isVisible();\n> 16 |     expect(hasLoading || hasList || hasError).toBeTruthy();\n     |                                               ^\n  17 |   });\n  18 |\n  19 |   test('should eventually show fetch-list when API succeeds', async ({ page }) => {\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-21T06:05:59.975Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium-retry1\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium-retry1\\error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium-retry1\\trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 47,
-                            "line": 16
-                          }
-                        },
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 2276,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 47,
-                              "line": 16
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mconst\u001b[39m hasList \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m list\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m     \u001b[36mconst\u001b[39m hasError \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m err\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     expect(hasLoading \u001b[33m||\u001b[39m hasList \u001b[33m||\u001b[39m hasError)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m   test(\u001b[32m'should eventually show fetch-list when API succeeds'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 47,
-                                "line": 16
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n  14 |     const hasList = await list.isVisible();\n  15 |     const hasError = await err.isVisible();\n> 16 |     expect(hasLoading || hasList || hasError).toBeTruthy();\n     |                                               ^\n  17 |   });\n  18 |\n  19 |   test('should eventually show fetch-list when API succeeds', async ({ page }) => {\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:16:47"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-21T06:06:06.698Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium-retry2\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--d6d22-should-show-loading-or-list-chromium-retry2\\error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 47,
-                            "line": 16
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "897c0b09f5b8225a79bd-7bc66a1771cb4c50b87e",
@@ -28828,7 +28662,7 @@
                 },
                 {
                   "title": "should eventually show fetch-list when API succeeds",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -28839,156 +28673,20 @@
                       "projectName": "chromium",
                       "results": [
                         {
-                          "workerIndex": 3,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 11692,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 24,
-                              "line": 22
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'#fetch-list'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m list \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#fetch-list'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(list)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 24,
-                                "line": 22
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n\n  20 |     await page.waitForSelector('#fetch-list', { timeout: 5000 }).catch(() => null);\n  21 |     const list = page.locator('#fetch-list');\n> 22 |     await expect(list).toBeVisible({ timeout: 6000 });\n     |                        ^\n  23 |   });\n  24 | });\n  25 |\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 1205,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-21T06:06:12.809Z",
+                          "startTime": "2026-07-21T06:28:47.913Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium\\error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 24,
-                            "line": 22
-                          }
-                        },
-                        {
-                          "workerIndex": 4,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 11964,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 24,
-                              "line": 22
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'#fetch-list'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m list \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#fetch-list'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(list)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 24,
-                                "line": 22
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n\n  20 |     await page.waitForSelector('#fetch-list', { timeout: 5000 }).catch(() => null);\n  21 |     const list = page.locator('#fetch-list');\n> 22 |     await expect(list).toBeVisible({ timeout: 6000 });\n     |                        ^\n  23 |   });\n  24 | });\n  25 |\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2026-07-21T06:06:28.433Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium-retry1\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium-retry1\\error-context.md"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium-retry1\\trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 24,
-                            "line": 22
-                          }
-                        },
-                        {
-                          "workerIndex": 5,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 11802,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24",
-                            "location": {
-                              "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                              "column": 24,
-                              "line": 22
-                            },
-                            "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'#fetch-list'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m list \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#fetch-list'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(list)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m\u001b[0m"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                                "column": 24,
-                                "line": 22
-                              },
-                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#fetch-list')\nExpected: visible\nTimeout: 6000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 6000ms\u001b[22m\n\u001b[2m  - waiting for locator('#fetch-list')\u001b[22m\n\n\n  20 |     await page.waitForSelector('#fetch-list', { timeout: 5000 }).catch(() => null);\n  21 |     const list = page.locator('#fetch-list');\n> 22 |     await expect(list).toBeVisible({ timeout: 6000 });\n     |                        ^\n  23 |   });\n  24 | });\n  25 |\n    at C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts:22:24"
-                            }
-                          ],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 2,
-                          "startTime": "2026-07-21T06:06:44.451Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium-retry2\\test-failed-1.png"
-                            },
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\test-results\\challenge-22-Challenge-22--e238e-etch-list-when-API-succeeds-chromium-retry2\\error-context.md"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\01-react-fundamentals\\project\\tests\\e2e\\challenge-22.spec.ts",
-                            "column": 24,
-                            "line": 22
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "897c0b09f5b8225a79bd-874b54bff2542e762bf2",
@@ -29001,46 +28699,45 @@
           ]
         }
       ],
-      "error": "Command failed: npx playwright test \"tests/e2e/challenge-22.spec.ts\" --reporter=json\nnpm notice run react-fundamentals-project@1.0.0 npx\nnpm notice run playwright test tests/e2e/challenge-22.spec.ts --reporter=json\n",
-      "passed": false
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "22-data-fetching",
-      "timestamp": "2026-07-21T06:06:57.546Z",
-      "score": 65,
+      "timestamp": "2026-07-21T06:28:49.711Z",
+      "score": 88,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and follows a clear pattern of functional components.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-organized and easy to navigate."
+        "The code is well-structured and easy to follow, with clear separation of concerns between the FetchDemoView component and the App component.",
+        "The use of TypeScript and functional components makes the code more maintainable and scalable.",
+        "The code is well-documented, with clear and concise comments explaining the purpose of each section."
       ],
       "improvements": [
-        "The `FetchDemoView` component is currently returning `null`. It should be updated to render the loading, error, or data state as per the challenge requirements.",
-        "The `useEffect` hook is missing the `AbortController` to prevent memory leaks and React warnings.",
-        "The error handling in the `fetch` call is not robust. It should be updated to handle different types of errors and provide a better user experience."
+        "The FetchDemoView component is tightly coupled with the specific API endpoint and data structure. Consider making it more generic and reusable by injecting the API endpoint and data structure as props.",
+        "The error handling in the FetchDemoView component is quite basic and could be improved by providing more specific error messages and handling different types of errors.",
+        "The App component has a lot of repeated code for rendering different challenge routes. Consider extracting a separate component or using a more dynamic approach to render the routes."
       ],
-      "readability": 60,
-      "maintainability": 70,
-      "overall": "The code has a good structure and follows best practices. However, it needs some improvements to meet the challenge requirements and provide a better user experience."
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some areas for improvement to make it more generic, reusable, and robust. With some refactoring and improvements, this code has the potential to be a high-quality and scalable solution."
     },
     "aiResults": {
       "challengeId": "22-data-fetching",
-      "timestamp": "2026-07-21T06:06:57.546Z",
-      "score": 65,
+      "timestamp": "2026-07-21T06:28:49.711Z",
+      "score": 88,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and follows a clear pattern of functional components.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-organized and easy to navigate."
+        "The code is well-structured and easy to follow, with clear separation of concerns between the FetchDemoView component and the App component.",
+        "The use of TypeScript and functional components makes the code more maintainable and scalable.",
+        "The code is well-documented, with clear and concise comments explaining the purpose of each section."
       ],
       "improvements": [
-        "The `FetchDemoView` component is currently returning `null`. It should be updated to render the loading, error, or data state as per the challenge requirements.",
-        "The `useEffect` hook is missing the `AbortController` to prevent memory leaks and React warnings.",
-        "The error handling in the `fetch` call is not robust. It should be updated to handle different types of errors and provide a better user experience."
+        "The FetchDemoView component is tightly coupled with the specific API endpoint and data structure. Consider making it more generic and reusable by injecting the API endpoint and data structure as props.",
+        "The error handling in the FetchDemoView component is quite basic and could be improved by providing more specific error messages and handling different types of errors.",
+        "The App component has a lot of repeated code for rendering different challenge routes. Consider extracting a separate component or using a more dynamic approach to render the routes."
       ],
-      "readability": 60,
-      "maintainability": 70,
-      "overall": "The code has a good structure and follows best practices. However, it needs some improvements to meet the challenge requirements and provide a better user experience."
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some areas for improvement to make it more generic, reusable, and robust. With some refactoring and improvements, this code has the potential to be a high-quality and scalable solution."
     }
   }
 ]

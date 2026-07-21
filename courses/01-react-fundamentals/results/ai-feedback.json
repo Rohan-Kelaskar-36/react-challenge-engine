@@ -460,29 +460,6 @@
     }
   },
   {
-    "challengeId": "22-data-fetching",
-    "challengeName": "Data Fetching - Loading and Error State",
-    "aiReview": {
-      "challengeId": "22-data-fetching",
-      "timestamp": "2026-07-21T06:06:57.546Z",
-      "score": 65,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a clear pattern of functional components.",
-        "The use of TypeScript and functional components is a good practice.",
-        "The code is well-organized and easy to navigate."
-      ],
-      "improvements": [
-        "The `FetchDemoView` component is currently returning `null`. It should be updated to render the loading, error, or data state as per the challenge requirements.",
-        "The `useEffect` hook is missing the `AbortController` to prevent memory leaks and React warnings.",
-        "The error handling in the `fetch` call is not robust. It should be updated to handle different types of errors and provide a better user experience."
-      ],
-      "readability": 60,
-      "maintainability": 70,
-      "overall": "The code has a good structure and follows best practices. However, it needs some improvements to meet the challenge requirements and provide a better user experience."
-    }
-  },
-  {
     "challengeId": "20-error-boundaries",
     "challengeName": "Error Boundaries and Error Handling",
     "aiReview": {
@@ -503,6 +480,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-organized and effective in managing state and side effects. However, there are some minor improvements that can be made to enhance readability and maintainability."
+    }
+  },
+  {
+    "challengeId": "22-data-fetching",
+    "challengeName": "Data Fetching - Loading and Error State",
+    "aiReview": {
+      "challengeId": "22-data-fetching",
+      "timestamp": "2026-07-21T06:28:49.711Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the FetchDemoView component and the App component.",
+        "The use of TypeScript and functional components makes the code more maintainable and scalable.",
+        "The code is well-documented, with clear and concise comments explaining the purpose of each section."
+      ],
+      "improvements": [
+        "The FetchDemoView component is tightly coupled with the specific API endpoint and data structure. Consider making it more generic and reusable by injecting the API endpoint and data structure as props.",
+        "The error handling in the FetchDemoView component is quite basic and could be improved by providing more specific error messages and handling different types of errors.",
+        "The App component has a lot of repeated code for rendering different challenge routes. Consider extracting a separate component or using a more dynamic approach to render the routes."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, but there are some areas for improvement to make it more generic, reusable, and robust. With some refactoring and improvements, this code has the potential to be a high-quality and scalable solution."
     }
   }
 ]
