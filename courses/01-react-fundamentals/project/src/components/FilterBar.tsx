@@ -1,5 +1,6 @@
-import Button from "./Button"
-import FormInput from "./FormInput"
+import { useEffect, useRef } from "react";
+import Button from "./Button";
+import FormInput from "./FormInput";
 import { useTheme } from "../contexts/ThemeContext";
 
 interface FilterBarProps {
@@ -32,6 +33,11 @@ export default function FilterBar({
 }: FilterBarProps) {
 
   const { theme } = useTheme();
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+  searchInputRef.current?.focus();
+}, []);
   
   return (
     <div
@@ -106,6 +112,7 @@ theme==="dark"
 
       
       <FormInput
+       ref={searchInputRef}
   label="Search"
   id="search-input"
   value={searchText}
