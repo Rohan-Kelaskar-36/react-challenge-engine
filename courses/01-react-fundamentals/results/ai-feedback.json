@@ -389,5 +389,28 @@
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with a good use of React hooks and TypeScript. However, there are some minor improvements that can be made to handle potential errors and simplify the code."
     }
+  },
+  {
+    "challengeId": "18-usereducer-complex-state",
+    "challengeName": "useReducer - Complex State Management",
+    "aiReview": {
+      "challengeId": "18-usereducer-complex-state",
+      "timestamp": "2026-07-21T04:10:17.984Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Effective use of TypeScript to define types and interfaces",
+        "Clear separation of concerns between components and reducers",
+        "Use of memoization with `useMemo` to optimize performance"
+      ],
+      "improvements": [
+        "Consider adding JSDoc comments to explain the purpose and behavior of functions and components",
+        "Some variable names could be more descriptive, such as `debouncedSearchText` could be `searchTextAfterDebounce`",
+        "The `taskReducer` could be split into smaller, more focused reducers to improve maintainability"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows best practices for React and TypeScript development. However, there are some areas for improvement to enhance readability and maintainability."
+    }
   }
 ]

@@ -1,4 +1,4 @@
-import type { Dispatch, SetStateAction } from 'react'
+// import type { Dispatch, SetStateAction } from 'react'
 import TaskList, { Task } from "./TaskList"
 import TaskForm from "./TaskForm"
 import { useMemo,useState,useEffect } from "react"
@@ -6,11 +6,13 @@ import FilterBar from "./FilterBar"
 import StatsPanel from "./StatsPanel"
 import { useTheme } from "../contexts/ThemeContext";
 import Button from './Button'
+import  {   ADD_TASK,UPDATE_TASK,
+  TOGGLE_TASK } from "../reducers/taskReducer";
+  import type { TaskAction } from "../reducers/taskReducer";
 
 interface TaskAppProps {
   tasks?: Task[]
-  setTasks?: Dispatch<SetStateAction<Task[]>>
-  // dispatch?: (action: { type: string; payload?: unknown }) => void
+dispatch?: React.Dispatch<TaskAction>  // dispatch?: (action: { type: string; payload?: unknown }) => void
   showForm?: boolean
   countFormat?: string
       showFilterBar?: boolean
@@ -21,24 +23,18 @@ interface TaskAppProps {
 
 export default function TaskApp({
  tasks = [],
- setTasks,
+ dispatch,
  showForm,
  showFilterBar,
  showStatsPanel,
  onDelete,
 }: TaskAppProps) {
+
   const handleAddTask = (task: Task) => {
-    setTasks?.((prev) => [...prev, task])
-  }
+    dispatch?.({ type: ADD_TASK, payload: task })}
 
   const handleToggle = (id: string | number) => {
-    setTasks?.((prev) =>
-      prev.map((task) =>
-        task.id === id
-          ? { ...task, completed: !task.completed }
-          : task
-      )
-    )
+    dispatch?.({ type: TOGGLE_TASK, payload: id })
   }
   const { theme, toggleTheme } = useTheme();
 
@@ -161,13 +157,8 @@ const handleUpdateTask = (
 ) => {
   if (!updates.title.trim()) return
 
-  setTasks?.((prev) =>
-    prev.map((task) =>
-      task.id === id
-        ? { ...task, ...updates }
-        : task
-    )
-  )
+  dispatch?.({ type: UPDATE_TASK, payload: { id, ...updates } })
+
 
   setEditingId(null)
 }
@@ -301,7 +292,5 @@ const stats = useMemo(() => {
     </div>
   )
 }
-
-
 
 
