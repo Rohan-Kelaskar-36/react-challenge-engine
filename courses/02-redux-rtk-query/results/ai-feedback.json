@@ -1,14 +1,5 @@
 [
   {
-    "challengeId": "09-mutations",
-    "challengeName": "Mutations with useMutation",
-    "aiReview": {
-      "error": "Functional tests must pass first (28/37 passed)",
-      "score": 0,
-      "skipped": true
-    }
-  },
-  {
     "challengeId": "10-optimistic-updates",
     "challengeName": "Optimistic Updates",
     "aiReview": {
@@ -266,6 +257,33 @@
       "maintainability": 70,
       "overall": "The code meets most requirements and demonstrates a good understanding of RTK Query. However, there are some areas for improvement regarding code quality, maintainability, and best practices.",
       "requirementCompliance": 85
+    }
+  },
+  {
+    "challengeId": "09-mutations",
+    "challengeName": "Mutations with useMutation",
+    "aiReview": {
+      "challengeId": "09-mutations",
+      "timestamp": "2026-07-24T08:42:43.249Z",
+      "score": 77,
+      "feedback": [],
+      "strengths": [
+        "The code is generally well-structured and readable.",
+        "The code is following RTK Query best practices."
+      ],
+      "improvements": [
+        "Add the `queryFn` property to the `addPost` mutation in `apiSlice.ts`.",
+        "Update the `addPost` mutation to properly handle the response from the server.",
+        "Update the `addPost` mutation to invalidate the correct tags.",
+        "Update the `mockServer.ts` file to properly handle errors.",
+        "Update the `AddPostForm.tsx` file to properly handle the loading state.",
+        "Update the `AddPostForm.tsx` file to properly handle the success state.",
+        "Update the `AddPostForm.tsx` file to properly integrate with the store."
+      ],
+      "readability": 80,
+      "maintainability": 70,
+      "overall": "The code meets most of the functional requirements, but there are a few areas for improvement. The code is generally well-structured and readable, but there are a few areas for improvement in terms of error handling and loading state.",
+      "requirementCompliance": 80
     }
   }
 ]

@@ -6008,25 +6008,25 @@
   {
     "challengeId": "09-mutations",
     "challengeName": "Mutations with useMutation",
-    "timestamp": "2026-07-23T11:00:25.551Z",
+    "timestamp": "2026-07-24T08:42:13.478Z",
     "scores": {
-      "functionalTests": 75.7,
+      "functionalTests": 100,
       "codeQuality": 50,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 0
+      "e2eTests": 100,
+      "aiReview": 77
     },
-    "totalScore": 53.995000000000005,
-    "passed": false,
+    "totalScore": 89.05,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 75.7,
-      "passed": false,
+      "score": 100,
+      "passed": true,
       "totalTests": 37,
-      "passedTests": 28,
-      "failedTests": 9,
+      "passedTests": 37,
+      "failedTests": 0,
       "details": [
         {
           "assertionResults": [
@@ -6049,7 +6049,7 @@
               "fullName": " Challenge 01: Store Setup with configureStore store exports RootState and AppDispatch",
               "status": "passed",
               "title": "store exports RootState and AppDispatch",
-              "duration": 2,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -6064,8 +6064,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435627,
-          "endTime": 1784804435637,
+          "startTime": 1784882542561,
+          "endTime": 1784882542571,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-01.test.tsx"
@@ -6080,7 +6080,7 @@
               "fullName": " Challenge 02: First Slice with createSlice counterSlice exists and uses createSlice",
               "status": "passed",
               "title": "counterSlice exists and uses createSlice",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -6091,7 +6091,7 @@
               "fullName": " Challenge 02: First Slice with createSlice counterSlice has increment and decrement reducers",
               "status": "passed",
               "title": "counterSlice has increment and decrement reducers",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -6102,12 +6102,12 @@
               "fullName": " Challenge 02: First Slice with createSlice store includes counter reducer",
               "status": "passed",
               "title": "store includes counter reducer",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435631,
-          "endTime": 1784804435641,
+          "startTime": 1784882542557,
+          "endTime": 1784882542564,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-02.test.tsx"
@@ -6133,7 +6133,7 @@
               "fullName": " Challenge 03: Reading and Dispatching CounterView uses useSelector or useAppSelector",
               "status": "passed",
               "title": "CounterView uses useSelector or useAppSelector",
-              "duration": 1,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -6144,12 +6144,12 @@
               "fullName": " Challenge 03: Reading and Dispatching CounterView has required data-testids",
               "status": "passed",
               "title": "CounterView has required data-testids",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435573,
-          "endTime": 1784804435581,
+          "startTime": 1784882542561,
+          "endTime": 1784882542572,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-03.test.tsx"
@@ -6179,8 +6179,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784804438997,
-          "endTime": 1784804439001,
+          "startTime": 1784882546034,
+          "endTime": 1784882546038,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-04.test.tsx"
@@ -6195,7 +6195,7 @@
               "fullName": " Challenge 05: Async Logic with createAsyncThunk usersSlice uses createAsyncThunk",
               "status": "passed",
               "title": "usersSlice uses createAsyncThunk",
-              "duration": 4,
+              "duration": 6,
               "failureMessages": []
             },
             {
@@ -6217,12 +6217,12 @@
               "fullName": " Challenge 05: Async Logic with createAsyncThunk store includes users reducer",
               "status": "passed",
               "title": "store includes users reducer",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435573,
-          "endTime": 1784804435581,
+          "startTime": 1784882542561,
+          "endTime": 1784882542572,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-05.test.tsx"
@@ -6248,7 +6248,7 @@
               "fullName": " Challenge 06: RTK Query Setup apiSlice has baseQuery or fetchBaseQuery",
               "status": "passed",
               "title": "apiSlice has baseQuery or fetchBaseQuery",
-              "duration": 2,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -6263,8 +6263,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435674,
-          "endTime": 1784804435684,
+          "startTime": 1784882542562,
+          "endTime": 1784882542572,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-06.test.tsx"
@@ -6279,7 +6279,7 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks API slice has getUsers query endpoint",
               "status": "passed",
               "title": "API slice has getUsers query endpoint",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -6301,12 +6301,12 @@
               "fullName": " Challenge 07: Query Endpoints and useQuery Hooks UsersList has users-list data-testid",
               "status": "passed",
               "title": "UsersList has users-list data-testid",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435573,
-          "endTime": 1784804435581,
+          "startTime": 1784882542557,
+          "endTime": 1784882542565,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-07.test.tsx"
@@ -6336,8 +6336,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784804439023,
-          "endTime": 1784804439028,
+          "startTime": 1784882546017,
+          "endTime": 1784882546022,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-08.test.tsx"
@@ -6352,7 +6352,7 @@
               "fullName": " Challenge 09: Mutations with useMutation API slice has builder.mutation endpoint",
               "status": "passed",
               "title": "API slice has builder.mutation endpoint",
-              "duration": 5,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -6374,12 +6374,12 @@
               "fullName": " Challenge 09: Mutations with useMutation AddPostForm has add-post-form and add-post-submit data-testids",
               "status": "passed",
               "title": "AddPostForm has add-post-form and add-post-submit data-testids",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435622,
-          "endTime": 1784804435632,
+          "startTime": 1784882542562,
+          "endTime": 1784882542571,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-09.test.tsx"
@@ -6392,16 +6392,10 @@
                 "Challenge 10: Optimistic Updates"
               ],
               "fullName": " Challenge 10: Optimistic Updates API slice mutation has onQueryStarted",
-              "status": "failed",
+              "status": "passed",
               "title": "API slice mutation has onQueryStarted",
-              "duration": 22,
-              "failureMessages": [
-                "expected 'import { createApi, fetchBaseQuery } …' to contain 'onQueryStarted'"
-              ],
-              "location": {
-                "line": 16,
-                "column": 21
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6409,16 +6403,10 @@
                 "Challenge 10: Optimistic Updates"
               ],
               "fullName": " Challenge 10: Optimistic Updates optimistic update uses queryFulfilled or updateQueryData",
-              "status": "failed",
+              "status": "passed",
               "title": "optimistic update uses queryFulfilled or updateQueryData",
-              "duration": 8,
-              "failureMessages": [
-                "expected 'import { createApi, fetchBaseQuery } …' to match /queryFulfilled|updateQueryData/"
-              ],
-              "location": {
-                "line": 22,
-                "column": 21
-              }
+              "duration": 1,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6426,21 +6414,15 @@
                 "Challenge 10: Optimistic Updates"
               ],
               "fullName": " Challenge 10: Optimistic Updates has rollback or undo on error",
-              "status": "failed",
+              "status": "passed",
               "title": "has rollback or undo on error",
-              "duration": 3,
-              "failureMessages": [
-                "expected 'import { createApi, fetchBaseQuery } …' to match /undo|rollback|patchResult/"
-              ],
-              "location": {
-                "line": 28,
-                "column": 21
-              }
+              "duration": 2,
+              "failureMessages": []
             }
           ],
-          "startTime": 1784804435715,
-          "endTime": 1784804435749,
-          "status": "failed",
+          "startTime": 1784882542561,
+          "endTime": 1784882542571,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-10.test.tsx"
         },
@@ -6452,16 +6434,10 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together filtersSlice exists and is in store",
-              "status": "failed",
+              "status": "passed",
               "title": "filtersSlice exists and is in store",
-              "duration": 17,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 14,
-                "column": 35
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6469,16 +6445,10 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
-              "status": "failed",
+              "status": "passed",
               "title": "PostsWithFilters uses useSelector and useGetPostsQuery or query hook",
-              "duration": 6,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 11 (API …' to match /useAppSelector|useSelector/"
-              ],
-              "location": {
-                "line": 24,
-                "column": 21
-              }
+              "duration": 3,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6486,21 +6456,15 @@
                 "Challenge 11: API and Local State Together"
               ],
               "fullName": " Challenge 11: API and Local State Together PostsWithFilters has posts-with-filters and filter-controls data-testids",
-              "status": "failed",
+              "status": "passed",
               "title": "PostsWithFilters has posts-with-filters and filter-controls data-testids",
-              "duration": 3,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 11 (API …' to contain 'filter-controls'"
-              ],
-              "location": {
-                "line": 32,
-                "column": 21
-              }
+              "duration": 1,
+              "failureMessages": []
             }
           ],
-          "startTime": 1784804435596,
-          "endTime": 1784804435622,
-          "status": "failed",
+          "startTime": 1784882542563,
+          "endTime": 1784882542572,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-11.test.tsx"
         },
@@ -6512,16 +6476,10 @@
                 "Challenge 12: Error and Loading UX"
               ],
               "fullName": " Challenge 12: Error and Loading UX ErrorDisplay exists with error-display and retry-btn data-testids",
-              "status": "failed",
+              "status": "passed",
               "title": "ErrorDisplay exists with error-display and retry-btn data-testids",
-              "duration": 17,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 12 (Erro…' to contain 'retry-btn'"
-              ],
-              "location": {
-                "line": 17,
-                "column": 21
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6546,9 +6504,9 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435566,
-          "endTime": 1784804435587,
-          "status": "failed",
+          "startTime": 1784882542557,
+          "endTime": 1784882542566,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-12.test.tsx"
         },
@@ -6560,16 +6518,10 @@
                 "Challenge 13: Query with Parameters and Detail View"
               ],
               "fullName": " Challenge 13: Query with Parameters and Detail View API slice has getPostById query endpoint",
-              "status": "failed",
+              "status": "passed",
               "title": "API slice has getPostById query endpoint",
-              "duration": 19,
-              "failureMessages": [
-                "expected 'import { createApi, fetchBaseQuery } …' to contain 'getPostById'"
-              ],
-              "location": {
-                "line": 16,
-                "column": 21
-              }
+              "duration": 4,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6577,16 +6529,10 @@
                 "Challenge 13: Query with Parameters and Detail View"
               ],
               "fullName": " Challenge 13: Query with Parameters and Detail View PostDetail uses useGetPostByIdQuery or generated query hook",
-              "status": "failed",
+              "status": "passed",
               "title": "PostDetail uses useGetPostByIdQuery or generated query hook",
-              "duration": 7,
-              "failureMessages": [
-                "expected '/** Stub: Complete Challenge 13 (Quer…' to match /useGetPostByIdQuery|useQuery/"
-              ],
-              "location": {
-                "line": 23,
-                "column": 21
-              }
+              "duration": 3,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -6596,18 +6542,17 @@
               "fullName": " Challenge 13: Query with Parameters and Detail View PostDetail has post-detail data-testid",
               "status": "passed",
               "title": "PostDetail has post-detail data-testid",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1784804435649,
-          "endTime": 1784804435677,
-          "status": "failed",
+          "startTime": 1784882542559,
+          "endTime": 1784882542567,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/02-redux-rtk-query/project/tests/challenge-13.test.tsx"
         }
-      ],
-      "error": "Command failed: npm test -- C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\02-redux-rtk-query\\project\\tests\\challenge-09.test.tsx --run --reporter=json\nnpm notice run rtk-query-project@1.0.0 test\nnpm notice run vitest C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\02-redux-rtk-query\\project\\tests\\challenge-09.test.tsx --run --reporter=json\n"
+      ]
     },
     "lintResults": {
       "score": 50,
@@ -6618,12 +6563,16 @@
     "architectureResults": {
       "score": 100,
       "passed": true,
-      "patternsFound": [],
+      "patternsFound": [
+        "builder.mutation"
+      ],
       "patternsMissing": [],
       "details": [
         {
           "file": "src/api/apiSlice.ts",
-          "patternsFound": [],
+          "patternsFound": [
+            "builder.mutation"
+          ],
           "patternsMissing": []
         },
         {
@@ -6641,18 +6590,145 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "totalTests": 0,
-      "passedTests": 0,
+      "score": 100,
+      "passed": true,
+      "totalTests": 2,
+      "passedTests": 2,
       "failedTests": 0,
-      "details": [],
-      "error": "Command failed: npx playwright test \"tests/e2e/challenge-09.spec.ts\" --reporter=json\nnpm notice run rtk-query-project@1.0.0 npx\nnpm notice run playwright test tests/e2e/challenge-09.spec.ts --reporter=json\n"
+      "details": [
+        {
+          "title": "challenge-09.spec.ts",
+          "file": "challenge-09.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 09: Mutations - E2E",
+              "file": "challenge-09.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should load challenge 09 page with AddPostForm",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 869,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-07-24T08:42:41.798Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-828951cbe0f5663062a7",
+                  "file": "challenge-09.spec.ts",
+                  "line": 8,
+                  "column": 3
+                },
+                {
+                  "title": "should have add post submit button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 770,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-07-24T08:42:41.877Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-d4f659a4cefad71b2896",
+                  "file": "challenge-09.spec.ts",
+                  "line": 13,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
-      "error": "Functional tests must pass first (28/37 passed)",
-      "score": 0,
-      "skipped": true
+      "challengeId": "09-mutations",
+      "timestamp": "2026-07-24T08:42:43.249Z",
+      "score": 77,
+      "feedback": [],
+      "strengths": [
+        "The code is generally well-structured and readable.",
+        "The code is following RTK Query best practices."
+      ],
+      "improvements": [
+        "Add the `queryFn` property to the `addPost` mutation in `apiSlice.ts`.",
+        "Update the `addPost` mutation to properly handle the response from the server.",
+        "Update the `addPost` mutation to invalidate the correct tags.",
+        "Update the `mockServer.ts` file to properly handle errors.",
+        "Update the `AddPostForm.tsx` file to properly handle the loading state.",
+        "Update the `AddPostForm.tsx` file to properly handle the success state.",
+        "Update the `AddPostForm.tsx` file to properly integrate with the store."
+      ],
+      "readability": 80,
+      "maintainability": 70,
+      "overall": "The code meets most of the functional requirements, but there are a few areas for improvement. The code is generally well-structured and readable, but there are a few areas for improvement in terms of error handling and loading state.",
+      "requirementCompliance": 80
+    },
+    "aiResults": {
+      "challengeId": "09-mutations",
+      "timestamp": "2026-07-24T08:42:43.249Z",
+      "score": 77,
+      "feedback": [],
+      "strengths": [
+        "The code is generally well-structured and readable.",
+        "The code is following RTK Query best practices."
+      ],
+      "improvements": [
+        "Add the `queryFn` property to the `addPost` mutation in `apiSlice.ts`.",
+        "Update the `addPost` mutation to properly handle the response from the server.",
+        "Update the `addPost` mutation to invalidate the correct tags.",
+        "Update the `mockServer.ts` file to properly handle errors.",
+        "Update the `AddPostForm.tsx` file to properly handle the loading state.",
+        "Update the `AddPostForm.tsx` file to properly handle the success state.",
+        "Update the `AddPostForm.tsx` file to properly integrate with the store."
+      ],
+      "readability": 80,
+      "maintainability": 70,
+      "overall": "The code meets most of the functional requirements, but there are a few areas for improvement. The code is generally well-structured and readable, but there are a few areas for improvement in terms of error handling and loading state.",
+      "requirementCompliance": 80
     }
   },
   {
