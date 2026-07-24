@@ -1,14 +1,5 @@
 [
   {
-    "challengeId": "10-optimistic-updates",
-    "challengeName": "Optimistic Updates",
-    "aiReview": {
-      "error": "Functional tests must pass first (31/37 passed)",
-      "score": 0,
-      "skipped": true
-    }
-  },
-  {
     "challengeId": "11-api-local-state",
     "challengeName": "API and Local State Together",
     "aiReview": {
@@ -284,6 +275,32 @@
       "maintainability": 70,
       "overall": "The code meets most of the functional requirements, but there are a few areas for improvement. The code is generally well-structured and readable, but there are a few areas for improvement in terms of error handling and loading state.",
       "requirementCompliance": 80
+    }
+  },
+  {
+    "challengeId": "10-optimistic-updates",
+    "challengeName": "Optimistic Updates",
+    "aiReview": {
+      "challengeId": "10-optimistic-updates",
+      "timestamp": "2026-07-24T08:46:07.850Z",
+      "score": 79,
+      "feedback": [],
+      "strengths": [
+        "Correct implementation of optimistic updates",
+        "Proper use of createApi and fetchBaseQuery",
+        "Clear separation of concerns in code organization"
+      ],
+      "improvements": [
+        "Inconsistent naming conventions (e.g., 'getUsers' vs 'getPosts')",
+        "Missing type annotations for 'arg' in 'onQueryStarted' function",
+        "Consider using a more robust error handling mechanism",
+        "File organization: Consider moving mock data to a separate file or module",
+        "Code duplication: 'getUsers' and 'getPosts' queries have similar structure, consider extracting a common function"
+      ],
+      "readability": 80,
+      "maintainability": 70,
+      "overall": "The code meets most requirements and demonstrates a good understanding of RTK Query. However, there are some areas for improvement in terms of code organization, naming conventions, and maintainability.",
+      "requirementCompliance": 85
     }
   }
 ]
