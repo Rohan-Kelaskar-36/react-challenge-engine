@@ -22,6 +22,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const repoRoot = join(__dirname, '..', '..', '..');
 const envPath = join(repoRoot, '.env');
+
+
+
 if (existsSync(envPath)) {
   const envContent = readFileSync(envPath, 'utf-8');
   for (const line of envContent.split('\n')) {
@@ -32,6 +35,12 @@ if (existsSync(envPath)) {
     }
   }
 }
+
+
+console.log("envPath:", envPath);
+console.log(".env exists:", existsSync(envPath));
+console.log("GROQ loaded:", !!process.env.GROQ_API_KEY);
+console.log("Key length:", process.env.GROQ_API_KEY?.length);
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY || '';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
@@ -93,7 +102,7 @@ export async function reviewCodeWithAI(challengeId, challengeMetadata, projectDi
         if (CODE_EXTENSIONS.includes(extname(fullPath)) && content.trim().length > 0) {
           codeFiles.push({
             file: filePath,
-            content: content.substring(0, 8000) // Limit to 8KB per file
+            content: content.substring(0, 2000) // Limit to 8KB per file
           });
         }
       } else {
@@ -185,7 +194,7 @@ function discoverAdditionalFiles(challengeMetadata, projectDir) {
                   if (content.trim().length > 0) {
                     additionalFiles.push({
                       file: relativePath,
-                      content: content.substring(0, 8000)
+                      content: content.substring(0, 2000)
                     });
                   }
                 } catch (e) {
@@ -224,12 +233,12 @@ function buildReviewPrompt(challengeId, challengeMetadata, instructions, require
 
   // Build requirements summary
   const requirementsSummary = requirements
-    ? `\n\n## Technical Requirements:\n${requirements.substring(0, 2000)}`
+    ? `\n\n## Technical Requirements:\n${requirements.substring(0, 800)}`
     : '';
 
   // Build instructions summary
   const instructionsSummary = instructions
-    ? `\n\n## Challenge Instructions:\n${instructions.substring(0, 3000)}`
+    ? `\n\n## Challenge Instructions:\n${instructions.substring(0, 1200)}`
     : '';
 
   return `You are an expert RTK Query, Redux Toolkit, and TypeScript code reviewer. Review the following implementation for challenge "${challengeName}" (${challengeId}).

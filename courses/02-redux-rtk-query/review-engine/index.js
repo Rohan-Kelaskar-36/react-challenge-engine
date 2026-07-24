@@ -11,7 +11,6 @@
  * - E2E tests (Playwright)
  * - AI review (only if functional tests pass)
  */
-
 import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
@@ -23,6 +22,8 @@ import { checkArchitecture } from './architecture-checker.js';
 import { checkBestPractices } from './best-practices.js';
 import { reviewCodeWithAI } from '../ai-review/index.js';
 import { generateCourseSummary } from '../../../global-review/course-summary-generator.js';
+
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

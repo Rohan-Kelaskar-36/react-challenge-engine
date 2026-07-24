@@ -24,16 +24,31 @@ export async function runE2ETests(challengeId, projectDir) {
   }
 
   try {
-    const env = { ...process.env, CI: '1' };
+const env = {
+  ...process.env
+};
     let output;
     if (process.platform === 'win32') {
-      output = execSync(`npx playwright test "${testFileRel}" --reporter=json`, {
-        cwd: projectDir,
-        encoding: 'utf-8',
-        timeout: E2E_TIMEOUT_MS,
-        env,
-        stdio: ['pipe', 'pipe', 'pipe']
-      });
+      // output = execSync(`npx playwright test "${testFileRel}" --reporter=json`, {
+      //   cwd: projectDir,
+      //   encoding: 'utf-8',
+      //   timeout: E2E_TIMEOUT_MS,
+      //   env,
+      //   stdio: ['pipe', 'pipe', 'pipe']
+      // });
+
+output = execSync(
+  `npx playwright test "${testFileRel}" --reporter=json`,
+  {
+    cwd: projectDir,
+    encoding: "utf8",
+    timeout: E2E_TIMEOUT_MS,
+    env,
+    shell: true,
+    stdio: ["pipe", "pipe", "pipe"]
+  }
+);
+
     } else {
       const result = spawnSync('npx', ['playwright', 'test', testFileRel, '--reporter=json'], {
         cwd: projectDir,
@@ -77,7 +92,9 @@ export async function runE2ETests(challengeId, projectDir) {
   } catch (error) {
     const errorOutput = (error.stdout ?? '') + (error.stderr ?? '');
     const fullMessage = [error.message, errorOutput.trim()].filter(Boolean).join('\n');
-
+console.log("Error message:", error.message);
+console.log("STDOUT:\n", error.stdout);
+console.log("STDERR:\n", error.stderr);
  
 
     // Try to parse error output (Playwright may output JSON even on failure)

@@ -46,7 +46,25 @@ export async function checkArchitecture(challengeMetadata, projectDir) {
 
   for (const file of filesToCheck) {
     const filePath = join(projectDir, file);
-    const patternsRequired = getFileSpecificPatterns(file);
+    // const patternsRequired = getFileSpecificPatterns(file);
+
+    let patternsRequired = [];
+
+if (challengeMetadata.patternsRequired?.length) {
+  if (file.includes("UsersList")) {
+    patternsRequired = challengeMetadata.patternsRequired.filter(p =>
+      p.includes("use")
+    );
+  } else if (file.includes("apiSlice")) {
+    patternsRequired = challengeMetadata.patternsRequired.filter(p =>
+      !p.includes("use")
+    );
+  }
+}
+
+if (!patternsRequired.length) {
+  patternsRequired = getFileSpecificPatterns(file);
+}
 
     if (!existsSync(filePath)) {
       results.details.push({
