@@ -10,9 +10,14 @@ function getFileSpecificPatterns(file) {
   if (file.includes("api/usersApi")) {
     return ["createApi", "fetchBaseQuery", "endpoints"];
   }
-  if (file.includes("store")) {
-    return ["reducer", "middleware"];
-  }
+  // if (file.includes("store")) {
+  //   return ["reducer", "middleware"];
+  // }
+
+  if (file.endsWith("store.ts")) {
+  return ["reducer", "middleware"];
+}
+
   if (file.includes("UsersList")) {
     return ["useQueryHook"];
   }

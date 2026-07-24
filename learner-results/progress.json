@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-24T03:36:28.181Z",
+  "lastUpdated": "2026-07-24T05:24:02.439Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 46.5,
-    "completionPercentage": 47.2,
+    "overallScore": 51.9,
+    "completionPercentage": 54.7,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 25
+    "completedChallenges": 29
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,11 +369,11 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 56.7,
-      "completionPercentage": 15.4,
+      "averageScore": 73.1,
+      "completionPercentage": 46.2,
       "badgeLevel": "none",
       "totalChallenges": 13,
-      "completedChallenges": 2,
+      "completedChallenges": 6,
       "challenges": {
         "01-store-setup": {
           "challengeId": "01-store-setup",
@@ -408,75 +408,75 @@
         "03-reading-dispatching": {
           "challengeId": "03-reading-dispatching",
           "challengeName": "Reading and Dispatching in Components",
-          "passed": false,
-          "score": 64.05,
-          "lastRun": "2026-07-24T03:35:43.410Z",
+          "passed": true,
+          "score": 85.405,
+          "lastRun": "2026-07-24T05:18:36.504Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 50,
-            "architecture": 0,
+            "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 77
+            "e2eTests": 66.7,
+            "aiReview": 86
           }
         },
         "04-multiple-slices": {
           "challengeId": "04-multiple-slices",
           "challengeName": "Multiple Slices in the Store",
-          "passed": false,
-          "score": 34.785,
-          "lastRun": "2026-07-23T09:56:44.047Z",
+          "passed": true,
+          "score": 90.4,
+          "lastRun": "2026-07-24T05:20:18.834Z",
           "scores": {
-            "functionalTests": 35.1,
+            "functionalTests": 100,
             "codeQuality": 50,
-            "architecture": 50,
+            "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
+            "e2eTests": 100,
+            "aiReview": 86
           }
         },
         "05-async-thunks": {
           "challengeId": "05-async-thunks",
           "challengeName": "Async Logic with createAsyncThunk",
-          "passed": false,
-          "score": 37.62,
-          "lastRun": "2026-07-23T10:11:43.893Z",
+          "passed": true,
+          "score": 90.4,
+          "lastRun": "2026-07-24T05:21:05.575Z",
           "scores": {
-            "functionalTests": 43.2,
+            "functionalTests": 100,
             "codeQuality": 50,
-            "architecture": 50,
+            "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
+            "e2eTests": 100,
+            "aiReview": 86
           }
         },
         "06-rtk-query-setup": {
           "challengeId": "06-rtk-query-setup",
           "challengeName": "RTK Query Setup and API Slice",
-          "passed": false,
-          "score": 49.269999999999996,
-          "lastRun": "2026-07-23T10:22:08.043Z",
+          "passed": true,
+          "score": 90.4,
+          "lastRun": "2026-07-24T05:21:51.861Z",
           "scores": {
-            "functionalTests": 62.2,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
+            "e2eTests": 100,
+            "aiReview": 86
           }
         },
         "07-queries": {
           "challengeId": "07-queries",
           "challengeName": "Query Endpoints and useQuery Hooks",
           "passed": false,
-          "score": 39.269999999999996,
-          "lastRun": "2026-07-23T10:22:42.409Z",
+          "score": 67.5,
+          "lastRun": "2026-07-24T05:23:20.965Z",
           "scores": {
-            "functionalTests": 62.2,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 0,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
@@ -544,10 +544,10 @@
           "challengeId": "12-error-loading-ux",
           "challengeName": "Error and Loading UX",
           "passed": false,
-          "score": 50.61,
-          "lastRun": "2026-07-23T11:15:51.030Z",
+          "score": 52.5,
+          "lastRun": "2026-07-24T04:41:57.046Z",
           "scores": {
-            "functionalTests": 94.6,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 0,
             "bestPractices": 100,
@@ -559,15 +559,15 @@
           "challengeId": "13-query-parameters",
           "challengeName": "Query with Parameters and Detail View",
           "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-07-23T11:22:00.266Z",
+          "score": 75.4,
+          "lastRun": "2026-07-24T03:47:48.794Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 0,
-            "aiReview": 0
+            "aiReview": 86
           }
         }
       }

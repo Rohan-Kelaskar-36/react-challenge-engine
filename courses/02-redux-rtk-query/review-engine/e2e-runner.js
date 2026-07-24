@@ -78,6 +78,8 @@ export async function runE2ETests(challengeId, projectDir) {
     const errorOutput = (error.stdout ?? '') + (error.stderr ?? '');
     const fullMessage = [error.message, errorOutput.trim()].filter(Boolean).join('\n');
 
+ 
+
     // Try to parse error output (Playwright may output JSON even on failure)
     try {
       const jsonMatch = errorOutput.match(/\{[\s\S]*"stats"[\s\S]*\}|\[[\s\S]*"status"[\s\S]*\]/);

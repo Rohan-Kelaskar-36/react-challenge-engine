@@ -57,21 +57,21 @@ npm run review -- --challenge=01-store-setup
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 24/7/2026, 9:06:22 am*
+*Auto-updated when you run review. Last run: 24/7/2026, 10:53:58 am*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 2 / 13 (15.4%) |
-| Average score | 56.7% |
+| Challenges completed | 6 / 13 (46.2%) |
+| Average score | 73.1% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
 | Store Setup with configureStore | Redux, Redux Toolkit, configureStore, Provider | Passed |
 | First Slice with createSlice | Redux Toolkit, createSlice, reducers, actions | Passed |
-| Reading and Dispatching in Components | React-Redux, useSelector, useDispatch, typed hooks | Not passed |
-| Multiple Slices in the Store | Redux, multiple reducers, slice per domain | Not passed |
-| Async Logic with createAsyncThunk | Redux Toolkit, createAsyncThunk, extraReducers, pending/fulfilled/rejected | Not passed |
-| RTK Query Setup and API Slice | RTK Query, createApi, fetchBaseQuery, API reducer and middleware | Not passed |
+| Reading and Dispatching in Components | React-Redux, useSelector, useDispatch, typed hooks | Passed |
+| Multiple Slices in the Store | Redux, multiple reducers, slice per domain | Passed |
+| Async Logic with createAsyncThunk | Redux Toolkit, createAsyncThunk, extraReducers, pending/fulfilled/rejected | Passed |
+| RTK Query Setup and API Slice | RTK Query, createApi, fetchBaseQuery, API reducer and middleware | Passed |
 | Query Endpoints and useQuery Hooks | RTK Query, useGetUsersQuery, loading, error, data | Not passed |
 | Caching and Cache Tags | RTK Query, providesTags, invalidatesTags, cache invalidation | Not passed |
 | Mutations with useMutation | RTK Query, builder.mutation, useMutation, POST/PUT/DELETE | Not passed |
