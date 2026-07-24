@@ -274,6 +274,8 @@ Provide a comprehensive code review focusing on:
 
 Provide your review as JSON:
 
+
+
 {
   "readability": <number 0-100>,
   "maintainability": <number 0-100>,
@@ -333,26 +335,35 @@ async function callGroqAPI(prompt) {
 function parseAIResponse(response) {
   try {
     // Try to extract JSON from response
-    const jsonMatch = response.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      const parsed = JSON.parse(jsonMatch[0]);
-      return {
-        readability: parsed.readability || 0,
-        maintainability: parsed.maintainability || 0,
-        strengths: parsed.strengths || [],
-        improvements: parsed.improvements || [],
-        overall: parsed.overall || '',
-        requirementCompliance: parsed.requirementCompliance || 0
-      };
+    // const jsonMatch = response.match(/\{[\s\S]*\}/);
+const start = response.indexOf('{');
+const end = response.lastIndexOf('}');
+
+if (start !== -1 && end !== -1 && end > start) {
+  const parsed = JSON.parse(response.slice(start, end + 1));
+
+  return {
+    readability: parsed.readability || 0,
+    maintainability: parsed.maintainability || 0,
+    strengths: parsed.strengths || [],
+    improvements: parsed.improvements || [],
+    overall: parsed.overall || '',
+    requirementCompliance: parsed.requirementCompliance || 0
+  };
+
     }
   } catch (error) {
     // Fallback parsing
   }
 
   // Fallback: extract information manually
-  const readabilityMatch = response.match(/readability[:\s]+(\d+)/i);
-  const maintainabilityMatch = response.match(/maintainability[:\s]+(\d+)/i);
-  const complianceMatch = response.match(/requirementCompliance[:\s]+(\d+)/i);
+  // const readabilityMatch = response.match(/readability[:\s]+(\d+)/i);
+  // const maintainabilityMatch = response.match(/maintainability[:\s]+(\d+)/i);
+  // const complianceMatch = response.match(/requirementCompliance[:\s]+(\d+)/i);
+
+const readabilityMatch = response.match(/"readability"\s*:\s*(\d+)/i);
+const maintainabilityMatch = response.match(/"maintainability"\s*:\s*(\d+)/i);
+const complianceMatch = response.match(/"requirementCompliance"\s*:\s*(\d+)/i);
 
   return {
     readability: readabilityMatch ? parseInt(readabilityMatch[1]) : 0,

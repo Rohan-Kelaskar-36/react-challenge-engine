@@ -1,1 +1,176 @@
-[]
+[
+  {
+    "challengeId": "04-multiple-slices",
+    "challengeName": "Multiple Slices in the Store",
+    "aiReview": {
+      "error": "Functional tests must pass first (13/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "05-async-thunks",
+    "challengeName": "Async Logic with createAsyncThunk",
+    "aiReview": {
+      "error": "Functional tests must pass first (16/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "06-rtk-query-setup",
+    "challengeName": "RTK Query Setup and API Slice",
+    "aiReview": {
+      "error": "Functional tests must pass first (23/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "07-queries",
+    "challengeName": "Query Endpoints and useQuery Hooks",
+    "aiReview": {
+      "error": "Functional tests must pass first (23/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "08-caching-refetch",
+    "challengeName": "Caching and Cache Tags",
+    "aiReview": {
+      "error": "Functional tests must pass first (26/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "09-mutations",
+    "challengeName": "Mutations with useMutation",
+    "aiReview": {
+      "error": "Functional tests must pass first (28/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "10-optimistic-updates",
+    "challengeName": "Optimistic Updates",
+    "aiReview": {
+      "error": "Functional tests must pass first (31/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "11-api-local-state",
+    "challengeName": "API and Local State Together",
+    "aiReview": {
+      "error": "Functional tests must pass first (34/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "12-error-loading-ux",
+    "challengeName": "Error and Loading UX",
+    "aiReview": {
+      "error": "Functional tests must pass first (35/37 passed)",
+      "score": 0,
+      "skipped": true
+    }
+  },
+  {
+    "challengeId": "13-query-parameters",
+    "challengeName": "Query with Parameters and Detail View",
+    "aiReview": {
+      "challengeId": "13-query-parameters",
+      "timestamp": "2026-07-23T11:22:24.980Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (413): Request too large for model `llama-3.1-8b-instant` in organization `org_01kxdhjh8vfjy9n25qbjje802n` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6710, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "01-store-setup",
+    "challengeName": "Store Setup with configureStore",
+    "aiReview": {
+      "challengeId": "01-store-setup",
+      "timestamp": "2026-07-24T03:33:57.339Z",
+      "score": 86,
+      "feedback": [],
+      "strengths": [
+        "Proper use of configureStore and Provider\",",
+        "Correct TypeScript usage and type definitions\",",
+        "Logical structure and separation of concerns",
+        "improvements\": [",
+        "Consider adding a reducer for the root state in store.ts (src/store/store.ts)\","
+      ],
+      "improvements": [
+        "Consider adding a reducer for the root state in store.ts (src/store/store.ts)\",",
+        "In main.tsx (src/main.tsx), consider adding a check for store initialization before rendering the app\",",
+        "In App.tsx (src/App.tsx), consider using a more robust routing solution, such as React Router's HashRouter or BrowserRouter with a custom history\",",
+        "In store.ts (src/store/store.ts), consider adding a check for middleware initialization before creating the store",
+        "requirementCompliance\": 90"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "## Review Output\n\n```json\n{\n  \"readability\": 85,\n  \"maintainability\": 80,\n  \"strengths\": [\n    \"Proper use of configureStore and Provider\",\n    \"Correct TypeScript usage and type definitions\",\n    \"Logical structure and separation of concerns\"\n  ],\n  \"improvements\": [\n    \"Consider adding a reducer for the root state in store.ts (src/store/store.ts)\",\n    \"In main.tsx (src/main.tsx), consider adding a check for store initialization before rendering the app\",\n    \"In App.tsx (src/App.tsx), consid",
+      "requirementCompliance": 90
+    }
+  },
+  {
+    "challengeId": "02-first-slice",
+    "challengeName": "First Slice with createSlice",
+    "aiReview": {
+      "challengeId": "02-first-slice",
+      "timestamp": "2026-07-24T03:35:13.406Z",
+      "score": 86,
+      "feedback": [],
+      "strengths": [
+        "Proper use of createSlice and reducers for counterSlice.",
+        "Correct integration of counterReducer with the store.",
+        "Use of Immer for reducer logic in counterSlice."
+      ],
+      "improvements": [
+        "In src/store/slices/counterSlice.ts, consider adding a type for the initialState. For example, `initialState: number = 0;`.",
+        "In src/store/store.ts, consider adding a comment explaining the middleware setup for the apiSlice.",
+        "In src/store/slices/usersSlice.ts, consider adding a type for the initialState. For example, `initialState: { list: string[]; loading: boolean; error: string | null } = { list: [], loading: false, error: null };`.",
+        "In src/store/slices/usersSlice.ts, consider handling the case where the fetchUsers thunk fails with a specific error message instead of a generic one."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code meets most requirements and demonstrates good understanding of RTK Query and createSlice. However, there are some minor improvements that can be made for better maintainability and readability.",
+      "requirementCompliance": 90
+    }
+  },
+  {
+    "challengeId": "03-reading-dispatching",
+    "challengeName": "Reading and Dispatching in Components",
+    "aiReview": {
+      "challengeId": "03-reading-dispatching",
+      "timestamp": "2026-07-24T03:36:19.511Z",
+      "score": 77,
+      "feedback": [],
+      "strengths": [
+        "Good structure in src/store/hooks.ts and src/components/CounterView.tsx",
+        "Correct use of useAppSelector and useAppDispatch hooks"
+      ],
+      "improvements": [
+        "Improve src/store/store.ts with RootState and AppDispatch types",
+        "Improve src/components/AddPostForm.tsx to be relevant to the current challenge",
+        "Implement src/components/PostsList.tsx with the required functionality",
+        "Improve src/components/ChallengeList.tsx with more descriptive names for the CHALLENGES array"
+      ],
+      "readability": 80,
+      "maintainability": 70,
+      "overall": "The code meets most functional requirements, but there are some concerns regarding missing files and implementation details.",
+      "requirementCompliance": 80
+    }
+  }
+]

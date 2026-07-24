@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-21T06:38:59.052Z",
+  "lastUpdated": "2026-07-24T03:36:28.181Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 27.8,
-    "completionPercentage": 43.4,
+    "overallScore": 46.5,
+    "completionPercentage": 47.2,
     "badgeLevel": "none",
     "totalChallenges": 53,
-    "completedChallenges": 23
+    "completedChallenges": 25
   },
   "courses": {
     "01-react-fundamentals": {
@@ -369,12 +369,208 @@
     "02-redux-rtk-query": {
       "courseId": "02-redux-rtk-query",
       "courseName": "Redux & RTK Query",
-      "averageScore": 0,
-      "completionPercentage": 0,
+      "averageScore": 56.7,
+      "completionPercentage": 15.4,
       "badgeLevel": "none",
       "totalChallenges": 13,
-      "completedChallenges": 0,
-      "challenges": {}
+      "completedChallenges": 2,
+      "challenges": {
+        "01-store-setup": {
+          "challengeId": "01-store-setup",
+          "challengeName": "Store Setup with configureStore",
+          "passed": true,
+          "score": 90.4,
+          "lastRun": "2026-07-24T03:33:04.232Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 86
+          }
+        },
+        "02-first-slice": {
+          "challengeId": "02-first-slice",
+          "challengeName": "First Slice with createSlice",
+          "passed": true,
+          "score": 87.9,
+          "lastRun": "2026-07-24T03:34:24.644Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 75,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 86
+          }
+        },
+        "03-reading-dispatching": {
+          "challengeId": "03-reading-dispatching",
+          "challengeName": "Reading and Dispatching in Components",
+          "passed": false,
+          "score": 64.05,
+          "lastRun": "2026-07-24T03:35:43.410Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 0,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 77
+          }
+        },
+        "04-multiple-slices": {
+          "challengeId": "04-multiple-slices",
+          "challengeName": "Multiple Slices in the Store",
+          "passed": false,
+          "score": 34.785,
+          "lastRun": "2026-07-23T09:56:44.047Z",
+          "scores": {
+            "functionalTests": 35.1,
+            "codeQuality": 50,
+            "architecture": 50,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "05-async-thunks": {
+          "challengeId": "05-async-thunks",
+          "challengeName": "Async Logic with createAsyncThunk",
+          "passed": false,
+          "score": 37.62,
+          "lastRun": "2026-07-23T10:11:43.893Z",
+          "scores": {
+            "functionalTests": 43.2,
+            "codeQuality": 50,
+            "architecture": 50,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "06-rtk-query-setup": {
+          "challengeId": "06-rtk-query-setup",
+          "challengeName": "RTK Query Setup and API Slice",
+          "passed": false,
+          "score": 49.269999999999996,
+          "lastRun": "2026-07-23T10:22:08.043Z",
+          "scores": {
+            "functionalTests": 62.2,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "07-queries": {
+          "challengeId": "07-queries",
+          "challengeName": "Query Endpoints and useQuery Hooks",
+          "passed": false,
+          "score": 39.269999999999996,
+          "lastRun": "2026-07-23T10:22:42.409Z",
+          "scores": {
+            "functionalTests": 62.2,
+            "codeQuality": 50,
+            "architecture": 0,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "08-caching-refetch": {
+          "challengeId": "08-caching-refetch",
+          "challengeName": "Caching and Cache Tags",
+          "passed": false,
+          "score": 52.105,
+          "lastRun": "2026-07-23T10:53:06.308Z",
+          "scores": {
+            "functionalTests": 70.3,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "09-mutations": {
+          "challengeId": "09-mutations",
+          "challengeName": "Mutations with useMutation",
+          "passed": false,
+          "score": 53.995000000000005,
+          "lastRun": "2026-07-23T11:00:25.551Z",
+          "scores": {
+            "functionalTests": 75.7,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "10-optimistic-updates": {
+          "challengeId": "10-optimistic-updates",
+          "challengeName": "Optimistic Updates",
+          "passed": false,
+          "score": 56.83,
+          "lastRun": "2026-07-23T11:01:25.179Z",
+          "scores": {
+            "functionalTests": 83.8,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "11-api-local-state": {
+          "challengeId": "11-api-local-state",
+          "challengeName": "API and Local State Together",
+          "passed": false,
+          "score": 57.165,
+          "lastRun": "2026-07-23T11:07:47.162Z",
+          "scores": {
+            "functionalTests": 91.9,
+            "codeQuality": 50,
+            "architecture": 75,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "12-error-loading-ux": {
+          "challengeId": "12-error-loading-ux",
+          "challengeName": "Error and Loading UX",
+          "passed": false,
+          "score": 50.61,
+          "lastRun": "2026-07-23T11:15:51.030Z",
+          "scores": {
+            "functionalTests": 94.6,
+            "codeQuality": 50,
+            "architecture": 0,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        },
+        "13-query-parameters": {
+          "challengeId": "13-query-parameters",
+          "challengeName": "Query with Parameters and Detail View",
+          "passed": false,
+          "score": 62.5,
+          "lastRun": "2026-07-23T11:22:00.266Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 50,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 0,
+            "aiReview": 0
+          }
+        }
+      }
     },
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
