@@ -1,11 +1,11 @@
 {
   "courseId": "02-redux-rtk-query",
   "courseName": "Redux & RTK Query",
-  "lastUpdated": "2026-07-24T08:49:11.262Z",
+  "lastUpdated": "2026-07-24T08:59:05.438Z",
   "totalChallenges": 13,
-  "completedChallenges": 12,
-  "averageScore": 87,
-  "completionPercentage": 92.3,
+  "completedChallenges": 13,
+  "averageScore": 87.5,
+  "completionPercentage": 100,
   "badgeLevel": "silver",
   "challengeResults": [
     {
@@ -83,8 +83,8 @@
     {
       "challengeId": "13-query-parameters",
       "challengeName": "Query with Parameters and Detail View",
-      "score": 75.4,
-      "passed": false
+      "score": 82.15,
+      "passed": true
     }
   ],
   "skillStrengths": [
@@ -99,7 +99,8 @@
     "Mutations with useMutation",
     "Optimistic Updates",
     "API and Local State Together",
-    "Error and Loading UX"
+    "Error and Loading UX",
+    "Query with Parameters and Detail View"
   ],
   "improvementAreas": []
 }

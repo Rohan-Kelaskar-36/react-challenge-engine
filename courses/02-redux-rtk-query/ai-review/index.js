@@ -37,10 +37,10 @@ if (existsSync(envPath)) {
 }
 
 
-console.log("envPath:", envPath);
-console.log(".env exists:", existsSync(envPath));
-console.log("GROQ loaded:", !!process.env.GROQ_API_KEY);
-console.log("Key length:", process.env.GROQ_API_KEY?.length);
+// console.log("envPath:", envPath);
+// console.log(".env exists:", existsSync(envPath));
+// console.log("GROQ loaded:", !!process.env.GROQ_API_KEY);
+// console.log("Key length:", process.env.GROQ_API_KEY?.length);
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY || '';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';

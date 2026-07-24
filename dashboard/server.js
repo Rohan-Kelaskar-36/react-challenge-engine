@@ -214,9 +214,9 @@ app.post('/api/review', (req, res) => {
   loadEnvFromRoot();
   const child = spawn('node', [script, `--course=${courseId}`, `--challenge=${challengeId}`], {
     cwd: ROOT,
-    stdio: 'inherit',
+    stdio: 'ignore',
     env: { ...process.env },
-    detached: false,
+    detached: true,
   });
   child.unref(); // allow server to keep running without waiting for child
   // Respond immediately so other requests (e.g. back to challenges) are not blocked
