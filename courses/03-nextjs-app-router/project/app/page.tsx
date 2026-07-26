@@ -1,17 +1,26 @@
-import ChallengeList from './components/ChallengeList'
+import Link from "next/link";
+import Counter from "./components/Counter";
+import Image from "next/image";
+
+
+
 
 export default function Home() {
   return (
     <main>
-      <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <h1>Next.js App Router Project</h1>
-        <p>Complete the challenges to build your Next.js skills!</p>
-        <p style={{ color: '#666', marginTop: '0.5rem' }}>
-          Work on challenges by modifying code in <code>app/</code> directory.
-          Run <code>npm run dev</code> to see your changes.
-        </p>
-      </header>
-      <ChallengeList />
+      <Image
+  src="https://placehold.co/300x200"
+  alt="Placeholder image"
+  width={300}
+  height={200}
+/>
+      <h1>Home</h1>
+
+      <Link href="/about">About</Link>
+      <br />
+      <Link href="/posts">Posts</Link>
+
+      <Counter />
     </main>
-  )
+  );
 }

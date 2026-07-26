@@ -24,7 +24,9 @@ export async function runE2ETests(challengeId, projectDir) {
   }
 
   try {
-    const env = { ...process.env, CI: '1' };
+    // const env = { ...process.env, CI: '1' };
+        const env = { ...process.env};
+
     let output;
     if (process.platform === 'win32') {
       output = execSync(`npx playwright test "${testFileRel}" --reporter=json`, {
