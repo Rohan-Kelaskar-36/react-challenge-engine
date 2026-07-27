@@ -1,28 +1,5 @@
 [
   {
-    "challengeId": "12-metadata-and-seo",
-    "challengeName": "Metadata and SEO",
-    "aiReview": {
-      "challengeId": "12-metadata-and-seo",
-      "timestamp": "2026-07-26T18:38:40.285Z",
-      "score": 93,
-      "feedback": [],
-      "strengths": [
-        "The codebase is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript is a great choice for a Next.js project, ensuring type safety and maintainability.",
-        "The code is free of console statements, which is a requirement for this challenge."
-      ],
-      "improvements": [
-        "In the `app/posts/page.tsx` file, the `AddPostForm` component is not imported. It should be added to the import statement or removed from the code.",
-        "The `openGraph` object in the `app/layout.tsx` file has the same properties as the `metadata` object. Consider removing the duplicate properties to keep the code concise.",
-        "The `metadata` object in the `app/layout.tsx` file has a fixed title and description. Consider making these dynamic to provide more flexibility."
-      ],
-      "readability": 95,
-      "maintainability": 90,
-      "overall": "The codebase is well-structured and follows best practices for a Next.js project. However, there are a few minor improvements that can be made to enhance maintainability and readability."
-    }
-  },
-  {
     "challengeId": "13-images-and-fonts",
     "challengeName": "Images and Fonts",
     "aiReview": {
@@ -388,6 +365,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured, maintainable, and effectively uses Next.js features. However, there are some minor improvements that could be made to enhance the user experience and code organization."
+    }
+  },
+  {
+    "challengeId": "12-metadata-and-seo",
+    "challengeName": "Metadata and SEO",
+    "aiReview": {
+      "challengeId": "12-metadata-and-seo",
+      "timestamp": "2026-07-27T03:42:24.098Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent naming convention.",
+        "The use of TypeScript and Next.js features such as `metadata` and `generateMetadata` is correct and effective.",
+        "The code is free of console statements and passes ESLint."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `query` in `app/posts/page.tsx`.",
+        "The `openGraph` object in `app/layout.tsx` could be extracted into a separate object or function for better reusability.",
+        "In `app/posts/page.tsx`, the `fetch` call could be wrapped in a try-catch block to handle potential errors more robustly."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and effectively uses Next.js features. However, there are some minor improvements that could be made to enhance readability and maintainability."
     }
   }
 ]
