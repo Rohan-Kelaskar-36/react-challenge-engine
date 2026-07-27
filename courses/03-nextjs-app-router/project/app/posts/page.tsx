@@ -1,3 +1,5 @@
+
+export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import AddPostForm from "../components/AddPostForm";
 import Link from "next/link";
@@ -26,11 +28,11 @@ export default async function PostsPage({
 })  {
   const response = await fetch(
     "https://jsonplaceholder.typicode.com/posts",
-    {
-      next: {
-        revalidate: 60,
-      },
-    }
+    // {
+    //   next: {
+    //     revalidate: 60,
+    //   },
+    // }
   );
   const query = searchParams.q?.toLowerCase() || "";
 const currentPage = Number(searchParams.page || "1");

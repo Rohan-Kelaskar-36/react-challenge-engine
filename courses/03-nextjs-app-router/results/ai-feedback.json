@@ -1,28 +1,5 @@
 [
   {
-    "challengeId": "07-static-and-dynamic-rendering",
-    "challengeName": "Static and Dynamic Rendering",
-    "aiReview": {
-      "challengeId": "07-static-and-dynamic-rendering",
-      "timestamp": "2026-07-26T18:15:54.602Z",
-      "score": 93,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the Home page and the Posts page.",
-        "The use of TypeScript and ESLint ensures that the code is type-safe and follows best practices.",
-        "The dynamic import of the Posts page is handled correctly using the `fetch` API and error handling."
-      ],
-      "improvements": [
-        "In the Posts page, the `cache` option is set to `'no-store'`, which may lead to performance issues if the API is called frequently. Consider using a more efficient caching strategy.",
-        "The error handling in the Posts page could be improved by providing more specific error messages or logging the error for debugging purposes.",
-        "The `dynamic` export in the Posts page could be removed if the page is already dynamic due to the use of the `fetch` API. However, this is a minor improvement."
-      ],
-      "readability": 95,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices, but there are some minor improvements that can be made to enhance performance and error handling."
-    }
-  },
-  {
     "challengeId": "08-ssr-dynamic-rendering",
     "challengeName": "SSR (Server-Side Rendering)",
     "aiReview": {
@@ -388,6 +365,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured and maintainable, with some minor improvements needed to fix issues with the `notFound` and `LikeButton` components. Overall, the code is a good example of how to implement dynamic routes with Next.js App Router."
+    }
+  },
+  {
+    "challengeId": "07-static-and-dynamic-rendering",
+    "challengeName": "Static and Dynamic Rendering",
+    "aiReview": {
+      "challengeId": "07-static-and-dynamic-rendering",
+      "timestamp": "2026-07-27T03:36:55.645Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between components.",
+        "The use of TypeScript and Next.js features such as dynamic routing and metadata is well-implemented.",
+        "The code includes proper error handling and suspense fallbacks for a better user experience."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `query` and `currentPage`.",
+        "The `fetch` call in `PostsPage` could be wrapped in a try-catch block to handle any potential errors.",
+        "The `metadata` object could be extracted into a separate file or a constant to make it easier to manage and reuse."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-written and demonstrates a good understanding of Next.js features and best practices. With a few minor improvements, it could be even more maintainable and efficient."
     }
   }
 ]

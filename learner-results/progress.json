@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T03:32:41.421Z",
+  "lastUpdated": "2026-07-27T03:37:01.905Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 80.9,
-    "completionPercentage": 79.2,
+    "overallScore": 81.5,
+    "completionPercentage": 81.1,
     "badgeLevel": "silver",
     "totalChallenges": 53,
-    "completedChallenges": 42
+    "completedChallenges": 43
   },
   "courses": {
     "01-react-fundamentals": {
@@ -575,11 +575,11 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 71.4,
-      "completionPercentage": 35.3,
+      "averageScore": 73.1,
+      "completionPercentage": 41.2,
       "badgeLevel": "none",
       "totalChallenges": 17,
-      "completedChallenges": 6,
+      "completedChallenges": 7,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -674,16 +674,16 @@
         "07-static-and-dynamic-rendering": {
           "challengeId": "07-static-and-dynamic-rendering",
           "challengeName": "Static and Dynamic Rendering",
-          "passed": false,
-          "score": 51.855000000000004,
-          "lastRun": "2026-07-26T18:15:25.099Z",
+          "passed": true,
+          "score": 80.7,
+          "lastRun": "2026-07-27T03:36:29.594Z",
           "scores": {
-            "functionalTests": 58.3,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 0,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 93
+            "e2eTests": 100,
+            "aiReview": 88
           }
         },
         "08-ssr-dynamic-rendering": {
