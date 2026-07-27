@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AddPostForm from "../components/AddPostForm";
 import Link from "next/link";
 import PostsList from "./PostsList";
-
+import { Suspense } from "react";
 
 interface Post {
   id: number;
@@ -80,7 +80,9 @@ const paginatedPosts = filteredPosts.slice(
   </Link>
 </div>
 
-<PostsList/>
+<Suspense fallback={<p>Loading...</p>}>
+      <PostsList />
+    </Suspense>
     </main>
   );
 }
