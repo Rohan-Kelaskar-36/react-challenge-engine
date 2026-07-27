@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import StoreProvider from "./providers/StoreProvider";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Next.js App Router Project",
@@ -19,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-  <body>
+  <body className={inter.className}>
     <StoreProvider>
       {children}
     </StoreProvider>

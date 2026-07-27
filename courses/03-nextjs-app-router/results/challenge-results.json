@@ -824,25 +824,25 @@
   {
     "challengeId": "02-server-and-client-components",
     "challengeName": "Server and Client Components",
-    "timestamp": "2026-07-26T18:00:38.613Z",
+    "timestamp": "2026-07-27T03:23:06.642Z",
     "scores": {
-      "functionalTests": 25,
+      "functionalTests": 97.2,
       "codeQuality": 50,
       "architecture": 11.1,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 94
+      "e2eTests": 100,
+      "aiReview": 88
     },
-    "totalScore": 41.46,
-    "passed": false,
+    "totalScore": 80.83,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 25,
+      "score": 97.2,
       "passed": false,
       "totalTests": 36,
-      "passedTests": 9,
-      "failedTests": 27,
+      "passedTests": 35,
+      "failedTests": 1,
       "details": [
         {
           "assertionResults": [
@@ -854,7 +854,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have app/page.tsx",
               "status": "passed",
               "title": "should have app/page.tsx",
-              "duration": 4,
+              "duration": 7,
               "failureMessages": []
             },
             {
@@ -865,7 +865,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have app/about/page.tsx",
               "status": "passed",
               "title": "should have app/about/page.tsx",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -876,7 +876,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should use Server Components (no use client)",
               "status": "passed",
               "title": "should use Server Components (no use client)",
-              "duration": 2,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -898,12 +898,12 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have proper App Router structure",
               "status": "passed",
               "title": "should have proper App Router structure",
-              "duration": 4,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1785088846418,
-          "endTime": 1785088846432,
+          "startTime": 1785122596902,
+          "endTime": 1785122596919,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-01.test.tsx"
@@ -918,7 +918,7 @@
               "fullName": " Challenge 02: Server and Client Components should have at least one Client Component with use client",
               "status": "passed",
               "title": "should have at least one Client Component with use client",
-              "duration": 4,
+              "duration": 11,
               "failureMessages": []
             },
             {
@@ -929,7 +929,7 @@
               "fullName": " Challenge 02: Server and Client Components should have Client Component that uses state or event handlers",
               "status": "passed",
               "title": "should have Client Component that uses state or event handlers",
-              "duration": 2,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -940,12 +940,12 @@
               "fullName": " Challenge 02: Server and Client Components should have App Router structure",
               "status": "passed",
               "title": "should have App Router structure",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1785088846429,
-          "endTime": 1785088846438,
+          "startTime": 1785122596895,
+          "endTime": 1785122596910,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-02.test.tsx"
@@ -958,16 +958,10 @@
                 "Challenge 03: Data Fetching in Server Components"
               ],
               "fullName": " Challenge 03: Data Fetching in Server Components should have posts page (or equivalent data page)",
-              "status": "failed",
+              "status": "passed",
               "title": "should have posts page (or equivalent data page)",
-              "duration": 22,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 10,
-                "column": 35
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -975,16 +969,10 @@
                 "Challenge 03: Data Fetching in Server Components"
               ],
               "fullName": " Challenge 03: Data Fetching in Server Components should have async Server Component",
-              "status": "failed",
+              "status": "passed",
               "title": "should have async Server Component",
               "duration": 3,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 15,
-                "column": 20
-              }
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -992,21 +980,15 @@
                 "Challenge 03: Data Fetching in Server Components"
               ],
               "fullName": " Challenge 03: Data Fetching in Server Components should fetch data in Server Component",
-              "status": "failed",
+              "status": "passed",
               "title": "should fetch data in Server Component",
-              "duration": 3,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 24,
-                "column": 20
-              }
+              "duration": 2,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846415,
-          "endTime": 1785088846443,
-          "status": "failed",
+          "startTime": 1785122596886,
+          "endTime": 1785122596896,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-03.test.tsx"
         },
@@ -1018,16 +1000,10 @@
                 "Challenge 04: API Route Handlers"
               ],
               "fullName": " Challenge 04: API Route Handlers should have API route file",
-              "status": "failed",
+              "status": "passed",
               "title": "should have API route file",
-              "duration": 22,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 11,
-                "column": 60
-              }
+              "duration": 3,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1035,21 +1011,15 @@
                 "Challenge 04: API Route Handlers"
               ],
               "fullName": " Challenge 04: API Route Handlers should export GET that returns JSON",
-              "status": "failed",
+              "status": "passed",
               "title": "should export GET that returns JSON",
-              "duration": 3,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 17,
-                "column": 20
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846429,
-          "endTime": 1785088846455,
-          "status": "failed",
+          "startTime": 1785122596875,
+          "endTime": 1785122596882,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-04.test.tsx"
         },
@@ -1061,16 +1031,10 @@
                 "Challenge 05: Loading and Streaming"
               ],
               "fullName": " Challenge 05: Loading and Streaming should have loading.tsx in a route segment",
-              "status": "failed",
+              "status": "passed",
               "title": "should have loading.tsx in a route segment",
-              "duration": 18,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 11,
-                "column": 62
-              }
+              "duration": 4,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1078,21 +1042,15 @@
                 "Challenge 05: Loading and Streaming"
               ],
               "fullName": " Challenge 05: Loading and Streaming should export default loading component",
-              "status": "failed",
+              "status": "passed",
               "title": "should export default loading component",
-              "duration": 2,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 17,
-                "column": 20
-              }
+              "duration": 3,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088847838,
-          "endTime": 1785088847858,
-          "status": "failed",
+          "startTime": 1785122598629,
+          "endTime": 1785122598636,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-05.test.tsx"
         },
@@ -1104,16 +1062,10 @@
                 "Challenge 06: Dynamic Routes"
               ],
               "fullName": " Challenge 06: Dynamic Routes should have dynamic route segment [id] or [slug]",
-              "status": "failed",
+              "status": "passed",
               "title": "should have dynamic route segment [id] or [slug]",
-              "duration": 22,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 14,
-                "column": 7
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1121,21 +1073,15 @@
                 "Challenge 06: Dynamic Routes"
               ],
               "fullName": " Challenge 06: Dynamic Routes should use params in page component",
-              "status": "failed",
+              "status": "passed",
               "title": "should use params in page component",
-              "duration": 4,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 24,
-                "column": 20
-              }
+              "duration": 6,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846428,
-          "endTime": 1785088846455,
-          "status": "failed",
+          "startTime": 1785122596887,
+          "endTime": 1785122596898,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-06.test.tsx"
         },
@@ -1147,21 +1093,15 @@
                 "Challenge 07: Static and Dynamic Rendering"
               ],
               "fullName": " Challenge 07: Static and Dynamic Rendering should have at least one page with dynamic export or dynamic APIs",
-              "status": "failed",
+              "status": "passed",
               "title": "should have at least one page with dynamic export or dynamic APIs",
-              "duration": 23,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 24
-              }
+              "duration": 11,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088847867,
-          "endTime": 1785088847890,
-          "status": "failed",
+          "startTime": 1785122598622,
+          "endTime": 1785122598633,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-07.test.tsx"
         },
@@ -1175,7 +1115,7 @@
               "fullName": " Challenge 08: SSR (Server-Side Rendering) should have page with force-dynamic or cache no-store",
               "status": "failed",
               "title": "should have page with force-dynamic or cache no-store",
-              "duration": 18,
+              "duration": 22,
               "failureMessages": [
                 "expected false to be true // Object.is equality"
               ],
@@ -1185,8 +1125,8 @@
               }
             }
           ],
-          "startTime": 1785088847845,
-          "endTime": 1785088847863,
+          "startTime": 1785122598622,
+          "endTime": 1785122598644,
           "status": "failed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-08.test.tsx"
@@ -1199,16 +1139,10 @@
                 "Challenge 09: Server Actions and Revalidation"
               ],
               "fullName": " Challenge 09: Server Actions and Revalidation should have use server in a file",
-              "status": "failed",
+              "status": "passed",
               "title": "should have use server in a file",
-              "duration": 24,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 20,
-                "column": 26
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1216,21 +1150,15 @@
                 "Challenge 09: Server Actions and Revalidation"
               ],
               "fullName": " Challenge 09: Server Actions and Revalidation should call revalidatePath or revalidateTag",
-              "status": "failed",
+              "status": "passed",
               "title": "should call revalidatePath or revalidateTag",
-              "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 33,
-                "column": 27
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846598,
-          "endTime": 1785088846625,
-          "status": "failed",
+          "startTime": 1785122596894,
+          "endTime": 1785122596903,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-09.test.tsx"
         },
@@ -1242,21 +1170,15 @@
                 "Challenge 10: Caching and Revalidating"
               ],
               "fullName": " Challenge 10: Caching and Revalidating should have fetch with cache options or revalidate",
-              "status": "failed",
+              "status": "passed",
               "title": "should have fetch with cache options or revalidate",
-              "duration": 23,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 22,
-                "column": 34
-              }
+              "duration": 7,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846520,
-          "endTime": 1785088846543,
-          "status": "failed",
+          "startTime": 1785122596878,
+          "endTime": 1785122596885,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-10.test.tsx"
         },
@@ -1268,16 +1190,10 @@
                 "Challenge 11: Error Handling"
               ],
               "fullName": " Challenge 11: Error Handling should have error.tsx in app or route segment",
-              "status": "failed",
+              "status": "passed",
               "title": "should have error.tsx in app or route segment",
-              "duration": 22,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 12,
-                "column": 61
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1285,21 +1201,15 @@
                 "Challenge 11: Error Handling"
               ],
               "fullName": " Challenge 11: Error Handling should use notFound in dynamic post page",
-              "status": "failed",
+              "status": "passed",
               "title": "should use notFound in dynamic post page",
-              "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 16,
-                "column": 40
-              }
+              "duration": 2,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846428,
-          "endTime": 1785088846453,
-          "status": "failed",
+          "startTime": 1785122596915,
+          "endTime": 1785122596923,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-11.test.tsx"
         },
@@ -1313,12 +1223,12 @@
               "fullName": " Challenge 12: Metadata and SEO should export metadata or generateMetadata with title/description",
               "status": "passed",
               "title": "should export metadata or generateMetadata with title/description",
-              "duration": 3,
+              "duration": 9,
               "failureMessages": []
             }
           ],
-          "startTime": 1785088847864,
-          "endTime": 1785088847867,
+          "startTime": 1785122598626,
+          "endTime": 1785122598635,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-12.test.tsx"
@@ -1331,16 +1241,10 @@
                 "Challenge 13: Images and Fonts"
               ],
               "fullName": " Challenge 13: Images and Fonts should use next/image",
-              "status": "failed",
+              "status": "passed",
               "title": "should use next/image",
-              "duration": 25,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 16,
-                "column": 22
-              }
+              "duration": 10,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1348,21 +1252,15 @@
                 "Challenge 13: Images and Fonts"
               ],
               "fullName": " Challenge 13: Images and Fonts should use next/font",
-              "status": "failed",
+              "status": "passed",
               "title": "should use next/font",
-              "duration": 4,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 21
-              }
+              "duration": 6,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846510,
-          "endTime": 1785088846539,
-          "status": "failed",
+          "startTime": 1785122596898,
+          "endTime": 1785122596914,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-13.test.tsx"
         },
@@ -1374,21 +1272,15 @@
                 "Challenge 14: Search and Pagination"
               ],
               "fullName": " Challenge 14: Search and Pagination should have page that receives searchParams",
-              "status": "failed",
+              "status": "passed",
               "title": "should have page that receives searchParams",
-              "duration": 23,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 10,
-                "column": 35
-              }
+              "duration": 6,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088847852,
-          "endTime": 1785088847875,
-          "status": "failed",
+          "startTime": 1785122598681,
+          "endTime": 1785122598687,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-14.test.tsx"
         },
@@ -1400,16 +1292,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have store with configureStore",
-              "status": "failed",
+              "status": "passed",
               "title": "should have store with configureStore",
-              "duration": 30,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 12,
-                "column": 35
-              }
+              "duration": 12,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1417,16 +1303,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have Client Provider wrapping with Provider and store",
-              "status": "failed",
+              "status": "passed",
               "title": "should have Client Provider wrapping with Provider and store",
-              "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 18,
-                "column": 39
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1434,21 +1314,15 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should use useSelector or useDispatch in a Client Component",
-              "status": "failed",
+              "status": "passed",
               "title": "should use useSelector or useDispatch in a Client Component",
-              "duration": 6,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 40,
-                "column": 22
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846457,
-          "endTime": 1785088846496,
-          "status": "failed",
+          "startTime": 1785122596897,
+          "endTime": 1785122596918,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-15.test.tsx"
         },
@@ -1460,16 +1334,10 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should have createApi and fetchBaseQuery",
-              "status": "failed",
+              "status": "passed",
               "title": "should have createApi and fetchBaseQuery",
-              "duration": 24,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 11,
-                "column": 34
-              }
+              "duration": 6,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1477,21 +1345,15 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should add API reducer and middleware to store",
-              "status": "failed",
+              "status": "passed",
               "title": "should add API reducer and middleware to store",
               "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 17,
-                "column": 35
-              }
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088847866,
-          "endTime": 1785088847893,
-          "status": "failed",
+          "startTime": 1785122598747,
+          "endTime": 1785122598757,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-16.test.tsx"
         },
@@ -1503,16 +1365,10 @@
                 "Challenge 17: Fullstack Capstone"
               ],
               "fullName": " Challenge 17: Fullstack Capstone should have dynamic route page",
-              "status": "failed",
+              "status": "passed",
               "title": "should have dynamic route page",
-              "duration": 22,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 13,
-                "column": 37
-              }
+              "duration": 5,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1520,16 +1376,10 @@
                 "Challenge 17: Fullstack Capstone"
               ],
               "fullName": " Challenge 17: Fullstack Capstone should have error.tsx or not-found.tsx",
-              "status": "failed",
+              "status": "passed",
               "title": "should have error.tsx or not-found.tsx",
-              "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 19,
-                "column": 7
-              }
+              "duration": 1,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -1537,21 +1387,15 @@
                 "Challenge 17: Fullstack Capstone"
               ],
               "fullName": " Challenge 17: Fullstack Capstone should have metadata or generateMetadata on dynamic page",
-              "status": "failed",
+              "status": "passed",
               "title": "should have metadata or generateMetadata on dynamic page",
               "duration": 3,
-              "failureMessages": [
-                "expected true to be false // Object.is equality"
-              ],
-              "location": {
-                "line": 24,
-                "column": 20
-              }
+              "failureMessages": []
             }
           ],
-          "startTime": 1785088846422,
-          "endTime": 1785088846451,
-          "status": "failed",
+          "startTime": 1785122596903,
+          "endTime": 1785122596914,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-17.test.tsx"
         }
@@ -1619,11 +1463,11 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
+      "score": 100,
+      "passed": true,
       "totalTests": 2,
-      "passedTests": 0,
-      "failedTests": 2,
+      "passedTests": 2,
+      "failedTests": 0,
       "details": [
         {
           "title": "challenge-02.spec.ts",
@@ -1640,7 +1484,7 @@
               "specs": [
                 {
                   "title": "should display home page",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -1653,32 +1497,18 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 4,
-                          "error": {
-                            "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
-                            "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
-                          },
-                          "errors": [
-                            {
-                              "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 2040,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-26T18:01:05.344Z",
+                          "startTime": "2026-07-27T03:23:36.089Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\test-results\\challenge-02-Challenge-02--01124-2E-should-display-home-page-chromium\\error-context.md"
-                            }
-                          ]
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "42dc79384a61c0717494-913d124fcf0db785346d",
@@ -1688,7 +1518,7 @@
                 },
                 {
                   "title": "should have interactive element (button or link)",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -1701,32 +1531,18 @@
                         {
                           "workerIndex": 1,
                           "parallelIndex": 1,
-                          "status": "failed",
-                          "duration": 4,
-                          "error": {
-                            "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
-                            "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
-                          },
-                          "errors": [
-                            {
-                              "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Rohan Kelaskar\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 1951,
+                          "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-26T18:01:05.272Z",
+                          "startTime": "2026-07-27T03:23:35.979Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "error-context",
-                              "contentType": "text/markdown",
-                              "path": "C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\test-results\\challenge-02-Challenge-02--4d07e-ive-element-button-or-link--chromium\\error-context.md"
-                            }
-                          ]
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "42dc79384a61c0717494-9726b28217a56c91520e",
@@ -1739,45 +1555,45 @@
           ]
         }
       ],
-      "error": "Command failed: npx playwright test \"tests/e2e/challenge-02.spec.ts\" --reporter=json\nnpm notice run nextjs-app-router-project@1.0.0 npx\nnpm notice run playwright test tests/e2e/challenge-02.spec.ts --reporter=json\n"
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "02-server-and-client-components",
-      "timestamp": "2026-07-26T18:01:05.536Z",
-      "score": 94,
+      "timestamp": "2026-07-27T03:23:39.019Z",
+      "score": 88,
       "feedback": [],
       "strengths": [
         "Clear separation of concerns between Server and Client Components",
-        "Effective use of TypeScript and React hooks",
-        "Well-structured and concise component code"
+        "Effective use of TypeScript and ESLint for code quality",
+        "Well-structured component files with clear naming conventions"
       ],
       "improvements": [
         "Consider adding more descriptive variable names in the Counter component",
-        "In the Home page, consider using a more robust way to handle the Link component, such as using the `next/link` component with a `href` prop",
-        "Add more test cases to ensure the Counter component works as expected in different scenarios"
+        "The use of a StoreProvider in the layout file could be better explained in the code comments",
+        "The Counter component's state update logic could be simplified using a more functional approach"
       ],
-      "readability": 95,
-      "maintainability": 92,
-      "overall": "The code is well-structured, readable, and maintainable. The separation of concerns between Server and Client Components is clear, and the use of TypeScript and React hooks is effective. However, there are some minor improvements that can be made to enhance the code's readability and maintainability."
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code demonstrates a good understanding of Next.js App Router concepts and effectively separates Server and Client Components. However, there are some minor improvements that can be made to enhance code readability and maintainability."
     },
     "aiResults": {
       "challengeId": "02-server-and-client-components",
-      "timestamp": "2026-07-26T18:01:05.536Z",
-      "score": 94,
+      "timestamp": "2026-07-27T03:23:39.019Z",
+      "score": 88,
       "feedback": [],
       "strengths": [
         "Clear separation of concerns between Server and Client Components",
-        "Effective use of TypeScript and React hooks",
-        "Well-structured and concise component code"
+        "Effective use of TypeScript and ESLint for code quality",
+        "Well-structured component files with clear naming conventions"
       ],
       "improvements": [
         "Consider adding more descriptive variable names in the Counter component",
-        "In the Home page, consider using a more robust way to handle the Link component, such as using the `next/link` component with a `href` prop",
-        "Add more test cases to ensure the Counter component works as expected in different scenarios"
+        "The use of a StoreProvider in the layout file could be better explained in the code comments",
+        "The Counter component's state update logic could be simplified using a more functional approach"
       ],
-      "readability": 95,
-      "maintainability": 92,
-      "overall": "The code is well-structured, readable, and maintainable. The separation of concerns between Server and Client Components is clear, and the use of TypeScript and React hooks is effective. However, there are some minor improvements that can be made to enhance the code's readability and maintainability."
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code demonstrates a good understanding of Next.js App Router concepts and effectively separates Server and Client Components. However, there are some minor improvements that can be made to enhance code readability and maintainability."
     }
   },
   {
