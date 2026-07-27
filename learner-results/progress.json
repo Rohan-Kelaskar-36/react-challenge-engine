@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T03:25:20.320Z",
+  "lastUpdated": "2026-07-27T03:27:15.036Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 79,
-    "completionPercentage": 73.6,
-    "badgeLevel": "bronze",
+    "overallScore": 79.7,
+    "completionPercentage": 75.5,
+    "badgeLevel": "silver",
     "totalChallenges": 53,
-    "completedChallenges": 39
+    "completedChallenges": 40
   },
   "courses": {
     "01-react-fundamentals": {
@@ -575,11 +575,11 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 65.8,
-      "completionPercentage": 17.6,
+      "averageScore": 67.9,
+      "completionPercentage": 23.5,
       "badgeLevel": "none",
       "totalChallenges": 17,
-      "completedChallenges": 3,
+      "completedChallenges": 4,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -629,16 +629,16 @@
         "04-api-route-handlers": {
           "challengeId": "04-api-route-handlers",
           "challengeName": "API Route Handlers",
-          "passed": false,
-          "score": 47.875,
-          "lastRun": "2026-07-26T18:10:01.225Z",
+          "passed": true,
+          "score": 83.05,
+          "lastRun": "2026-07-27T03:26:49.549Z",
           "scores": {
-            "functionalTests": 41.7,
+            "functionalTests": 97.2,
             "codeQuality": 50,
             "architecture": 33.3,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 88
           }
         },
         "05-loading-and-streaming": {
