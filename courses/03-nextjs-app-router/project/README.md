@@ -64,12 +64,12 @@ npm run review -- --challenge=01-app-router-pages-layout
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 27/7/2026, 9:01:23 am*
+*Auto-updated when you run review. Last run: 27/7/2026, 9:02:37 am*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 5 / 17 (29.4%) |
-| Average score | 69.7% |
+| Challenges completed | 6 / 17 (35.3%) |
+| Average score | 71.4% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
@@ -78,7 +78,7 @@ npm run review -- --challenge=01-app-router-pages-layout
 | Data Fetching in Server Components | Async Server Components, fetch, Data fetching, Server-side data | Passed |
 | API Route Handlers | Route Handlers, app/api, GET, POST, Response.json | Passed |
 | Loading and Streaming | loading.tsx, Streaming, Suspense, Loading UI | Passed |
-| Dynamic Routes | Dynamic Routes, [id], params, generateStaticParams | Not passed |
+| Dynamic Routes | Dynamic Routes, [id], params, generateStaticParams | Passed |
 | Static and Dynamic Rendering | Static Rendering, Dynamic Rendering, force-static, force-dynamic | Not passed |
 | SSR (Server-Side Rendering) | SSR, force-dynamic, cache: no-store, Server-side rendering | Not passed |
 | Server Actions and Revalidation | Server Actions, 'use server', revalidatePath, revalidateTag | Not passed |

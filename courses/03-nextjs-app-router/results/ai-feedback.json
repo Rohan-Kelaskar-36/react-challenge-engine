@@ -23,29 +23,6 @@
     }
   },
   {
-    "challengeId": "06-dynamic-routes",
-    "challengeName": "Dynamic Routes",
-    "aiReview": {
-      "challengeId": "06-dynamic-routes",
-      "timestamp": "2026-07-26T18:16:38.534Z",
-      "score": 93,
-      "feedback": [],
-      "strengths": [
-        "The code uses TypeScript, which is a good practice for Next.js applications.",
-        "The use of async/await for fetching data is clean and easy to read.",
-        "The code includes a `generateStaticParams` function, which is a good practice for dynamic routes."
-      ],
-      "improvements": [
-        "The function name `PostDetailsPage` could be more descriptive. Consider renaming it to something like `PostDetailsPageComponent`.",
-        "The `generateStaticParams` function returns a hardcoded array of IDs. Consider making this more dynamic or fetching the IDs from a database or API.",
-        "The error handling for the fetch request could be improved. Consider adding a try-catch block to handle any potential errors."
-      ],
-      "readability": 90,
-      "maintainability": 95,
-      "overall": "The code is well-structured and easy to read. It uses good practices for Next.js applications, such as TypeScript and async/await. However, there are a few areas for improvement, such as more descriptive function names and better error handling."
-    }
-  },
-  {
     "challengeId": "08-ssr-dynamic-rendering",
     "challengeName": "SSR (Server-Side Rendering)",
     "aiReview": {
@@ -388,6 +365,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-structured, maintainable, and effectively utilizes Next.js App Router features. With a few minor improvements, it can be even more robust and efficient."
+    }
+  },
+  {
+    "challengeId": "06-dynamic-routes",
+    "challengeName": "Dynamic Routes",
+    "aiReview": {
+      "challengeId": "06-dynamic-routes",
+      "timestamp": "2026-07-27T03:32:36.232Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the `generateMetadata` and `PostPage` functions.",
+        "The use of TypeScript type annotations is thorough and helps to ensure the correctness of the code.",
+        "The code includes a `generateStaticParams` function, which is a nice touch for generating static pages."
+      ],
+      "improvements": [
+        "The `notFound` function is imported but not used correctly. Instead of calling it directly, it should be used as a return value from the `PostPage` function. This can be fixed by changing the `notFound()` calls to `return notFound()`.",
+        "The `LikeButton` component is imported but not used correctly. Instead of passing it as a child element, it should be rendered as a separate component. This can be fixed by changing the `<LikeButton />` line to `<LikeButton />`.",
+        "The `generateMetadata` function can be simplified by removing the unnecessary `Promise` wrapper. This can be fixed by changing the function signature to `export async function generateMetadata({ params }: Props): Metadata`."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with some minor improvements needed to fix issues with the `notFound` and `LikeButton` components. Overall, the code is a good example of how to implement dynamic routes with Next.js App Router."
     }
   }
 ]
