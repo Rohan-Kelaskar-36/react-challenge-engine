@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T03:42:30.847Z",
+  "lastUpdated": "2026-07-27T03:43:24.317Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 84,
-    "completionPercentage": 90.6,
+    "overallScore": 84.2,
+    "completionPercentage": 92.5,
     "badgeLevel": "silver",
     "totalChallenges": 53,
-    "completedChallenges": 48
+    "completedChallenges": 49
   },
   "courses": {
     "01-react-fundamentals": {
@@ -575,11 +575,11 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 80.4,
-      "completionPercentage": 70.6,
-      "badgeLevel": "bronze",
+      "averageScore": 81,
+      "completionPercentage": 76.5,
+      "badgeLevel": "silver",
       "totalChallenges": 17,
-      "completedChallenges": 12,
+      "completedChallenges": 13,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -764,11 +764,11 @@
         "13-images-and-fonts": {
           "challengeId": "13-images-and-fonts",
           "challengeName": "Images and Fonts",
-          "passed": false,
-          "score": 71.72,
-          "lastRun": "2026-07-26T18:45:20.722Z",
+          "passed": true,
+          "score": 81.45,
+          "lastRun": "2026-07-27T03:43:01.982Z",
           "scores": {
-            "functionalTests": 72.2,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 0,
             "bestPractices": 100,

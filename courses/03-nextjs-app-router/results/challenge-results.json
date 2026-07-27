@@ -8918,25 +8918,25 @@
   {
     "challengeId": "13-images-and-fonts",
     "challengeName": "Images and Fonts",
-    "timestamp": "2026-07-26T18:45:20.722Z",
+    "timestamp": "2026-07-27T03:43:01.982Z",
     "scores": {
-      "functionalTests": 72.2,
+      "functionalTests": 100,
       "codeQuality": 50,
       "architecture": 0,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 93
     },
-    "totalScore": 71.72,
-    "passed": false,
+    "totalScore": 81.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 72.2,
-      "passed": false,
+      "score": 100,
+      "passed": true,
       "totalTests": 36,
-      "passedTests": 26,
-      "failedTests": 10,
+      "passedTests": 36,
+      "failedTests": 0,
       "details": [
         {
           "assertionResults": [
@@ -8948,7 +8948,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have app/page.tsx",
               "status": "passed",
               "title": "should have app/page.tsx",
-              "duration": 5,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -8970,7 +8970,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should use Server Components (no use client)",
               "status": "passed",
               "title": "should use Server Components (no use client)",
-              "duration": 2,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -8992,12 +8992,12 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have proper App Router structure",
               "status": "passed",
               "title": "should have proper App Router structure",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530128,
-          "endTime": 1785091530143,
+          "startTime": 1785123786498,
+          "endTime": 1785123786514,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-01.test.tsx"
@@ -9012,7 +9012,7 @@
               "fullName": " Challenge 02: Server and Client Components should have at least one Client Component with use client",
               "status": "passed",
               "title": "should have at least one Client Component with use client",
-              "duration": 5,
+              "duration": 6,
               "failureMessages": []
             },
             {
@@ -9023,7 +9023,7 @@
               "fullName": " Challenge 02: Server and Client Components should have Client Component that uses state or event handlers",
               "status": "passed",
               "title": "should have Client Component that uses state or event handlers",
-              "duration": 3,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -9034,12 +9034,12 @@
               "fullName": " Challenge 02: Server and Client Components should have App Router structure",
               "status": "passed",
               "title": "should have App Router structure",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530131,
-          "endTime": 1785091530141,
+          "startTime": 1785123786458,
+          "endTime": 1785123786469,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-02.test.tsx"
@@ -9054,7 +9054,7 @@
               "fullName": " Challenge 03: Data Fetching in Server Components should have posts page (or equivalent data page)",
               "status": "passed",
               "title": "should have posts page (or equivalent data page)",
-              "duration": 6,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -9076,12 +9076,12 @@
               "fullName": " Challenge 03: Data Fetching in Server Components should fetch data in Server Component",
               "status": "passed",
               "title": "should fetch data in Server Component",
-              "duration": 2,
+              "duration": 1,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530129,
-          "endTime": 1785091530139,
+          "startTime": 1785123786479,
+          "endTime": 1785123786486,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-03.test.tsx"
@@ -9107,12 +9107,12 @@
               "fullName": " Challenge 04: API Route Handlers should export GET that returns JSON",
               "status": "passed",
               "title": "should export GET that returns JSON",
-              "duration": 3,
+              "duration": 7,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530131,
-          "endTime": 1785091530138,
+          "startTime": 1785123786549,
+          "endTime": 1785123786560,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-04.test.tsx"
@@ -9127,7 +9127,7 @@
               "fullName": " Challenge 05: Loading and Streaming should have loading.tsx in a route segment",
               "status": "passed",
               "title": "should have loading.tsx in a route segment",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -9142,8 +9142,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1785091531603,
-          "endTime": 1785091531610,
+          "startTime": 1785123787679,
+          "endTime": 1785123787686,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-05.test.tsx"
@@ -9169,12 +9169,12 @@
               "fullName": " Challenge 06: Dynamic Routes should use params in page component",
               "status": "passed",
               "title": "should use params in page component",
-              "duration": 2,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530130,
-          "endTime": 1785091530138,
+          "startTime": 1785123786453,
+          "endTime": 1785123786462,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-06.test.tsx"
@@ -9187,21 +9187,15 @@
                 "Challenge 07: Static and Dynamic Rendering"
               ],
               "fullName": " Challenge 07: Static and Dynamic Rendering should have at least one page with dynamic export or dynamic APIs",
-              "status": "failed",
+              "status": "passed",
               "title": "should have at least one page with dynamic export or dynamic APIs",
-              "duration": 25,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 24
-              }
+              "duration": 5,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091531530,
-          "endTime": 1785091531555,
-          "status": "failed",
+          "startTime": 1785123787658,
+          "endTime": 1785123787663,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-07.test.tsx"
         },
@@ -9213,21 +9207,15 @@
                 "Challenge 08: SSR (Server-Side Rendering)"
               ],
               "fullName": " Challenge 08: SSR (Server-Side Rendering) should have page with force-dynamic or cache no-store",
-              "status": "failed",
+              "status": "passed",
               "title": "should have page with force-dynamic or cache no-store",
-              "duration": 23,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 20
-              }
+              "duration": 3,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091531598,
-          "endTime": 1785091531621,
-          "status": "failed",
+          "startTime": 1785123787655,
+          "endTime": 1785123787658,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-08.test.tsx"
         },
@@ -9252,12 +9240,12 @@
               "fullName": " Challenge 09: Server Actions and Revalidation should call revalidatePath or revalidateTag",
               "status": "passed",
               "title": "should call revalidatePath or revalidateTag",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530160,
-          "endTime": 1785091530174,
+          "startTime": 1785123786517,
+          "endTime": 1785123786529,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-09.test.tsx"
@@ -9272,12 +9260,12 @@
               "fullName": " Challenge 10: Caching and Revalidating should have fetch with cache options or revalidate",
               "status": "passed",
               "title": "should have fetch with cache options or revalidate",
-              "duration": 9,
+              "duration": 6,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530173,
-          "endTime": 1785091530182,
+          "startTime": 1785123786487,
+          "endTime": 1785123786493,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-10.test.tsx"
@@ -9292,7 +9280,7 @@
               "fullName": " Challenge 11: Error Handling should have error.tsx in app or route segment",
               "status": "passed",
               "title": "should have error.tsx in app or route segment",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -9307,8 +9295,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1785091530131,
-          "endTime": 1785091530140,
+          "startTime": 1785123786492,
+          "endTime": 1785123786499,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-11.test.tsx"
@@ -9323,12 +9311,12 @@
               "fullName": " Challenge 12: Metadata and SEO should export metadata or generateMetadata with title/description",
               "status": "passed",
               "title": "should export metadata or generateMetadata with title/description",
-              "duration": 7,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091531544,
-          "endTime": 1785091531551,
+          "startTime": 1785123787670,
+          "endTime": 1785123787674,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-12.test.tsx"
@@ -9343,7 +9331,7 @@
               "fullName": " Challenge 13: Images and Fonts should use next/image",
               "status": "passed",
               "title": "should use next/image",
-              "duration": 9,
+              "duration": 7,
               "failureMessages": []
             },
             {
@@ -9352,21 +9340,15 @@
                 "Challenge 13: Images and Fonts"
               ],
               "fullName": " Challenge 13: Images and Fonts should use next/font",
-              "status": "failed",
+              "status": "passed",
               "title": "should use next/font",
-              "duration": 30,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 21
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091530161,
-          "endTime": 1785091530200,
-          "status": "failed",
+          "startTime": 1785123786576,
+          "endTime": 1785123786587,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-13.test.tsx"
         },
@@ -9378,21 +9360,15 @@
                 "Challenge 14: Search and Pagination"
               ],
               "fullName": " Challenge 14: Search and Pagination should have page that receives searchParams",
-              "status": "failed",
+              "status": "passed",
               "title": "should have page that receives searchParams",
-              "duration": 27,
-              "failureMessages": [
-                "expected 'import type { Metadata } from \"next\";…' to match /searchParams|params\\.searchParams/"
-              ],
-              "location": {
-                "line": 12,
-                "column": 21
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091531626,
-          "endTime": 1785091531653,
-          "status": "failed",
+          "startTime": 1785123787728,
+          "endTime": 1785123787732,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-14.test.tsx"
         },
@@ -9404,16 +9380,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have store with configureStore",
-              "status": "failed",
+              "status": "passed",
               "title": "should have store with configureStore",
-              "duration": 37,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 12,
-                "column": 35
-              }
+              "duration": 6,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -9421,16 +9391,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have Client Provider wrapping with Provider and store",
-              "status": "failed",
+              "status": "passed",
               "title": "should have Client Provider wrapping with Provider and store",
-              "duration": 5,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 18,
-                "column": 39
-              }
+              "duration": 3,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -9438,21 +9402,15 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should use useSelector or useDispatch in a Client Component",
-              "status": "failed",
+              "status": "passed",
               "title": "should use useSelector or useDispatch in a Client Component",
-              "duration": 6,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 40,
-                "column": 22
-              }
+              "duration": 8,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091530163,
-          "endTime": 1785091530211,
-          "status": "failed",
+          "startTime": 1785123786473,
+          "endTime": 1785123786491,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-15.test.tsx"
         },
@@ -9464,16 +9422,10 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should have createApi and fetchBaseQuery",
-              "status": "failed",
+              "status": "passed",
               "title": "should have createApi and fetchBaseQuery",
-              "duration": 21,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 11,
-                "column": 34
-              }
+              "duration": 6,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -9481,21 +9433,15 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should add API reducer and middleware to store",
-              "status": "failed",
+              "status": "passed",
               "title": "should add API reducer and middleware to store",
-              "duration": 2,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 17,
-                "column": 35
-              }
+              "duration": 5,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091531601,
-          "endTime": 1785091531625,
-          "status": "failed",
+          "startTime": 1785123787679,
+          "endTime": 1785123787690,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-16.test.tsx"
         },
@@ -9529,26 +9475,19 @@
                 "Challenge 17: Fullstack Capstone"
               ],
               "fullName": " Challenge 17: Fullstack Capstone should have metadata or generateMetadata on dynamic page",
-              "status": "failed",
+              "status": "passed",
               "title": "should have metadata or generateMetadata on dynamic page",
-              "duration": 23,
-              "failureMessages": [
-                "expected 'import { notFound } from \"next/naviga…' to match /metadata|generateMetadata/"
-              ],
-              "location": {
-                "line": 28,
-                "column": 21
-              }
+              "duration": 4,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091530139,
-          "endTime": 1785091530167,
-          "status": "failed",
+          "startTime": 1785123786514,
+          "endTime": 1785123786523,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-17.test.tsx"
         }
-      ],
-      "error": "Command failed: npm test -- C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\tests\\challenge-13.test.tsx --run --reporter=json\nnpm notice run nextjs-app-router-project@1.0.0 test\nnpm notice run vitest C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\tests\\challenge-13.test.tsx --run --reporter=json\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n"
+      ]
     },
     "lintResults": {
       "score": 50,
@@ -9628,12 +9567,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1714,
+                          "duration": 967,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-26T18:45:53.783Z",
+                          "startTime": "2026-07-27T03:43:17.807Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -9655,41 +9594,41 @@
     },
     "aiReviewResults": {
       "challengeId": "13-images-and-fonts",
-      "timestamp": "2026-07-26T18:45:56.594Z",
+      "timestamp": "2026-07-27T03:43:19.244Z",
       "score": 93,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and follows the Next.js App Router guidelines.",
-        "The use of TypeScript ensures type safety and helps catch errors early.",
-        "The code is concise and easy to understand."
+        "Effective use of Next.js features such as `next/image` and `next/font`",
+        "Proper use of TypeScript and ESLint to ensure code quality",
+        "Well-structured code with clear separation of concerns"
       ],
       "improvements": [
-        "In `app/page.tsx`, consider adding a fallback for the image in case it fails to load. This can be done using the `loading` prop on the `Image` component.",
-        "In `app/layout.tsx`, consider adding a more robust way to handle font loading and fallbacks. This can be done using the `fontLoading` prop on the `Font` component.",
-        "Consider adding more comments or documentation to explain the purpose and behavior of each component and function."
+        "Consider adding more comments to explain complex logic or decisions",
+        "Some variable names could be more descriptive (e.g., `inter` could be `interFont`)",
+        "Consider using a more robust method for handling errors or exceptions"
       ],
       "readability": 95,
       "maintainability": 90,
-      "overall": "The code is well-structured and follows the Next.js App Router guidelines. It uses TypeScript and is concise and easy to understand. However, there are some areas for improvement, such as adding fallbacks for the image and font, and adding more comments or documentation."
+      "overall": "This code demonstrates a good understanding of Next.js features and best practices. The use of TypeScript and ESLint ensures code quality, and the structure is well-organized. However, there are some minor areas for improvement to make the code even more maintainable and readable."
     },
     "aiResults": {
       "challengeId": "13-images-and-fonts",
-      "timestamp": "2026-07-26T18:45:56.594Z",
+      "timestamp": "2026-07-27T03:43:19.244Z",
       "score": 93,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and follows the Next.js App Router guidelines.",
-        "The use of TypeScript ensures type safety and helps catch errors early.",
-        "The code is concise and easy to understand."
+        "Effective use of Next.js features such as `next/image` and `next/font`",
+        "Proper use of TypeScript and ESLint to ensure code quality",
+        "Well-structured code with clear separation of concerns"
       ],
       "improvements": [
-        "In `app/page.tsx`, consider adding a fallback for the image in case it fails to load. This can be done using the `loading` prop on the `Image` component.",
-        "In `app/layout.tsx`, consider adding a more robust way to handle font loading and fallbacks. This can be done using the `fontLoading` prop on the `Font` component.",
-        "Consider adding more comments or documentation to explain the purpose and behavior of each component and function."
+        "Consider adding more comments to explain complex logic or decisions",
+        "Some variable names could be more descriptive (e.g., `inter` could be `interFont`)",
+        "Consider using a more robust method for handling errors or exceptions"
       ],
       "readability": 95,
       "maintainability": 90,
-      "overall": "The code is well-structured and follows the Next.js App Router guidelines. It uses TypeScript and is concise and easy to understand. However, there are some areas for improvement, such as adding fallbacks for the image and font, and adding more comments or documentation."
+      "overall": "This code demonstrates a good understanding of Next.js features and best practices. The use of TypeScript and ESLint ensures code quality, and the structure is well-organized. However, there are some minor areas for improvement to make the code even more maintainable and readable."
     }
   },
   {
