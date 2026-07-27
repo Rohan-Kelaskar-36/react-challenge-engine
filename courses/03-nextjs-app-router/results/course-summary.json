@@ -1,11 +1,11 @@
 {
   "courseId": "03-nextjs-app-router",
   "courseName": "Next.js App Router",
-  "lastUpdated": "2026-07-27T03:40:06.600Z",
+  "lastUpdated": "2026-07-27T03:41:08.773Z",
   "totalChallenges": 17,
-  "completedChallenges": 10,
-  "averageScore": 78.2,
-  "completionPercentage": 58.8,
+  "completedChallenges": 11,
+  "averageScore": 79.7,
+  "completionPercentage": 64.7,
   "badgeLevel": "bronze",
   "challengeResults": [
     {
@@ -71,8 +71,8 @@
     {
       "challengeId": "11-error-handling",
       "challengeName": "Error Handling",
-      "score": 57.41,
-      "passed": false
+      "score": 82.37,
+      "passed": true
     },
     {
       "challengeId": "12-metadata-and-seo",
@@ -121,10 +121,10 @@
     "Static and Dynamic Rendering",
     "SSR (Server-Side Rendering)",
     "Server Actions and Revalidation",
-    "Caching and Revalidating"
+    "Caching and Revalidating",
+    "Error Handling"
   ],
   "improvementAreas": [
-    "Error Handling",
     "RTK Query with Next.js"
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T03:40:10.830Z",
+  "lastUpdated": "2026-07-27T03:41:13.661Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 83.2,
-    "completionPercentage": 86.8,
+    "overallScore": 83.7,
+    "completionPercentage": 88.7,
     "badgeLevel": "silver",
     "totalChallenges": 53,
-    "completedChallenges": 46
+    "completedChallenges": 47
   },
   "courses": {
     "01-react-fundamentals": {
@@ -575,11 +575,11 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 78.2,
-      "completionPercentage": 58.8,
+      "averageScore": 79.7,
+      "completionPercentage": 64.7,
       "badgeLevel": "bronze",
       "totalChallenges": 17,
-      "completedChallenges": 10,
+      "completedChallenges": 11,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -734,16 +734,16 @@
         "11-error-handling": {
           "challengeId": "11-error-handling",
           "challengeName": "Error Handling",
-          "passed": false,
-          "score": 57.41,
-          "lastRun": "2026-07-26T18:24:46.594Z",
+          "passed": true,
+          "score": 82.37,
+          "lastRun": "2026-07-27T03:40:43.568Z",
           "scores": {
-            "functionalTests": 69.4,
+            "functionalTests": 100,
             "codeQuality": 50,
             "architecture": 16.7,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 93
+            "e2eTests": 100,
+            "aiReview": 88
           }
         },
         "12-metadata-and-seo": {
