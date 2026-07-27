@@ -69,6 +69,10 @@ const paginatedPosts = filteredPosts.slice(
 
 
       <div>
+        <Suspense fallback={<p>Loading...</p>}>
+      <PostsList />
+    </Suspense>
+    
   {currentPage > 1 && (
     <Link href={`/posts?page=${currentPage - 1}&q=${query}`}>
       Previous
@@ -82,9 +86,7 @@ const paginatedPosts = filteredPosts.slice(
   </Link>
 </div>
 
-<Suspense fallback={<p>Loading...</p>}>
-      <PostsList />
-    </Suspense>
+
     </main>
   );
 }

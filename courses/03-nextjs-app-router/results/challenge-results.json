@@ -9634,25 +9634,25 @@
   {
     "challengeId": "14-search-and-pagination",
     "challengeName": "Search and Pagination",
-    "timestamp": "2026-07-26T18:49:55.452Z",
+    "timestamp": "2026-07-27T03:45:04.453Z",
     "scores": {
-      "functionalTests": 77.8,
+      "functionalTests": 100,
       "codeQuality": 50,
       "architecture": 50,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 88
     },
-    "totalScore": 77.92999999999999,
-    "passed": false,
+    "totalScore": 85.7,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
-      "score": 77.8,
-      "passed": false,
+      "score": 100,
+      "passed": true,
       "totalTests": 36,
-      "passedTests": 28,
-      "failedTests": 8,
+      "passedTests": 36,
+      "failedTests": 0,
       "details": [
         {
           "assertionResults": [
@@ -9664,7 +9664,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have app/page.tsx",
               "status": "passed",
               "title": "should have app/page.tsx",
-              "duration": 5,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -9675,7 +9675,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have app/about/page.tsx",
               "status": "passed",
               "title": "should have app/about/page.tsx",
-              "duration": 4,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9686,7 +9686,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should use Server Components (no use client)",
               "status": "passed",
               "title": "should use Server Components (no use client)",
-              "duration": 4,
+              "duration": 6,
               "failureMessages": []
             },
             {
@@ -9697,7 +9697,7 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should use Next.js Link component",
               "status": "passed",
               "title": "should use Next.js Link component",
-              "duration": 3,
+              "duration": 7,
               "failureMessages": []
             },
             {
@@ -9708,12 +9708,12 @@
               "fullName": " Challenge 01: App Router, Pages, and Layout should have proper App Router structure",
               "status": "passed",
               "title": "should have proper App Router structure",
-              "duration": 1,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808149,
-          "endTime": 1785091808167,
+          "startTime": 1785123911039,
+          "endTime": 1785123911060,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-01.test.tsx"
@@ -9754,8 +9754,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808171,
-          "endTime": 1785091808184,
+          "startTime": 1785123911039,
+          "endTime": 1785123911052,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-02.test.tsx"
@@ -9770,7 +9770,7 @@
               "fullName": " Challenge 03: Data Fetching in Server Components should have posts page (or equivalent data page)",
               "status": "passed",
               "title": "should have posts page (or equivalent data page)",
-              "duration": 4,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -9781,7 +9781,7 @@
               "fullName": " Challenge 03: Data Fetching in Server Components should have async Server Component",
               "status": "passed",
               "title": "should have async Server Component",
-              "duration": 3,
+              "duration": 2,
               "failureMessages": []
             },
             {
@@ -9792,12 +9792,12 @@
               "fullName": " Challenge 03: Data Fetching in Server Components should fetch data in Server Component",
               "status": "passed",
               "title": "should fetch data in Server Component",
-              "duration": 3,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808149,
-          "endTime": 1785091808161,
+          "startTime": 1785123911065,
+          "endTime": 1785123911073,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-03.test.tsx"
@@ -9812,7 +9812,7 @@
               "fullName": " Challenge 04: API Route Handlers should have API route file",
               "status": "passed",
               "title": "should have API route file",
-              "duration": 5,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -9823,12 +9823,12 @@
               "fullName": " Challenge 04: API Route Handlers should export GET that returns JSON",
               "status": "passed",
               "title": "should export GET that returns JSON",
-              "duration": 3,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808347,
-          "endTime": 1785091808356,
+          "startTime": 1785123911067,
+          "endTime": 1785123911075,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-04.test.tsx"
@@ -9843,7 +9843,7 @@
               "fullName": " Challenge 05: Loading and Streaming should have loading.tsx in a route segment",
               "status": "passed",
               "title": "should have loading.tsx in a route segment",
-              "duration": 3,
+              "duration": 8,
               "failureMessages": []
             },
             {
@@ -9854,12 +9854,12 @@
               "fullName": " Challenge 05: Loading and Streaming should export default loading component",
               "status": "passed",
               "title": "should export default loading component",
-              "duration": 2,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091809856,
-          "endTime": 1785091809862,
+          "startTime": 1785123912681,
+          "endTime": 1785123912694,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-05.test.tsx"
@@ -9874,7 +9874,7 @@
               "fullName": " Challenge 06: Dynamic Routes should have dynamic route segment [id] or [slug]",
               "status": "passed",
               "title": "should have dynamic route segment [id] or [slug]",
-              "duration": 7,
+              "duration": 3,
               "failureMessages": []
             },
             {
@@ -9889,8 +9889,8 @@
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808171,
-          "endTime": 1785091808181,
+          "startTime": 1785123911059,
+          "endTime": 1785123911066,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-06.test.tsx"
@@ -9905,12 +9905,12 @@
               "fullName": " Challenge 07: Static and Dynamic Rendering should have at least one page with dynamic export or dynamic APIs",
               "status": "passed",
               "title": "should have at least one page with dynamic export or dynamic APIs",
-              "duration": 4,
+              "duration": 7,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091809854,
-          "endTime": 1785091809858,
+          "startTime": 1785123912590,
+          "endTime": 1785123912597,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-07.test.tsx"
@@ -9923,21 +9923,15 @@
                 "Challenge 08: SSR (Server-Side Rendering)"
               ],
               "fullName": " Challenge 08: SSR (Server-Side Rendering) should have page with force-dynamic or cache no-store",
-              "status": "failed",
+              "status": "passed",
               "title": "should have page with force-dynamic or cache no-store",
-              "duration": 19,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 20
-              }
+              "duration": 7,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091809831,
-          "endTime": 1785091809850,
-          "status": "failed",
+          "startTime": 1785123912533,
+          "endTime": 1785123912540,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-08.test.tsx"
         },
@@ -9951,7 +9945,7 @@
               "fullName": " Challenge 09: Server Actions and Revalidation should have use server in a file",
               "status": "passed",
               "title": "should have use server in a file",
-              "duration": 14,
+              "duration": 7,
               "failureMessages": []
             },
             {
@@ -9962,12 +9956,12 @@
               "fullName": " Challenge 09: Server Actions and Revalidation should call revalidatePath or revalidateTag",
               "status": "passed",
               "title": "should call revalidatePath or revalidateTag",
-              "duration": 6,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808328,
-          "endTime": 1785091808348,
+          "startTime": 1785123911160,
+          "endTime": 1785123911171,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-09.test.tsx"
@@ -9982,12 +9976,12 @@
               "fullName": " Challenge 10: Caching and Revalidating should have fetch with cache options or revalidate",
               "status": "passed",
               "title": "should have fetch with cache options or revalidate",
-              "duration": 8,
+              "duration": 7,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808139,
-          "endTime": 1785091808147,
+          "startTime": 1785123911198,
+          "endTime": 1785123911205,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-10.test.tsx"
@@ -10002,7 +9996,7 @@
               "fullName": " Challenge 11: Error Handling should have error.tsx in app or route segment",
               "status": "passed",
               "title": "should have error.tsx in app or route segment",
-              "duration": 10,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -10013,12 +10007,12 @@
               "fullName": " Challenge 11: Error Handling should use notFound in dynamic post page",
               "status": "passed",
               "title": "should use notFound in dynamic post page",
-              "duration": 4,
+              "duration": 2,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091808154,
-          "endTime": 1785091808168,
+          "startTime": 1785123911073,
+          "endTime": 1785123911079,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-11.test.tsx"
@@ -10033,12 +10027,12 @@
               "fullName": " Challenge 12: Metadata and SEO should export metadata or generateMetadata with title/description",
               "status": "passed",
               "title": "should export metadata or generateMetadata with title/description",
-              "duration": 3,
+              "duration": 5,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091809860,
-          "endTime": 1785091809863,
+          "startTime": 1785123912589,
+          "endTime": 1785123912594,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-12.test.tsx"
@@ -10053,7 +10047,7 @@
               "fullName": " Challenge 13: Images and Fonts should use next/image",
               "status": "passed",
               "title": "should use next/image",
-              "duration": 11,
+              "duration": 5,
               "failureMessages": []
             },
             {
@@ -10062,21 +10056,15 @@
                 "Challenge 13: Images and Fonts"
               ],
               "fullName": " Challenge 13: Images and Fonts should use next/font",
-              "status": "failed",
+              "status": "passed",
               "title": "should use next/font",
-              "duration": 42,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 25,
-                "column": 21
-              }
+              "duration": 5,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091808308,
-          "endTime": 1785091808361,
-          "status": "failed",
+          "startTime": 1785123911224,
+          "endTime": 1785123911235,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-13.test.tsx"
         },
@@ -10090,12 +10078,12 @@
               "fullName": " Challenge 14: Search and Pagination should have page that receives searchParams",
               "status": "passed",
               "title": "should have page that receives searchParams",
-              "duration": 6,
+              "duration": 4,
               "failureMessages": []
             }
           ],
-          "startTime": 1785091809960,
-          "endTime": 1785091809966,
+          "startTime": 1785123912743,
+          "endTime": 1785123912747,
           "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-14.test.tsx"
@@ -10108,16 +10096,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have store with configureStore",
-              "status": "failed",
+              "status": "passed",
               "title": "should have store with configureStore",
-              "duration": 34,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 12,
-                "column": 35
-              }
+              "duration": 7,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -10125,16 +10107,10 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should have Client Provider wrapping with Provider and store",
-              "status": "failed",
+              "status": "passed",
               "title": "should have Client Provider wrapping with Provider and store",
-              "duration": 4,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 18,
-                "column": 39
-              }
+              "duration": 8,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -10142,21 +10118,15 @@
                 "Challenge 15: Redux Toolkit with Next.js"
               ],
               "fullName": " Challenge 15: Redux Toolkit with Next.js should use useSelector or useDispatch in a Client Component",
-              "status": "failed",
+              "status": "passed",
               "title": "should use useSelector or useDispatch in a Client Component",
-              "duration": 7,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 40,
-                "column": 22
-              }
+              "duration": 9,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091808177,
-          "endTime": 1785091808223,
-          "status": "failed",
+          "startTime": 1785123911190,
+          "endTime": 1785123911214,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-15.test.tsx"
         },
@@ -10168,16 +10138,10 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should have createApi and fetchBaseQuery",
-              "status": "failed",
+              "status": "passed",
               "title": "should have createApi and fetchBaseQuery",
-              "duration": 21,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 11,
-                "column": 34
-              }
+              "duration": 8,
+              "failureMessages": []
             },
             {
               "ancestorTitles": [
@@ -10185,21 +10149,15 @@
                 "Challenge 16: RTK Query with Next.js"
               ],
               "fullName": " Challenge 16: RTK Query with Next.js should add API reducer and middleware to store",
-              "status": "failed",
+              "status": "passed",
               "title": "should add API reducer and middleware to store",
               "duration": 3,
-              "failureMessages": [
-                "expected false to be true // Object.is equality"
-              ],
-              "location": {
-                "line": 17,
-                "column": 35
-              }
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091809907,
-          "endTime": 1785091809931,
-          "status": "failed",
+          "startTime": 1785123912686,
+          "endTime": 1785123912697,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-16.test.tsx"
         },
@@ -10213,7 +10171,7 @@
               "fullName": " Challenge 17: Fullstack Capstone should have dynamic route page",
               "status": "passed",
               "title": "should have dynamic route page",
-              "duration": 8,
+              "duration": 4,
               "failureMessages": []
             },
             {
@@ -10233,26 +10191,19 @@
                 "Challenge 17: Fullstack Capstone"
               ],
               "fullName": " Challenge 17: Fullstack Capstone should have metadata or generateMetadata on dynamic page",
-              "status": "failed",
+              "status": "passed",
               "title": "should have metadata or generateMetadata on dynamic page",
-              "duration": 32,
-              "failureMessages": [
-                "expected 'import { notFound } from \"next/naviga…' to match /metadata|generateMetadata/"
-              ],
-              "location": {
-                "line": 28,
-                "column": 21
-              }
+              "duration": 3,
+              "failureMessages": []
             }
           ],
-          "startTime": 1785091808326,
-          "endTime": 1785091808368,
-          "status": "failed",
+          "startTime": 1785123911166,
+          "endTime": 1785123911175,
+          "status": "passed",
           "message": "",
           "name": "C:/Users/Rohan Kelaskar/Desktop/react-challenge-engine/challenge-engine-react/courses/03-nextjs-app-router/project/tests/challenge-17.test.tsx"
         }
-      ],
-      "error": "Command failed: npm test -- C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\tests\\challenge-14.test.tsx --run --reporter=json\nnpm notice run nextjs-app-router-project@1.0.0 test\nnpm notice run vitest C:\\Users\\Rohan Kelaskar\\Desktop\\react-challenge-engine\\challenge-engine-react\\courses\\03-nextjs-app-router\\project\\tests\\challenge-14.test.tsx --run --reporter=json\n\u001b[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.\u001b[39m\n"
+      ]
     },
     "lintResults": {
       "score": 50,
@@ -10324,12 +10275,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 1487,
+                          "duration": 1834,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-07-26T18:50:29.150Z",
+                          "startTime": "2026-07-27T03:45:24.904Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -10351,41 +10302,41 @@
     },
     "aiReviewResults": {
       "challengeId": "14-search-and-pagination",
-      "timestamp": "2026-07-26T18:50:32.068Z",
+      "timestamp": "2026-07-27T03:45:27.279Z",
       "score": 88,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between data fetching, filtering, and rendering.",
-        "The use of TypeScript and Next.js features like `fetch` and `Link` components demonstrates a good understanding of the framework and its capabilities.",
-        "The code is free of console statements and passes ESLint, indicating a good attention to detail and adherence to best practices."
+        "The code is well-structured and follows a logical flow, making it easy to understand and follow.",
+        "The use of TypeScript and Next.js features such as dynamic routing and Suspense is well-implemented.",
+        "The code is concise and to the point, with minimal unnecessary complexity."
       ],
       "improvements": [
-        "The `paginatedPosts` variable is not necessary and can be removed, as the `filteredPosts` array can be sliced directly in the JSX. This would simplify the code and reduce unnecessary variables.",
-        "The `Link` components for navigating to previous and next pages can be simplified by using the `href` attribute with template literals, reducing the amount of string concatenation.",
-        "The error handling for the `fetch` request can be improved by providing a more informative error message or by using a more robust error handling mechanism, such as a try-catch block with a specific error type."
+        "The variable `query` is not properly validated or sanitized, which could lead to potential security issues if user input is not properly escaped. Consider using a library like `querystring` to safely parse query parameters.",
+        "The code uses a magic number (`10`) for the number of posts per page. Consider defining a constant or configuration variable for this value to make it easier to change or customize in the future.",
+        "The `PostsList` component is not imported correctly. It should be imported from the correct file path, or the file path should be updated to match the actual location of the component."
       ],
       "readability": 85,
       "maintainability": 90,
-      "overall": "The code demonstrates a good understanding of Next.js and TypeScript, with a clear and well-structured implementation of search and pagination features. However, there are some minor improvements that can be made to simplify the code and improve maintainability."
+      "overall": "The code is well-structured and effectively implements search and pagination features using Next.js and TypeScript. However, there are some areas for improvement to ensure the code is more robust and maintainable."
     },
     "aiResults": {
       "challengeId": "14-search-and-pagination",
-      "timestamp": "2026-07-26T18:50:32.068Z",
+      "timestamp": "2026-07-27T03:45:27.279Z",
       "score": 88,
       "feedback": [],
       "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between data fetching, filtering, and rendering.",
-        "The use of TypeScript and Next.js features like `fetch` and `Link` components demonstrates a good understanding of the framework and its capabilities.",
-        "The code is free of console statements and passes ESLint, indicating a good attention to detail and adherence to best practices."
+        "The code is well-structured and follows a logical flow, making it easy to understand and follow.",
+        "The use of TypeScript and Next.js features such as dynamic routing and Suspense is well-implemented.",
+        "The code is concise and to the point, with minimal unnecessary complexity."
       ],
       "improvements": [
-        "The `paginatedPosts` variable is not necessary and can be removed, as the `filteredPosts` array can be sliced directly in the JSX. This would simplify the code and reduce unnecessary variables.",
-        "The `Link` components for navigating to previous and next pages can be simplified by using the `href` attribute with template literals, reducing the amount of string concatenation.",
-        "The error handling for the `fetch` request can be improved by providing a more informative error message or by using a more robust error handling mechanism, such as a try-catch block with a specific error type."
+        "The variable `query` is not properly validated or sanitized, which could lead to potential security issues if user input is not properly escaped. Consider using a library like `querystring` to safely parse query parameters.",
+        "The code uses a magic number (`10`) for the number of posts per page. Consider defining a constant or configuration variable for this value to make it easier to change or customize in the future.",
+        "The `PostsList` component is not imported correctly. It should be imported from the correct file path, or the file path should be updated to match the actual location of the component."
       ],
       "readability": 85,
       "maintainability": 90,
-      "overall": "The code demonstrates a good understanding of Next.js and TypeScript, with a clear and well-structured implementation of search and pagination features. However, there are some minor improvements that can be made to simplify the code and improve maintainability."
+      "overall": "The code is well-structured and effectively implements search and pagination features using Next.js and TypeScript. However, there are some areas for improvement to ensure the code is more robust and maintainable."
     }
   },
   {
