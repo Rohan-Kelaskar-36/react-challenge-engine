@@ -1,28 +1,5 @@
 [
   {
-    "challengeId": "17-fullstack-capstone",
-    "challengeName": "Fullstack Capstone",
-    "aiReview": {
-      "challengeId": "17-fullstack-capstone",
-      "timestamp": "2026-07-26T19:03:17.838Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between data fetching, error handling, and UI rendering.",
-        "The use of TypeScript and Next.js features like `generateStaticParams` and `generateMetadata` demonstrates a good understanding of the framework and its capabilities.",
-        "The code is concise and to the point, with minimal unnecessary complexity."
-      ],
-      "improvements": [
-        "Consider adding more robust error handling, such as displaying a user-friendly error message when the post is not found or the API request fails.",
-        "The `LikeButton` component is not imported correctly; it should be imported from the correct file path.",
-        "The `generateStaticParams` function can be simplified by using the `map` function to generate the static params array."
-      ],
-      "readability": 90,
-      "maintainability": 85,
-      "overall": "The code is well-structured and demonstrates a good understanding of Next.js features and best practices. However, there are some minor improvements that can be made to enhance error handling and code simplicity."
-    }
-  },
-  {
     "challengeId": "01-app-router-pages-layout",
     "challengeName": "App Router, Pages, and Layout",
     "aiReview": {
@@ -388,6 +365,29 @@
       "readability": 85,
       "maintainability": 90,
       "overall": "The code is well-organized and effectively implements RTK Query in a Next.js App Router application. However, there are some minor areas for improvement to enhance maintainability and user experience."
+    }
+  },
+  {
+    "challengeId": "17-fullstack-capstone",
+    "challengeName": "Fullstack Capstone",
+    "aiReview": {
+      "challengeId": "17-fullstack-capstone",
+      "timestamp": "2026-07-27T03:50:02.611Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear and concise variable names and function signatures.",
+        "The use of TypeScript and Next.js features such as `generateStaticParams` and `generateMetadata` is well-implemented.",
+        "The code includes a clear and simple error handling mechanism using `notFound()`."
+      ],
+      "improvements": [
+        "The `Post` interface can be simplified by removing the `body` property, as it's not being used in the code.",
+        "The `LikeButton` component is not being used correctly, as it's not being passed any props. It should be updated to accept the post ID as a prop.",
+        "The code can benefit from additional comments or documentation to explain the purpose of each function and component."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-implemented, with a good balance of simplicity and functionality. With a few minor improvements, it can be even more maintainable and efficient."
     }
   }
 ]
