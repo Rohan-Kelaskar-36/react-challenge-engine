@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-27T03:48:24.154Z",
+  "lastUpdated": "2026-07-27T03:49:15.721Z",
   "pathway": {
     "name": "Modern React Engineer",
     "version": "1.0.0",
-    "overallScore": 84.4,
-    "completionPercentage": 96.2,
+    "overallScore": 84.8,
+    "completionPercentage": 98.1,
     "badgeLevel": "silver",
     "totalChallenges": 53,
-    "completedChallenges": 51
+    "completedChallenges": 52
   },
   "courses": {
     "01-react-fundamentals": {
@@ -575,11 +575,11 @@
     "03-nextjs-app-router": {
       "courseId": "03-nextjs-app-router",
       "courseName": "Next.js App Router",
-      "averageScore": 81.7,
-      "completionPercentage": 88.2,
+      "averageScore": 82.9,
+      "completionPercentage": 94.1,
       "badgeLevel": "silver",
       "totalChallenges": 17,
-      "completedChallenges": 15,
+      "completedChallenges": 16,
       "challenges": {
         "01-app-router-pages-layout": {
           "challengeId": "01-app-router-pages-layout",
@@ -809,16 +809,16 @@
         "16-rtk-query-with-nextjs": {
           "challengeId": "16-rtk-query-with-nextjs",
           "challengeName": "RTK Query with Next.js",
-          "passed": false,
-          "score": 62.565,
-          "lastRun": "2026-07-26T18:59:43.273Z",
+          "passed": true,
+          "score": 82.37,
+          "lastRun": "2026-07-27T03:48:53.703Z",
           "scores": {
-            "functionalTests": 88.9,
+            "functionalTests": 100,
             "codeQuality": 50,
-            "architecture": 0,
+            "architecture": 16.7,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 93
+            "e2eTests": 100,
+            "aiReview": 88
           }
         },
         "17-fullstack-capstone": {
